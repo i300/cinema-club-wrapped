@@ -3,6 +3,9 @@ import { TMDB } from "tmdb-ts";
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 const tmdb = new TMDB(API_KEY);
 
+// Number of cast members to analyze per movie
+const CAST_ANALYSIS_DEPTH = 10;
+
 export const searchMovie = async (title, year) => {
   try {
     const results = await tmdb.search.movies({
@@ -30,11 +33,7 @@ export const getMovieDetails = async (movieId) => {
   }
 };
 
-export const enrichMovieData = async (
-  movieTitle,
-  year,
-  watchedDate
-) => {
+export const enrichMovieData = async (movieTitle, year, watchedDate) => {
   try {
     const searchResult = await searchMovie(movieTitle, year);
 
@@ -57,6 +56,15 @@ export const enrichMovieData = async (
         ? details.genres[0].name
         : "Unknown";
 
+    // Extract top cast members with popularity
+    const topCast =
+      details.credits?.cast?.slice(0, CAST_ANALYSIS_DEPTH).map((actor) => ({
+        id: actor.id,
+        name: actor.name,
+        character: actor.character,
+        popularity: actor.popularity,
+      })) || [];
+
     return {
       title: details.title,
       year: new Date(details.release_date).getFullYear(),
@@ -68,6 +76,7 @@ export const enrichMovieData = async (
       posterPath: details.poster_path,
       backdropPath: details.backdrop_path,
       overview: details.overview,
+      cast: topCast,
     };
   } catch (error) {
     console.error(`Error enriching movie data for: ${movieTitle}`, error);

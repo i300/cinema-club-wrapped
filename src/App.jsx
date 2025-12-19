@@ -7,13 +7,11 @@ import EventListSlide from "./components/slides/EventListSlide";
 import TotalMoviesSlide from "./components/slides/TotalMoviesSlide";
 import RuntimeSlide from "./components/slides/RuntimeSlide";
 import TopGenreSlide from "./components/slides/TopGenreSlide";
+import TopActorsSlide from "./components/slides/TopActorsSlide";
 import OldestNewestSlide from "./components/slides/OldestNewestSlide";
-import HighestRatedSlide from "./components/slides/HighestRatedSlide";
 import LongestMovieSlide from "./components/slides/LongestMovieSlide";
-import TopDirectorSlide from "./components/slides/TopDirectorSlide";
 import MostAttendedEventSlide from "./components/slides/MostAttendedEventSlide";
 import TopAttendeeSlide from "./components/slides/TopAttendeeSlide";
-import DecadeBreakdownSlide from "./components/slides/DecadeBreakdownSlide";
 import SummarySlide from "./components/slides/SummarySlide";
 import ProgressBar from "./components/ProgressBar";
 import "./App.css";
@@ -51,13 +49,11 @@ function App() {
     <TotalMoviesSlide key="total" stats={stats} />,
     <RuntimeSlide key="runtime" stats={stats} />,
     <TopGenreSlide key="genre" stats={stats} />,
+    <TopActorsSlide key="top-actors" stats={stats} />,
     <OldestNewestSlide key="oldest-newest" stats={stats} />,
-    <HighestRatedSlide key="highest" stats={stats} />,
     <LongestMovieSlide key="longest" stats={stats} />,
-    <TopDirectorSlide key="director" stats={stats} />,
     <MostAttendedEventSlide key="most-attended" stats={stats} />,
     <TopAttendeeSlide key="top-attendee" stats={stats} />,
-    <DecadeBreakdownSlide key="decade" stats={stats} />,
     <SummarySlide key="summary" stats={stats} />,
   ];
 
@@ -127,7 +123,7 @@ function App() {
           dragElastic={0.2}
           dragMomentum={false}
           onDragStart={() => setIsDragging(true)}
-          onDragEnd={(e, info) => {
+          onDragEnd={(_, info) => {
             setIsDragging(false);
             const containerWidth = containerRef.current?.offsetWidth || 1;
             const offset = info.offset.x;

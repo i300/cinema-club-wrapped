@@ -8,6 +8,8 @@
   background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
   position: relative;
   overflow: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.1);
 }
 
 .slides-container {
