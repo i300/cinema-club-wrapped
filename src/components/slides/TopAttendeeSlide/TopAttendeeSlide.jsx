@@ -1,14 +1,15 @@
-import Slide from "../Slide";
+import Slide from "../../Slide";
+import './TopAttendeeSlide.css';
 
 // Import profile images
-import alexImg from "../../assets/alex.jpeg";
-import brennaImg from "../../assets/brenna.jpeg";
-import jerryImg from "../../assets/jerry.jpeg";
-import jojoImg from "../../assets/jojo.jpeg";
-import julietImg from "../../assets/juliet.jpeg";
-import michaelImg from "../../assets/michael.jpeg";
-import nirImg from "../../assets/nir.jpeg";
-import zoeImg from "../../assets/zoe.jpeg";
+import alexImg from "../../../assets/alex.jpeg";
+import brennaImg from "../../../assets/brenna.jpeg";
+import jerryImg from "../../../assets/jerry.jpeg";
+import jojoImg from "../../../assets/jojo.jpeg";
+import julietImg from "../../../assets/juliet.jpeg";
+import michaelImg from "../../../assets/michael.jpeg";
+import nirImg from "../../../assets/nir.jpeg";
+import zoeImg from "../../../assets/zoe.jpeg";
 
 const profileImages = {
   alex: alexImg,

@@ -1,4 +1,5 @@
-import Slide from '../Slide';
+import Slide from '../../Slide';
+import './EventListSlide.css';
 
 const EventListSlide = ({ stats }) => {
   const formatDate = (dateString) => {

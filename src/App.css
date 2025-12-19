@@ -41,32 +41,6 @@
   padding: 1rem;
 }
 
-.progress-bars {
-  position: fixed;
-  top: 1.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(100% - 4rem);
-  max-width: 900px;
-  display: flex;
-  gap: 6px;
-  z-index: 1000;
-}
-
-.progress-bar-item {
-  flex: 1;
-  height: 3px;
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: 2px;
-  overflow: hidden;
-}
-
-.progress-bar-fill {
-  height: 100%;
-  background: white;
-  transform-origin: left;
-}
-
 .loading,
 .error {
   text-align: center;
@@ -101,16 +75,6 @@
 }
 
 @media (max-width: 768px) {
-  .progress-bars {
-    top: 1rem;
-    width: calc(100% - 2rem);
-    gap: 4px;
-  }
-
-  .progress-bar-item {
-    height: 2px;
-  }
-
   .slides-container {
     padding: 3rem 0 1rem 0;
   }

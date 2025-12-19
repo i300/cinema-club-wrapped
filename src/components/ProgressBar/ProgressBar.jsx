@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import './ProgressBar.css';
 
 const ProgressBar = ({ totalSlides, currentSlide }) => {
   return (

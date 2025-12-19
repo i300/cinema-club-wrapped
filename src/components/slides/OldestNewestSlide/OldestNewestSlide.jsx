@@ -1,4 +1,5 @@
-import Slide from "../Slide";
+import Slide from "../../Slide";
+import './OldestNewestSlide.css';
 
 const OldestNewestSlide = ({ stats }) => {
   const decades = Object.entries(stats.decadeCounts)

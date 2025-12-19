@@ -1,4 +1,5 @@
-import Slide from '../Slide';
+import Slide from '../../Slide';
+import './MostAttendedEventSlide.css';
 
 const MostAttendedEventSlide = ({ stats }) => {
   const event = stats.mostAttendedEvent;

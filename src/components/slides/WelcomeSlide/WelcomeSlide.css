@@ -1,0 +1,40 @@
+/* Welcome Slide */
+.welcome-slide {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.title-main {
+  font-size: 5rem;
+  font-weight: 800;
+  margin: 0;
+  background: linear-gradient(135deg, #fff 0%, #f0f0f0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -2px;
+}
+
+.title-sub {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .title-main {
+    font-size: 3rem;
+  }
+
+  .title-sub {
+    font-size: 2.5rem;
+  }
+}

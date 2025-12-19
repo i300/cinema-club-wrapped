@@ -1,4 +1,5 @@
-import Slide from '../Slide';
+import Slide from '../../Slide';
+import './RuntimeSlide.css';
 
 const RuntimeSlide = ({ stats }) => {
   return (

@@ -1,4 +1,5 @@
-import Slide from '../Slide';
+import Slide from '../../Slide';
+import './TopActorsSlide.css';
 
 const TopActorsSlide = ({ stats }) => {
   // Edge case: no actors data

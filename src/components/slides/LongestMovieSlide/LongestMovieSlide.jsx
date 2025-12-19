@@ -1,4 +1,5 @@
-import Slide from '../Slide';
+import Slide from '../../Slide';
+import './LongestMovieSlide.css';
 
 const LongestMovieSlide = ({ stats }) => {
   const hours = Math.floor(stats.longestMovie.runtime / 60);
