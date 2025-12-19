@@ -1,26 +1,31 @@
-import { useState, useEffect } from 'react';
-import { fetchMovies } from './data/movies';
-import { calculateStats } from './utils/statistics';
-import WelcomeSlide from './components/slides/WelcomeSlide';
-import EventListSlide from './components/slides/EventListSlide';
-import TotalMoviesSlide from './components/slides/TotalMoviesSlide';
-import RuntimeSlide from './components/slides/RuntimeSlide';
-import TopGenreSlide from './components/slides/TopGenreSlide';
-import OldestNewestSlide from './components/slides/OldestNewestSlide';
-import HighestRatedSlide from './components/slides/HighestRatedSlide';
-import LongestMovieSlide from './components/slides/LongestMovieSlide';
-import TopDirectorSlide from './components/slides/TopDirectorSlide';
-import MostAttendedEventSlide from './components/slides/MostAttendedEventSlide';
-import TopAttendeeSlide from './components/slides/TopAttendeeSlide';
-import DecadeBreakdownSlide from './components/slides/DecadeBreakdownSlide';
-import SummarySlide from './components/slides/SummarySlide';
-import './App.css';
+import { useState, useEffect, useRef } from "react";
+import { motion, useMotionValue, animate } from "framer-motion";
+import { fetchMovies } from "./data/movies";
+import { calculateStats } from "./utils/statistics";
+import WelcomeSlide from "./components/slides/WelcomeSlide";
+import EventListSlide from "./components/slides/EventListSlide";
+import TotalMoviesSlide from "./components/slides/TotalMoviesSlide";
+import RuntimeSlide from "./components/slides/RuntimeSlide";
+import TopGenreSlide from "./components/slides/TopGenreSlide";
+import OldestNewestSlide from "./components/slides/OldestNewestSlide";
+import HighestRatedSlide from "./components/slides/HighestRatedSlide";
+import LongestMovieSlide from "./components/slides/LongestMovieSlide";
+import TopDirectorSlide from "./components/slides/TopDirectorSlide";
+import MostAttendedEventSlide from "./components/slides/MostAttendedEventSlide";
+import TopAttendeeSlide from "./components/slides/TopAttendeeSlide";
+import DecadeBreakdownSlide from "./components/slides/DecadeBreakdownSlide";
+import SummarySlide from "./components/slides/SummarySlide";
+import ProgressBar from "./components/ProgressBar";
+import "./App.css";
 
 function App() {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [index, setIndex] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
   const [stats, setStats] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const containerRef = useRef(null);
+  const x = useMotionValue(0);
 
   useEffect(() => {
     const loadMovies = async () => {
@@ -30,8 +35,8 @@ function App() {
         const calculatedStats = calculateStats(movies);
         setStats(calculatedStats);
       } catch (err) {
-        console.error('Error loading movies:', err);
-        setError('Failed to load movie data');
+        console.error("Error loading movies:", err);
+        setError("Failed to load movie data");
       } finally {
         setLoading(false);
       }
@@ -53,35 +58,36 @@ function App() {
     <MostAttendedEventSlide key="most-attended" stats={stats} />,
     <TopAttendeeSlide key="top-attendee" stats={stats} />,
     <DecadeBreakdownSlide key="decade" stats={stats} />,
-    <SummarySlide key="summary" stats={stats} />
+    <SummarySlide key="summary" stats={stats} />,
   ];
 
-  const nextSlide = () => {
-    if (currentSlide < slides.length - 1) {
-      setCurrentSlide(currentSlide + 1);
-    }
-  };
+  useEffect(() => {
+    if (!isDragging && containerRef.current) {
+      const containerWidth = containerRef.current.offsetWidth || 1;
+      const targetX = -index * containerWidth;
 
-  const prevSlide = () => {
-    if (currentSlide > 0) {
-      setCurrentSlide(currentSlide - 1);
+      animate(x, targetX, {
+        type: "spring",
+        stiffness: 300,
+        damping: 30,
+      });
     }
-  };
+  }, [index, x, isDragging]);
 
   useEffect(() => {
     const handleKeyDown = (e) => {
-      if (e.key === 'ArrowRight' || e.key === ' ') {
+      if (e.key === "ArrowRight" || e.key === " ") {
         e.preventDefault();
-        nextSlide();
-      } else if (e.key === 'ArrowLeft') {
+        setIndex((i) => Math.min(slides.length - 1, i + 1));
+      } else if (e.key === "ArrowLeft") {
         e.preventDefault();
-        prevSlide();
+        setIndex((i) => Math.max(0, i - 1));
       }
     };
 
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [currentSlide]);
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [slides.length]);
 
   if (loading) {
     return (
@@ -111,40 +117,45 @@ function App() {
 
   return (
     <div className="app">
+      <ProgressBar totalSlides={slides.length} currentSlide={index} />
+
       <div className="slides-container">
-        {slides[currentSlide]}
-      </div>
+        <motion.div
+          className="slides-carousel"
+          ref={containerRef}
+          drag="x"
+          dragElastic={0.2}
+          dragMomentum={false}
+          onDragStart={() => setIsDragging(true)}
+          onDragEnd={(e, info) => {
+            setIsDragging(false);
+            const containerWidth = containerRef.current?.offsetWidth || 1;
+            const offset = info.offset.x;
+            const velocity = info.velocity.x;
 
-      <div className="navigation">
-        <button
-          className="nav-button"
-          onClick={prevSlide}
-          disabled={currentSlide === 0}
-        >
-          ←
-        </button>
-        <div className="progress">
-          <span className="progress-text">
-            {currentSlide + 1} / {slides.length}
-          </span>
-          <div className="progress-bar">
-            <div
-              className="progress-fill"
-              style={{ width: `${((currentSlide + 1) / slides.length) * 100}%` }}
-            />
-          </div>
-        </div>
-        <button
-          className="nav-button"
-          onClick={nextSlide}
-          disabled={currentSlide === slides.length - 1}
-        >
-          →
-        </button>
-      </div>
+            let newIndex = index;
 
-      <div className="instructions">
-        Use arrow keys or click buttons to navigate
+            // If fast swipe, use velocity
+            if (Math.abs(velocity) > 500) {
+              newIndex = velocity > 0 ? index - 1 : index + 1;
+            }
+            // Otherwise use offset threshold (30% of container width)
+            else if (Math.abs(offset) > containerWidth * 0.3) {
+              newIndex = offset > 0 ? index - 1 : index + 1;
+            }
+
+            // Clamp index
+            newIndex = Math.max(0, Math.min(slides.length - 1, newIndex));
+            setIndex(newIndex);
+          }}
+          style={{ x }}
+        >
+          {slides.map((slide, i) => (
+            <div key={i} className="slides-container-wrapper">
+              {slide}
+            </div>
+          ))}
+        </motion.div>
       </div>
     </div>
   );
