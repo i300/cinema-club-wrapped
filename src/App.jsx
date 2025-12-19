@@ -71,6 +71,16 @@ function App() {
   }, [index, x, isDragging]);
 
   useEffect(() => {
+    const handleResize = () => {
+      const containerWidth = containerRef.current.offsetWidth || 1;
+      const targetX = -index * containerWidth;
+      x.set(targetX);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [index, x]);
+
+  useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === "ArrowRight" || e.key === " ") {
         e.preventDefault();
