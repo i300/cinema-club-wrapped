@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion, useMotionValue, animate } from "framer-motion";
 import { fetchMovies } from "./data/movies";
 import { calculateStats } from "./utils/statistics";
+import { calculateRatingsStats } from "./data/ratings";
 import WelcomeSlide from "./components/slides/WelcomeSlide/WelcomeSlide";
 import EventListSlide from "./components/slides/EventListSlide/EventListSlide";
 import TotalMoviesSlide from "./components/slides/TotalMoviesSlide/TotalMoviesSlide";
@@ -12,6 +13,9 @@ import OldestNewestSlide from "./components/slides/OldestNewestSlide/OldestNewes
 import LongestMovieSlide from "./components/slides/LongestMovieSlide/LongestMovieSlide";
 import MostAttendedEventSlide from "./components/slides/MostAttendedEventSlide/MostAttendedEventSlide";
 import TopAttendeeSlide from "./components/slides/TopAttendeeSlide/TopAttendeeSlide";
+import TopMoviesSlide from "./components/slides/TopMoviesSlide/TopMoviesSlide";
+import BustOfTheYearSlide from "./components/slides/BustOfTheYearSlide/BustOfTheYearSlide";
+import PersonalFavoritesSlide from "./components/slides/PersonalFavoritesSlide/PersonalFavoritesSlide";
 import SummarySlide from "./components/slides/SummarySlide/SummarySlide";
 import ProgressBar from "./components/ProgressBar/ProgressBar";
 import "./App.css";
@@ -30,7 +34,10 @@ function App() {
       try {
         setLoading(true);
         const movies = await fetchMovies();
-        const calculatedStats = calculateStats(movies);
+        const calculatedStats = {
+          ...calculateStats(movies),
+          ratingsStats: calculateRatingsStats()
+        };
         setStats(calculatedStats);
       } catch (err) {
         console.error("Error loading movies:", err);
@@ -54,6 +61,9 @@ function App() {
     <LongestMovieSlide key="longest" stats={stats} />,
     <MostAttendedEventSlide key="most-attended" stats={stats} />,
     <TopAttendeeSlide key="top-attendee" stats={stats} />,
+    <TopMoviesSlide key="top-movies" stats={stats} />,
+    <BustOfTheYearSlide key="bust" stats={stats} />,
+    <PersonalFavoritesSlide key="personal-favorites" stats={stats} />,
     <SummarySlide key="summary" stats={stats} />,
   ];
 
