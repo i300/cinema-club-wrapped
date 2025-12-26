@@ -120,7 +120,7 @@ function App() {
   if (error) {
     return (
       <div className="w-full h-screen flex flex-col justify-center items-center bg-gradient-app relative overflow-hidden scrollbar-custom">
-        <div className="text-center text-white">
+        <div className="text-center text-white p-8">
           <h2 className="text-[2rem] mb-8">Oops! Something went wrong</h2>
           <p className="text-xl text-white/70">{error}</p>
         </div>
@@ -133,7 +133,7 @@ function App() {
   }
 
   return (
-    <div className="w-full h-screen flex flex-col justify-center items-center bg-(image:--gradient-app) relative overflow-hidden scrollbar-custom">
+    <div className="w-full h-screen flex flex-col justify-center items-center bg-gradient-app relative overflow-hidden scrollbar-custom">
       <ProgressBar totalSlides={slides.length} currentSlide={index} />
 
       <div className="w-full h-full pt-16 pb-8 px-8 max-md:pt-12 max-md:pb-4 max-md:px-0 relative overflow-hidden">

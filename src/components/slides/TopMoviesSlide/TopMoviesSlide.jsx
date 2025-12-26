@@ -1,7 +1,10 @@
 import Slide from "../../Slide";
 import PopularMovieCard from "../../PopularMovieCard/PopularMovieCard";
+import useScreenSize from "../../../hooks/useScreenSize";
 
 const TopMoviesSlide = ({ stats }) => {
+  const { mobile } = useScreenSize();
+
   if (
     !stats?.ratingsStats?.movieStats ||
     stats.ratingsStats.movieStats.length === 0
@@ -28,26 +31,26 @@ const TopMoviesSlide = ({ stats }) => {
   const [first, ...restMovies] = topMovies;
 
   return (
-    <Slide className="stat-slide bg-gradient-top-movies">
-      <div className="flex flex-col items-center gap-8 max-md:gap-6 w-full max-w-[900px] mx-auto">
-        <p className="text-[2rem] max-md:text-[1.5rem] font-bold text-white text-center mb-4">
+    <Slide>
+      <div className="flex flex-col items-center gap-4 w-full mx-auto">
+        <p className="text-5xl font-tangerine text-white text-center mb-4">
           Top rated movies
         </p>
 
         <PopularMovieCard
           movie={first}
           posterUrl={getPosterUrl(first.movieName)}
-          size="default"
+          size={mobile ? "small" : "default"}
         />
 
         {restMovies.length > 0 && (
-          <div className="flex flex-col gap-6 max-md:gap-4 w-full items-center">
+          <div className="flex flex-col sm:flex-row gap-4 w-full">
             {restMovies.map((movie) => (
               <PopularMovieCard
                 key={movie.movieName}
                 movie={movie}
                 posterUrl={getPosterUrl(movie.movieName)}
-                size="small"
+                size={mobile ? "small" : "default"}
                 secondary
               />
             ))}

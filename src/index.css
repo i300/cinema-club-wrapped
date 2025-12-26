@@ -17,12 +17,19 @@
   --gradient-bust: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
   --gradient-favorites: linear-gradient(135deg, #4c63d2 0%, #bc89ee 100%);
   --gradient-summary: linear-gradient(135deg, #868f96 0%, #596164 100%);
+
   --gradient-app: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
   --gradient-card: linear-gradient(
+    147.68deg,
+    rgb(142, 45, 226) 17.394%,
+    rgb(74, 0, 224) 82.606%
+  );
+  --gradient-card-secondary: linear-gradient(
     147.68deg,
     rgba(142, 45, 226, 0.1) 17.394%,
     rgba(74, 0, 224, 0.1) 82.606%
   );
+
   --gradient-avatar: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   --gradient-overlay: linear-gradient(
     to top,
@@ -108,6 +115,10 @@
   background-image: var(--gradient-card);
 }
 
+@utility bg-gradient-card-secondary {
+  background-image: var(--gradient-card-secondary);
+}
+
 @utility bg-gradient-avatar {
   background-image: var(--gradient-avatar);
 }
@@ -171,7 +182,7 @@ body {
   height: 100vh;
 }
 
-.tangerine-regular {
+@utility font-tangerine {
   font-family: "Tangerine", cursive;
   font-weight: 400;
   font-style: normal;

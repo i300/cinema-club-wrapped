@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import ProfileImage from "../ProfileImage/ProfileImage";
 
 const UserReview = ({ displayName, rating, liked, size = "default" }) => {
   // Format rating as stars for default size, or as "X/5" for small size
@@ -15,16 +16,6 @@ const UserReview = ({ displayName, rating, liked, size = "default" }) => {
     return stars;
   };
 
-  // Get initials from display name
-  const getInitials = (name) => {
-    return name
-      .split(" ")
-      .map((word) => word[0])
-      .join("")
-      .toUpperCase()
-      .slice(0, 2);
-  };
-
   return (
     <div
       className={clsx(
@@ -32,12 +23,10 @@ const UserReview = ({ displayName, rating, liked, size = "default" }) => {
         size === "default" ? "w-[75px] min-w-[75px] gap-2" : "gap-1"
       )}
     >
-      <div className="relative flex-shrink-0">
-        <div className="w-16 h-16 rounded-full border-2 border-white/50 flex items-center justify-center font-inter font-semibold text-lg text-white bg-gradient-avatar">
-          {getInitials(displayName)}
-        </div>
+      <div className="relative shrink-0">
+        <ProfileImage name={displayName} className="w-16 h-16" />
         {liked && (
-          <div className="absolute -top-0.5 -right-0.5 w-4 h-4 text-xs flex items-center justify-center">
+          <div className="absolute -top-1 -right-1 text-lg flex items-center justify-center">
             💖
           </div>
         )}
@@ -72,154 +61,95 @@ const PopularMovieCard = ({
   return (
     <div
       className={clsx(
-        "border border-[#8e2de2] rounded-2xl p-4 bg-gradient-card",
-        "flex gap-4 w-full max-w-[820px]",
-        size === "default" ? "flex-row items-start" : "flex-col",
-        "max-md:max-w-full max-md:flex-col"
+        "rounded-2xl p-4",
+        "flex flex-col gap-4 w-full",
+        !secondary && "bg-gradient-card",
+        secondary && "border border-purple-primary bg-gradient-card-secondary"
       )}
     >
-      <div
-        className={clsx(
-          "flex-shrink-0 rounded overflow-hidden aspect-[2/3] self-stretch",
-          size === "default" ? "h-[250px]" : "w-[67px] h-[100px]"
-        )}
-      >
-        <img
-          src={posterUrl}
-          alt={movie.movieName}
-          className="w-full h-full object-cover object-center"
-        />
-      </div>
+      <div className="flex items-center gap-4">
+        {/* Poster */}
+        <div
+          className={clsx(
+            "shrink-0 rounded overflow-hidden self-stretch",
+            !secondary && "h-30 sm:h-50",
+            secondary && "h-30"
+          )}
+        >
+          <img
+            src={posterUrl}
+            alt={movie.movieName}
+            className="w-full h-full object-cover object-center"
+          />
+        </div>
 
-      <div
-        className={clsx(
-          "flex flex-col gap-2 flex-1 min-w-0",
-          size === "small" && "flex-row h-[100px] gap-2"
-        )}
-      >
-        {size === "small" && (
-          <div className="flex-1 flex flex-col gap-2">
-            <div
+        {/* Title Card, Stats */}
+        <div className="flex flex-1 flex-col gap-2">
+          {/* Movie Title */}
+          <div className={clsx("flex items-center justify-between gap-4")}>
+            <h2
               className={clsx(
-                "flex items-center justify-between gap-4",
-                size === "default" && "text-center"
+                "font-inter font-bold text-white",
+                !secondary && "text-5xl md:text-6xl",
+                secondary && "font-semibold text-4xl"
               )}
             >
-              <h2
-                className={clsx(
-                  "font-inter font-bold text-white m-0 flex-none",
-                  size === "default"
-                    ? "text-[64px] max-md:text-[48px]"
-                    : "text-[48px]"
-                )}
-              >
-                {movie.movieName}
-              </h2>
-              {!secondary && (
-                <div
-                  className={clsx(
-                    "font-inter font-semibold text-[--color-gold] text-shadow-gold flex-shrink-0",
-                    size === "default"
-                      ? "text-5xl max-md:text-4xl"
-                      : "text-[32px]"
-                  )}
-                >
-                  {movie.averageScore.toFixed(2)}
-                </div>
-              )}
-            </div>
-
-            <div
-              className={clsx(
-                "flex gap-2 items-center text-white font-inter italic",
-                size === "default"
-                  ? "font-extralight text-2xl max-md:text-lg"
-                  : "font-light text-base"
-              )}
-            >
-              {secondary && (
-                <>
-                  <span className="leading-normal">
-                    {movie.averageScore.toFixed(2)}
-                  </span>
-                  <span
-                    className={clsx(
-                      "opacity-70",
-                      size === "small" && "text-sm"
-                    )}
-                  >
-                    •
-                  </span>
-                </>
-              )}
-              <span className="leading-normal">
-                {movie.totalReviews} reviews
-              </span>
-              <span
-                className={clsx("opacity-70", size === "small" && "text-sm")}
-              >
-                •
-              </span>
-              <span className="leading-normal">{movie.likeCount} likes</span>
-            </div>
-          </div>
-        )}
-
-        {size === "default" && (
-          <>
-            <div className="flex items-center justify-between gap-4">
-              <h2 className="font-inter font-bold text-white m-0 flex-none text-[64px] max-md:text-[48px]">
-                {movie.movieName}
-              </h2>
-              {!secondary && (
-                <div className="font-inter font-semibold text-[--color-gold] text-shadow-gold flex-shrink-0 text-5xl max-md:text-4xl">
-                  {movie.averageScore.toFixed(2)}
-                </div>
-              )}
-            </div>
-
-            <div className="flex gap-2 items-center text-white font-inter italic font-extralight text-2xl max-md:text-lg">
-              {secondary && (
-                <>
-                  <span className="leading-normal">
-                    {movie.averageScore.toFixed(2)}
-                  </span>
-                  <span className="opacity-70">•</span>
-                </>
-              )}
-              <span className="leading-normal">
-                {movie.totalReviews} reviews
-              </span>
-              <span className="opacity-70">•</span>
-              <span className="leading-normal">{movie.likeCount} likes</span>
-            </div>
+              {movie.movieName}
+            </h2>
 
             {!secondary && (
-              <div className="flex gap-2.5 items-center justify-center p-1 overflow-x-auto max-md:flex-wrap max-md:justify-start">
-                {displayReviews.map((review, index) => (
-                  <UserReview
-                    key={index}
-                    displayName={review.displayName}
-                    rating={review.rating}
-                    liked={review.liked}
-                    size="default"
-                  />
-                ))}
+              <div className="font-inter font-semibold text-gold text-shadow-gold shrink-0 text-4xl md:text-5xl">
+                {movie.averageScore.toFixed(2)}
               </div>
             )}
-          </>
-        )}
+          </div>
+
+          {/* Movie Stats */}
+          <div
+            className={clsx(
+              "flex gap-2 items-center text-white font-inter italic",
+              "font-light text-base md:font-extralight md:text-2xl"
+            )}
+          >
+            {secondary && (
+              <>
+                <span className="leading-normal">
+                  {movie.averageScore.toFixed(2)}
+                </span>
+                <span className="opacity-70 max-sm:text-sm">•</span>
+              </>
+            )}
+            <span className="leading-normal">{movie.totalReviews} reviews</span>
+            <span className="opacity-70 max-sm:text-sm">•</span>
+            <span className="leading-normal">{movie.likeCount} likes</span>
+          </div>
+
+          {size === "default" && !secondary && (
+            <div className="flex flex-wrap gap-2 items-center justify-center">
+              {displayReviews.map((review, index) => (
+                <UserReview
+                  key={index}
+                  displayName={review.displayName}
+                  rating={review.rating}
+                  liked={review.liked}
+                  size={size}
+                />
+              ))}
+            </div>
+          )}
+        </div>
       </div>
 
+      {/* In small size, show reviews under poster row */}
       {size === "small" && !secondary && (
-        <div className="flex flex-wrap gap-2.5 items-center justify-center h-[100px] px-2 overflow-hidden">
+        <div className="flex flex-wrap gap-2 items-center justify-center">
           {displayReviews.map((review, index) => (
             <UserReview
               key={index}
               displayName={review.displayName}
               rating={review.rating}
               liked={review.liked}
-              size="small"
+              size={size}
             />
           ))}
         </div>
