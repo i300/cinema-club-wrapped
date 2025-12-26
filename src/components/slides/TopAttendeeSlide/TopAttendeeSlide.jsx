@@ -1,5 +1,4 @@
 import Slide from "../../Slide";
-import './TopAttendeeSlide.css';
 
 // Import profile images
 import alexImg from "../../../assets/alex.jpeg";
@@ -50,27 +49,39 @@ const TopAttendeeSlide = ({ stats }) => {
     if (profileImage) {
       return (
         <div
-          className="leaderboard-avatar"
-          style={{ backgroundImage: `url(${profileImage})` }}
+          className="w-[100px] h-[100px] max-md:w-20 max-md:h-20 rounded-full border-[3px] border-white/40 flex items-center justify-center relative shadow-[--shadow-avatar] bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url(${profileImage})`,
+            backgroundOrigin: "border-box",
+          }}
         >
-          <div className="avatar-rank-badge">{count}</div>
+          <div className="absolute -bottom-1 -right-1 w-8 h-8 max-md:w-7 max-md:h-7 rounded-full bg-white text-[#333] text-base max-md:text-[0.9rem] font-black flex items-center justify-center shadow-[--shadow-rank-badge] border-2 border-white/90">
+            {count}
+          </div>
         </div>
       );
     } else {
       return (
         <div
-          className="leaderboard-avatar leaderboard-avatar-fallback"
-          style={{ background: `${getGradientForName(name)} border-box` }}
+          className="w-[100px] h-[100px] max-md:w-20 max-md:h-20 rounded-full border-[3px] border-white/40 flex items-center justify-center relative shadow-[--shadow-avatar] bg-cover bg-center bg-no-repeat backdrop-blur-[10px]"
+          style={{
+            background: `${getGradientForName(name)} border-box`,
+            backgroundOrigin: "border-box",
+          }}
         >
-          <div className="avatar-rank-badge">{count}</div>
-          <span className="avatar-initial">{name.charAt(0).toUpperCase()}</span>
+          <div className="absolute -bottom-1 -right-1 w-8 h-8 max-md:w-7 max-md:h-7 rounded-full bg-white text-[#333] text-base max-md:text-[0.9rem] font-black flex items-center justify-center shadow-[--shadow-rank-badge] border-2 border-white/90">
+            {count}
+          </div>
+          <span className="text-[2.5rem] max-md:text-[2rem] font-black text-white [text-shadow:0_2px_10px_rgba(0,0,0,0.3)] relative z-10">
+            {name.charAt(0).toUpperCase()}
+          </span>
         </div>
       );
     }
   };
 
   return (
-    <Slide className="stat-slide top-attendee-slide">
+    <Slide className="stat-slide bg-gradient-top-attendee">
       <div className="slide-content">
         <p className="stat-label">Most dedicated member</p>
         <h1 className="stat-highlight">{stats.topAttendee.name}</h1>
@@ -79,14 +90,21 @@ const TopAttendeeSlide = ({ stats }) => {
           out of {stats.totalMovies} events attended
         </p>
 
-        <div className="attendee-leaderboard">
-          <h3 className="leaderboard-title">Top Attendees</h3>
-          <div className="leaderboard-horizontal">
+        <div className="mt-6 p-4 rounded-[15px] max-w-[750px] mx-auto max-h-[420px] flex flex-col">
+          <h3 className="text-2xl text-white/90 mb-4 font-semibold flex-shrink-0">
+            Top Attendees
+          </h3>
+          <div className="grid grid-cols-4 max-md:grid-cols-2 gap-6 max-md:gap-4 justify-items-center overflow-y-auto py-2 pr-4 pl-2 scrollbar-custom">
             {sortedAttendees.map(([name, count]) => (
-              <div key={name} className="leaderboard-card">
+              <div
+                key={name}
+                className="flex flex-col items-center gap-2 relative w-full"
+              >
                 {getAvatarContent(name, count)}
-                <div className="leaderboard-info">
-                  <span className="leaderboard-name">{name}</span>
+                <div className="flex flex-col items-center gap-0.5">
+                  <span className="text-lg max-md:text-[0.95rem] text-white font-bold text-center">
+                    {name}
+                  </span>
                 </div>
               </div>
             ))}

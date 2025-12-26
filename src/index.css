@@ -1,11 +1,148 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Tangerine:wght@400;700&display=swap");
+
+/* Tailwind v4 Theme Configuration */
+@theme {
+  /* Custom gradients */
+  --gradient-welcome: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-events: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  --gradient-stat: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  --gradient-actors: linear-gradient(135deg, #8e2de2 0%, #4a00e0 100%);
+  --gradient-genre: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --gradient-oldest: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  --gradient-longest: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  --gradient-attended: linear-gradient(135deg, #fc466b 0%, #3f5efb 100%);
+  --gradient-top-attendee: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --gradient-top-movies: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  --gradient-bust: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  --gradient-favorites: linear-gradient(135deg, #4c63d2 0%, #bc89ee 100%);
+  --gradient-summary: linear-gradient(135deg, #868f96 0%, #596164 100%);
+  --gradient-app: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+  --gradient-card: linear-gradient(
+    147.68deg,
+    rgba(142, 45, 226, 0.1) 17.394%,
+    rgba(74, 0, 224, 0.1) 82.606%
+  );
+  --gradient-avatar: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-overlay: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.95),
+    rgba(0, 0, 0, 0.7) 70%,
+    transparent
+  );
+  --gradient-decade-bar: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+
+  /* Custom colors */
+  --color-gold: #ffd700;
+  --color-purple-primary: #8e2de2;
+
+  /* Custom shadows */
+  --shadow-slide: 0 20px 60px rgba(0, 0, 0, 0.4);
+  --shadow-avatar: 0 6px 16px rgba(0, 0, 0, 0.2);
+  --shadow-rank-badge: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Custom text-shadow utilities */
+@utility text-shadow-gold {
+  text-shadow: 0px 4px 20px rgba(215, 215, 0, 0.5);
+}
+
+/* Custom gradient background utilities */
+@utility bg-gradient-welcome {
+  background-image: var(--gradient-welcome);
+}
+
+@utility bg-gradient-events {
+  background-image: var(--gradient-events);
+}
+
+@utility bg-gradient-stat {
+  background-image: var(--gradient-stat);
+}
+
+@utility bg-gradient-actors {
+  background-image: var(--gradient-actors);
+}
+
+@utility bg-gradient-genre {
+  background-image: var(--gradient-genre);
+}
+
+@utility bg-gradient-oldest {
+  background-image: var(--gradient-oldest);
+}
+
+@utility bg-gradient-longest {
+  background-image: var(--gradient-longest);
+}
+
+@utility bg-gradient-attended {
+  background-image: var(--gradient-attended);
+}
+
+@utility bg-gradient-top-attendee {
+  background-image: var(--gradient-top-attendee);
+}
+
+@utility bg-gradient-top-movies {
+  background-image: var(--gradient-top-movies);
+}
+
+@utility bg-gradient-bust {
+  background-image: var(--gradient-bust);
+}
+
+@utility bg-gradient-favorites {
+  background-image: var(--gradient-favorites);
+}
+
+@utility bg-gradient-summary {
+  background-image: var(--gradient-summary);
+}
+
+@utility bg-gradient-app {
+  background-image: var(--gradient-app);
+}
+
+@utility bg-gradient-card {
+  background-image: var(--gradient-card);
+}
+
+@utility bg-gradient-avatar {
+  background-image: var(--gradient-avatar);
+}
+
+@utility bg-gradient-overlay {
+  background-image: var(--gradient-overlay);
+}
+
+@utility bg-gradient-decade-bar {
+  background-image: var(--gradient-decade-bar);
+}
+
+/* Global scrollbar styling */
+.scrollbar-custom {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.1);
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
 }
 
 :root {
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -32,4 +169,10 @@ body {
 #root {
   width: 100%;
   height: 100vh;
+}
+
+.tangerine-regular {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
 }

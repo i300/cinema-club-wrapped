@@ -593,6 +593,7 @@ const calculateMovieMetrics = (validReviews) => {
     }
     movieMap[review.movieName].reviews.push({
       displayName: review.displayName,
+      rating: review.rating,
       score: review.score,
       liked: review.liked,
     });
@@ -687,6 +688,7 @@ export const calculateRatingsStats = (
       averageScore: movie.averageScore,
       likeCount: movie.likeCount,
       totalReviews: movie.totalReviews,
+      reviews: movie.reviews,
     }))
     .sort((a, b) => b.averageScore - a.averageScore);
 

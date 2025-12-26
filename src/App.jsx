@@ -18,7 +18,6 @@ import BustOfTheYearSlide from "./components/slides/BustOfTheYearSlide/BustOfThe
 import PersonalFavoritesSlide from "./components/slides/PersonalFavoritesSlide/PersonalFavoritesSlide";
 import SummarySlide from "./components/slides/SummarySlide/SummarySlide";
 import ProgressBar from "./components/ProgressBar/ProgressBar";
-import "./App.css";
 
 function App() {
   const [index, setIndex] = useState(0);
@@ -36,7 +35,7 @@ function App() {
         const movies = await fetchMovies();
         const calculatedStats = {
           ...calculateStats(movies),
-          ratingsStats: calculateRatingsStats()
+          ratingsStats: calculateRatingsStats(),
         };
         setStats(calculatedStats);
       } catch (err) {
@@ -107,10 +106,12 @@ function App() {
 
   if (loading) {
     return (
-      <div className="app">
-        <div className="loading">
-          <h2>Loading your Cinema Club Wrapped...</h2>
-          <div className="loading-spinner"></div>
+      <div className="w-full h-screen flex justify-center items-center bg-gradient-app relative overflow-hidden scrollbar-custom">
+        <div className="flex flex-col md:flex-row-reverse justify-center items-center gap-4 text-white p-8">
+          <h2 className="text-[2rem] text-center">
+            Loading Cinema Club Wrapped...
+          </h2>
+          <div className="w-10 md:w-6 aspect-square border-4 border-white/20 border-t-white rounded-full animate-spin mx-auto"></div>
         </div>
       </div>
     );
@@ -118,10 +119,10 @@ function App() {
 
   if (error) {
     return (
-      <div className="app">
-        <div className="error">
-          <h2>Oops! Something went wrong</h2>
-          <p>{error}</p>
+      <div className="w-full h-screen flex flex-col justify-center items-center bg-gradient-app relative overflow-hidden scrollbar-custom">
+        <div className="text-center text-white">
+          <h2 className="text-[2rem] mb-8">Oops! Something went wrong</h2>
+          <p className="text-xl text-white/70">{error}</p>
         </div>
       </div>
     );
@@ -132,12 +133,12 @@ function App() {
   }
 
   return (
-    <div className="app">
+    <div className="w-full h-screen flex flex-col justify-center items-center bg-(image:--gradient-app) relative overflow-hidden scrollbar-custom">
       <ProgressBar totalSlides={slides.length} currentSlide={index} />
 
-      <div className="slides-container">
+      <div className="w-full h-full pt-16 pb-8 px-8 max-md:pt-12 max-md:pb-4 max-md:px-0 relative overflow-hidden">
         <motion.div
-          className="slides-carousel"
+          className="flex h-full cursor-grab active:cursor-grabbing select-none"
           ref={containerRef}
           drag="x"
           dragElastic={0.2}
@@ -167,7 +168,10 @@ function App() {
           style={{ x }}
         >
           {slides.map((slide, i) => (
-            <div key={i} className="slides-container-wrapper">
+            <div
+              key={i}
+              className="flex-shrink-0 w-full h-full flex justify-center items-center p-4"
+            >
               {slide}
             </div>
           ))}

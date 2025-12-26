@@ -1,5 +1,4 @@
 import Slide from '../../Slide';
-import './TotalMoviesSlide.css';
 
 const TotalMoviesSlide = ({ stats }) => {
   return (

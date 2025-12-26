@@ -71,6 +71,7 @@ const movieList = [
       "Juliet",
       "Sam",
       "Tessa",
+      "Zoe",
     ],
   },
   {

@@ -1,5 +1,4 @@
 import Slide from "../../Slide";
-import './OldestNewestSlide.css';
 
 const OldestNewestSlide = ({ stats }) => {
   const decades = Object.entries(stats.decadeCounts)
@@ -13,35 +12,49 @@ const OldestNewestSlide = ({ stats }) => {
   const maxCount = Math.max(...decades.map((d) => d.count));
 
   return (
-    <Slide className="stat-slide oldest-newest-slide">
+    <Slide className="stat-slide bg-gradient-oldest">
       <div className="slide-content">
         <p className="stat-label">Time travelers</p>
-        <div className="split-stats">
-          <div className="stat-half">
-            <h3 className="stat-subtitle">Oldest</h3>
+        <div className="flex gap-8 items-center justify-center mt-8 max-md:flex-col max-md:gap-8">
+          <div className="flex-1 max-w-[350px]">
+            <h3 className="text-xl text-white/80 mb-4 font-semibold uppercase tracking-[2px]">
+              Oldest
+            </h3>
             <h2 className="stat-movie-title">{stats.oldestMovie.title}</h2>
-            <p className="stat-year">{stats.oldestMovie.year}</p>
+            <p className="text-2xl text-white/90 font-semibold">
+              {stats.oldestMovie.year}
+            </p>
           </div>
-          <div className="stat-divider"></div>
-          <div className="stat-half">
-            <h3 className="stat-subtitle">Newest</h3>
+          <div className="w-0.5 h-[150px] bg-white/40 max-md:w-[150px] max-md:h-0.5"></div>
+          <div className="flex-1 max-w-[350px]">
+            <h3 className="text-xl text-white/80 mb-4 font-semibold uppercase tracking-[2px]">
+              Newest
+            </h3>
             <h2 className="stat-movie-title">{stats.newestMovie.title}</h2>
-            <p className="stat-year">{stats.newestMovie.year}</p>
+            <p className="text-2xl text-white/90 font-semibold">
+              {stats.newestMovie.year}
+            </p>
           </div>
         </div>
 
-        <div className="decade-distribution">
-          <h3 className="decade-subtitle">Decade distribution</h3>
-          <div className="decade-chart">
+        <div className="my-8">
+          <h3 className="text-xl text-white/90 mb-6 font-semibold uppercase tracking-[2px] text-center">
+            Decade distribution
+          </h3>
+          <div className="flex flex-col gap-4 max-w-[600px] mx-auto">
             {decades.map(({ decade, count }) => (
-              <div key={decade} className="decade-bar-container">
-                <div className="decade-label">{decade}</div>
-                <div className="decade-bar-wrapper">
+              <div key={decade} className="flex items-center gap-4">
+                <div className="min-w-[60px] font-semibold text-white text-lg text-left">
+                  {decade}
+                </div>
+                <div className="flex-1 bg-white/20 rounded-[10px] overflow-hidden h-10">
                   <div
-                    className="decade-bar"
+                    className="h-full bg-gradient-decade-bar flex items-center justify-end pr-4 transition-all duration-500 min-w-[60px]"
                     style={{ width: `${(count / maxCount) * 100}%` }}
                   >
-                    <span className="decade-count">{count}</span>
+                    <span className="text-[#333] font-bold text-lg">
+                      {count}
+                    </span>
                   </div>
                 </div>
               </div>

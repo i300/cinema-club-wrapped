@@ -1,5 +1,5 @@
 import Slide from "../../Slide";
-import "./TopMoviesSlide.css";
+import PopularMovieCard from "../../PopularMovieCard/PopularMovieCard";
 
 const TopMoviesSlide = ({ stats }) => {
   if (
@@ -7,44 +7,49 @@ const TopMoviesSlide = ({ stats }) => {
     stats.ratingsStats.movieStats.length === 0
   ) {
     return (
-      <Slide className="stat-slide top-movies-slide">
-        <div className="slide-content">
-          <p className="stat-label">No rating data available</p>
+      <Slide className="stat-slide bg-gradient-top-movies">
+        <div className="flex flex-col items-center gap-8 w-full max-w-[900px] mx-auto">
+          <p className="text-[2rem] max-md:text-[1.5rem] font-bold text-white text-center mb-4">
+            No rating data available
+          </p>
         </div>
       </Slide>
     );
   }
 
+  // Helper to get poster URL for a movie
+  const getPosterUrl = (movieName) => {
+    const movie = stats.movies?.find((m) => m.title === movieName);
+    if (!movie?.posterPath) return null;
+    return `https://image.tmdb.org/t/p/w500${movie.posterPath}`;
+  };
+
   const topMovies = stats.ratingsStats.movieStats.slice(0, 3);
-  const [first, ...podiumMovies] = topMovies;
+  const [first, ...restMovies] = topMovies;
 
   return (
-    <Slide className="stat-slide top-movies-slide">
-      <div className="slide-content">
-        <p className="stat-label">Top rated movies</p>
-        <h1 className="stat-highlight">{first.movieName}</h1>
-        <div className="score-display">
-          <span className="weighted-score">
-            {first.averageScore.toFixed(2)}
-          </span>
-          <span className="score-label">average score</span>
-        </div>
-        <div className="movie-details">
-          <span className="detail-item">{first.totalReviews} reviews</span>
-          <span className="detail-separator">•</span>
-          <span className="detail-item">{first.likeCount} likes</span>
-        </div>
+    <Slide className="stat-slide bg-gradient-top-movies">
+      <div className="flex flex-col items-center gap-8 max-md:gap-6 w-full max-w-[900px] mx-auto">
+        <p className="text-[2rem] max-md:text-[1.5rem] font-bold text-white text-center mb-4">
+          Top rated movies
+        </p>
 
-        {podiumMovies.length > 0 && (
-          <div className="movie-podium">
-            {podiumMovies.map((movie, index) => (
-              <div key={movie.movieName} className="podium-item">
-                <span className="podium-rank">#{index + 2}</span>
-                <span className="podium-name">{movie.movieName}</span>
-                <span className="podium-score">
-                  {movie.averageScore.toFixed(2)}
-                </span>
-              </div>
+        <PopularMovieCard
+          movie={first}
+          posterUrl={getPosterUrl(first.movieName)}
+          size="default"
+        />
+
+        {restMovies.length > 0 && (
+          <div className="flex flex-col gap-6 max-md:gap-4 w-full items-center">
+            {restMovies.map((movie) => (
+              <PopularMovieCard
+                key={movie.movieName}
+                movie={movie}
+                posterUrl={getPosterUrl(movie.movieName)}
+                size="small"
+                secondary
+              />
             ))}
           </div>
         )}
