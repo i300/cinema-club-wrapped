@@ -1,7 +1,5 @@
-import { enrichMovieData } from "../services/tmdb";
-
 // List of movies watched with your club - includes event names and attendees
-const movieList = [
+export const movieList = [
   {
     title: "Game Night",
     year: 2018,
@@ -174,27 +172,3 @@ const movieList = [
     ],
   },
 ];
-
-export const fetchMovies = async () => {
-  const enrichedMovies = await Promise.all(
-    movieList.map(async (movie) => {
-      const enriched = await enrichMovieData(
-        movie.title,
-        movie.year,
-        movie.watchedDate
-      );
-
-      if (enriched) {
-        return {
-          ...enriched,
-          eventName: movie.eventName,
-          attendees: movie.attendees,
-          attendeeCount: movie.attendees.length,
-        };
-      }
-      return null;
-    })
-  );
-
-  return enrichedMovies.filter((movie) => movie !== null);
-};

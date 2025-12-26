@@ -1,0 +1,1036 @@
+[
+  {
+    "title": "Game Night",
+    "year": 2018,
+    "genre": "Mystery",
+    "director": "John Francis Daley",
+    "runtime": 100,
+    "rating": 6.85,
+    "posterPath": "/85R8LMyn9f2Lev2YPBF8Nughrkv.jpg",
+    "backdropPath": "/aKPCZwkSZy2ASLo0QKeYmcoplfA.jpg",
+    "overview": "Max and Annie's weekly game night gets kicked up a notch when Max's brother Brooks arranges a murder mystery party -- complete with fake thugs and federal agents. So when Brooks gets kidnapped, it's all supposed to be part of the game. As the competitors set out to solve the case, they start to learn that neither the game nor Brooks are what they seem to be. The friends soon find themselves in over their heads as each twist leads to another unexpected turn over the course of one chaotic night.",
+    "cast": [
+      {
+        "id": 23532,
+        "name": "Jason Bateman",
+        "character": "Max",
+        "popularity": 6.1212
+      },
+      {
+        "id": 53714,
+        "name": "Rachel McAdams",
+        "character": "Annie",
+        "popularity": 5.3408
+      },
+      {
+        "id": 3497,
+        "name": "Kyle Chandler",
+        "character": "Brooks",
+        "popularity": 2.3317
+      },
+      {
+        "id": 21676,
+        "name": "Sharon Horgan",
+        "character": "Sarah",
+        "popularity": 1.7241
+      },
+      {
+        "id": 141034,
+        "name": "Billy Magnussen",
+        "character": "Ryan",
+        "popularity": 2.2216
+      },
+      {
+        "id": 1181327,
+        "name": "Lamorne Morris",
+        "character": "Kevin",
+        "popularity": 0.9444
+      },
+      {
+        "id": 999346,
+        "name": "Kylie Bunbury",
+        "character": "Michelle",
+        "popularity": 0.8911
+      },
+      {
+        "id": 88124,
+        "name": "Jesse Plemons",
+        "character": "Gary",
+        "popularity": 7.9179
+      },
+      {
+        "id": 53820,
+        "name": "Michael C. Hall",
+        "character": "The Bulgarian",
+        "popularity": 3.9084
+      },
+      {
+        "id": 6413,
+        "name": "Danny Huston",
+        "character": "Donald Anderton",
+        "popularity": 2.3222
+      }
+    ],
+    "watchedDate": "2025-01-30",
+    "eventName": "Cinema Club Round 1",
+    "attendees": [
+      "Jerry",
+      "Nir",
+      "Alex",
+      "Jojo",
+      "Sam",
+      "Tessa"
+    ],
+    "attendeeCount": 6
+  },
+  {
+    "title": "Before Sunrise",
+    "year": 1995,
+    "genre": "Drama",
+    "director": "Richard Linklater",
+    "runtime": 101,
+    "rating": 7.969,
+    "posterPath": "/kf1Jb1c2JAOqjuzA3H4oDM263uB.jpg",
+    "backdropPath": "/qA2TyqPldTtoTVY3LKrNIG5g6bH.jpg",
+    "overview": "An unexpected meeting on a train leads two travelers to spend an evening wandering through Vienna. As the night unfolds, they share stories and conversations about life and love, exploring new ideas while a quiet intimacy grows between them, knowing it may be their only night together.",
+    "cast": [
+      {
+        "id": 569,
+        "name": "Ethan Hawke",
+        "character": "Jesse",
+        "popularity": 6.784
+      },
+      {
+        "id": 1146,
+        "name": "Julie Delpy",
+        "character": "Céline",
+        "popularity": 2.1541
+      },
+      {
+        "id": 571,
+        "name": "Andrea Eckert",
+        "character": "Wife on Train",
+        "popularity": 0.2009
+      },
+      {
+        "id": 572,
+        "name": "Hanno Pöschl",
+        "character": "Husband on Train",
+        "popularity": 0.4484
+      },
+      {
+        "id": 573,
+        "name": "Karl Bruckschwaiger",
+        "character": "Guy on Bridge",
+        "popularity": 0.1398
+      },
+      {
+        "id": 574,
+        "name": "Tex Rubinowitz",
+        "character": "Guy on Bridge",
+        "popularity": 0.6574
+      },
+      {
+        "id": 146859,
+        "name": "Erni Mangold",
+        "character": "Palm Reader",
+        "popularity": 0.6933
+      },
+      {
+        "id": 3735,
+        "name": "Dominik Castell",
+        "character": "Street Poet",
+        "popularity": 0.4231
+      },
+      {
+        "id": 3738,
+        "name": "Haymon Maria Buttinger",
+        "character": "Bartender",
+        "popularity": 0.8335
+      },
+      {
+        "id": 3737,
+        "name": "Harold Waiglein",
+        "character": "Guitarist in Club",
+        "popularity": 0.0505
+      }
+    ],
+    "watchedDate": "2025-02-25",
+    "eventName": "Cinema Club Round 2",
+    "attendees": [
+      "Jerry",
+      "Nir",
+      "Alex",
+      "Juliet",
+      "Jojo",
+      "Michael",
+      "Sam"
+    ],
+    "attendeeCount": 7
+  },
+  {
+    "title": "The Grand Budapest Hotel",
+    "year": 2014,
+    "genre": "Comedy",
+    "director": "Wes Anderson",
+    "runtime": 100,
+    "rating": 8.033,
+    "posterPath": "/eWdyYQreja6JGCzqHWXpWHDrrPo.jpg",
+    "backdropPath": "/9udCLTxTFl28RxnK8Q05E154ZGa.jpg",
+    "overview": "The Grand Budapest Hotel tells of a legendary concierge at a famous European hotel between the wars and his friendship with a young employee who becomes his trusted protégé. The story involves the theft and recovery of a priceless Renaissance painting, the battle for an enormous family fortune and the slow and then sudden upheavals that transformed Europe during the first half of the 20th century.",
+    "cast": [
+      {
+        "id": 5469,
+        "name": "Ralph Fiennes",
+        "character": "M. Gustave",
+        "popularity": 7.1796
+      },
+      {
+        "id": 1164,
+        "name": "F. Murray Abraham",
+        "character": "Mr. Moustafa",
+        "popularity": 3.2811
+      },
+      {
+        "id": 8789,
+        "name": "Mathieu Amalric",
+        "character": "Serge X.",
+        "popularity": 1.4686
+      },
+      {
+        "id": 3490,
+        "name": "Adrien Brody",
+        "character": "Dmitri",
+        "popularity": 4.4742
+      },
+      {
+        "id": 5293,
+        "name": "Willem Dafoe",
+        "character": "Jopling",
+        "popularity": 4.967
+      },
+      {
+        "id": 4785,
+        "name": "Jeff Goldblum",
+        "character": "Deputy Kovacs",
+        "popularity": 5.6416
+      },
+      {
+        "id": 1037,
+        "name": "Harvey Keitel",
+        "character": "Ludwig",
+        "popularity": 3.8141
+      },
+      {
+        "id": 9642,
+        "name": "Jude Law",
+        "character": "Young Author",
+        "popularity": 7.8344
+      },
+      {
+        "id": 1532,
+        "name": "Bill Murray",
+        "character": "M. Ivan",
+        "popularity": 3.3685
+      },
+      {
+        "id": 819,
+        "name": "Edward Norton",
+        "character": "Henckels",
+        "popularity": 6.8778
+      }
+    ],
+    "watchedDate": "2025-03-27",
+    "eventName": "Grand Cinema Club",
+    "attendees": [
+      "Nir",
+      "Jerry",
+      "Jojo",
+      "Michael",
+      "Alex",
+      "Tessa",
+      "Brenna",
+      "Zoe",
+      "Sam"
+    ],
+    "attendeeCount": 9
+  },
+  {
+    "title": "Tag",
+    "year": 2018,
+    "genre": "Comedy",
+    "director": "Jeff Tomsic",
+    "runtime": 100,
+    "rating": 6.712,
+    "posterPath": "/eXXpuW2xaq5Aen9N5prFlARVIvr.jpg",
+    "backdropPath": "/n8UzZ7gd3lmsBeYAH539pfnwGwu.jpg",
+    "overview": "For one month every year, five highly competitive friends hit the ground running in a no-holds-barred game of tag they’ve been playing since the first grade. This year, the game coincides with the wedding of their only undefeated player, which should finally make him an easy target. But he knows they’re coming...and he’s ready.",
+    "cast": [
+      {
+        "id": 27105,
+        "name": "Ed Helms",
+        "character": "Hogan 'Hoagie' Malloy",
+        "popularity": 2.0749
+      },
+      {
+        "id": 65717,
+        "name": "Jon Hamm",
+        "character": "Bob Callahan",
+        "popularity": 8.7204
+      },
+      {
+        "id": 17604,
+        "name": "Jeremy Renner",
+        "character": "Jerry Pierce",
+        "popularity": 5.4004
+      },
+      {
+        "id": 543505,
+        "name": "Jake Johnson",
+        "character": "Randy 'Chilli' Cilliano",
+        "popularity": 2.3619
+      },
+      {
+        "id": 500427,
+        "name": "Hannibal Buress",
+        "character": "Kevin Sable",
+        "popularity": 1.1729
+      },
+      {
+        "id": 82809,
+        "name": "Annabelle Wallis",
+        "character": "Rebecca Crosby",
+        "popularity": 4.6659
+      },
+      {
+        "id": 52848,
+        "name": "Isla Fisher",
+        "character": "Anna Malloy",
+        "popularity": 9.0599
+      },
+      {
+        "id": 80591,
+        "name": "Rashida Jones",
+        "character": "Cheryl Deakins",
+        "popularity": 4.1434
+      },
+      {
+        "id": 57451,
+        "name": "Leslie Bibb",
+        "character": "Susan Rollins",
+        "popularity": 1.8836
+      },
+      {
+        "id": 2073126,
+        "name": "Maxwell Ross",
+        "character": "Teen Jerry",
+        "popularity": 0.1545
+      }
+    ],
+    "watchedDate": "2025-04-22",
+    "eventName": "tag ur it ha ha movie night i guess",
+    "attendees": [
+      "Jerry",
+      "Nir",
+      "Brenna",
+      "Alex",
+      "Jojo",
+      "Michael",
+      "Tessa",
+      "Sam"
+    ],
+    "attendeeCount": 8
+  },
+  {
+    "title": "The Truman Show",
+    "year": 1998,
+    "genre": "Comedy",
+    "director": "Peter Weir",
+    "runtime": 103,
+    "rating": 8.15,
+    "posterPath": "/vuza0WqY239yBXOadKlGwJsZJFE.jpg",
+    "backdropPath": "/rmiG2uwcNoGFmBKMoa1pIcf514L.jpg",
+    "overview": "An insurance salesman begins to suspect that his whole life is actually some sort of reality TV show.",
+    "cast": [
+      {
+        "id": 206,
+        "name": "Jim Carrey",
+        "character": "Truman Burbank",
+        "popularity": 9.3467
+      },
+      {
+        "id": 350,
+        "name": "Laura Linney",
+        "character": "Meryl Burbank / Hannah Gill",
+        "popularity": 4.4509
+      },
+      {
+        "id": 11315,
+        "name": "Noah Emmerich",
+        "character": "Marlon / Louis Coltrane",
+        "popularity": 1.2979
+      },
+      {
+        "id": 11317,
+        "name": "Natascha McElhone",
+        "character": "Lauren Garland / Sylvia",
+        "popularity": 3.6665
+      },
+      {
+        "id": 11318,
+        "name": "Holland Taylor",
+        "character": "Angela Montclair / Alanis Montclair",
+        "popularity": 3.1097
+      },
+      {
+        "id": 228,
+        "name": "Ed Harris",
+        "character": "Christof",
+        "popularity": 3.5289
+      },
+      {
+        "id": 13242,
+        "name": "Paul Giamatti",
+        "character": "Simeon",
+        "popularity": 3.6158
+      },
+      {
+        "id": 6579,
+        "name": "Brian Delate",
+        "character": "Walter Moore / Kirk Burbank",
+        "popularity": 0.3515
+      },
+      {
+        "id": 23119,
+        "name": "Peter Krause",
+        "character": "Lawrence",
+        "popularity": 2.3457
+      },
+      {
+        "id": 116898,
+        "name": "Blair Slater",
+        "character": "Young Truman",
+        "popularity": 0.8513
+      }
+    ],
+    "watchedDate": "2025-05-20",
+    "eventName": "The Cinema Club Show",
+    "attendees": [
+      "Nir",
+      "Jerry",
+      "Jojo",
+      "Brenna",
+      "Alex",
+      "Tessa",
+      "Sam"
+    ],
+    "attendeeCount": 7
+  },
+  {
+    "title": "The Matrix",
+    "year": 1999,
+    "genre": "Action",
+    "director": "Lana Wachowski",
+    "runtime": 136,
+    "rating": 8.236,
+    "posterPath": "/p96dm7sCMn4VYAStA6siNz30G1r.jpg",
+    "backdropPath": "/tlm8UkiQsitc8rSuIAscQDCnP8d.jpg",
+    "overview": "Set in the 22nd century, The Matrix tells the story of a computer hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth.",
+    "cast": [
+      {
+        "id": 6384,
+        "name": "Keanu Reeves",
+        "character": "Neo",
+        "popularity": 10.2579
+      },
+      {
+        "id": 2975,
+        "name": "Laurence Fishburne",
+        "character": "Morpheus",
+        "popularity": 3.7458
+      },
+      {
+        "id": 530,
+        "name": "Carrie-Anne Moss",
+        "character": "Trinity",
+        "popularity": 4.3589
+      },
+      {
+        "id": 1331,
+        "name": "Hugo Weaving",
+        "character": "Agent Smith",
+        "popularity": 2.454
+      },
+      {
+        "id": 9364,
+        "name": "Gloria Foster",
+        "character": "Oracle",
+        "popularity": 0.6958
+      },
+      {
+        "id": 532,
+        "name": "Joe Pantoliano",
+        "character": "Cypher",
+        "popularity": 2.6895
+      },
+      {
+        "id": 9372,
+        "name": "Marcus Chong",
+        "character": "Tank",
+        "popularity": 0.6458
+      },
+      {
+        "id": 7244,
+        "name": "Julian Arahanga",
+        "character": "Apoc",
+        "popularity": 2.8056
+      },
+      {
+        "id": 9374,
+        "name": "Matt Doran",
+        "character": "Mouse",
+        "popularity": 1.1572
+      },
+      {
+        "id": 9376,
+        "name": "Belinda McClory",
+        "character": "Switch",
+        "popularity": 1.3668
+      }
+    ],
+    "watchedDate": "2025-06-16",
+    "eventName": "www.whatisthematrix.com",
+    "attendees": [
+      "Jerry",
+      "Nir",
+      "Alex",
+      "Michael",
+      "Jojo",
+      "Brenna",
+      "Juliet",
+      "Sam",
+      "Tessa",
+      "Zoe"
+    ],
+    "attendeeCount": 10
+  },
+  {
+    "title": "What We Do in the Shadows",
+    "year": 2014,
+    "genre": "Comedy",
+    "director": "Jemaine Clement",
+    "runtime": 86,
+    "rating": 7.554,
+    "posterPath": "/a2rD3i3DBMeYbA34rBv6z3B9S3a.jpg",
+    "backdropPath": "/utjThRtcnsj0GrDwNudjGdfmHfq.jpg",
+    "overview": "Vampire housemates try to cope with the complexities of modern life and show a newly turned hipster some of the perks of being undead.",
+    "cast": [
+      {
+        "id": 55936,
+        "name": "Jemaine Clement",
+        "character": "Vladislav",
+        "popularity": 2.6814
+      },
+      {
+        "id": 55934,
+        "name": "Taika Waititi",
+        "character": "Viago",
+        "popularity": 5.4423
+      },
+      {
+        "id": 586951,
+        "name": "Jonny Brugh",
+        "character": "Deacon",
+        "popularity": 0.5751
+      },
+      {
+        "id": 1286794,
+        "name": "Cori Gonzalez-Macuer",
+        "character": "Nick",
+        "popularity": 0.1317
+      },
+      {
+        "id": 1286796,
+        "name": "Stu Rutherford",
+        "character": "Stu",
+        "popularity": 0.274
+      },
+      {
+        "id": 1439931,
+        "name": "Ben Fransham",
+        "character": "Petyr",
+        "popularity": 1.2713
+      },
+      {
+        "id": 1286797,
+        "name": "Jackie van Beek",
+        "character": "Jackie",
+        "popularity": 2.1464
+      },
+      {
+        "id": 1341670,
+        "name": "Elena Stejko",
+        "character": "Pauline (The Beast)",
+        "popularity": 0.2474
+      },
+      {
+        "id": 1233372,
+        "name": "Jason Hoyte",
+        "character": "Julian",
+        "popularity": 0.3081
+      },
+      {
+        "id": 1780262,
+        "name": "Karen O'Leary",
+        "character": "Policewoman",
+        "popularity": 0.2294
+      }
+    ],
+    "watchedDate": "2025-07-07",
+    "eventName": "Cinema Club in the Shadows",
+    "attendees": [
+      "Jerry",
+      "Zoe",
+      "Tessa",
+      "Juliet",
+      "Jojo",
+      "Brenna",
+      "Nir",
+      "Sam",
+      "Alex"
+    ],
+    "attendeeCount": 9
+  },
+  {
+    "title": "Wolfwalkers",
+    "year": 2020,
+    "genre": "Animation",
+    "director": "Tomm Moore",
+    "runtime": 102,
+    "rating": 8.2,
+    "posterPath": "/vqGiNbdc2sDwsnivMMYzwAoSSu6.jpg",
+    "backdropPath": "/3zTbERSBLh7waK9811RTKGAcG86.jpg",
+    "overview": "In a time of superstition and magic, when wolves are seen as demonic and nature an evil to be tamed, a young apprentice hunter comes to Ireland with her father to wipe out the last pack. But when she saves a wild native girl, their friendship leads her to discover the world of the Wolfwalkers and transform her into the very thing her father is tasked to destroy.",
+    "cast": [
+      {
+        "id": 1363045,
+        "name": "Honor Kneafsey",
+        "character": "Robyn Goodfellowe (voice)",
+        "popularity": 0.9745
+      },
+      {
+        "id": 2770089,
+        "name": "Eva Whittaker",
+        "character": "Mebh Óg MacTíre (voice)",
+        "popularity": 0.1167
+      },
+      {
+        "id": 48,
+        "name": "Sean Bean",
+        "character": "Robyn's Father, Bill Goodfellowe (voice)",
+        "popularity": 5.2175
+      },
+      {
+        "id": 16358,
+        "name": "Simon McBurney",
+        "character": "Lord Protector (voice)",
+        "popularity": 1.1754
+      },
+      {
+        "id": 107682,
+        "name": "Tommy Tiernan",
+        "character": "Sean Óg (voice)",
+        "popularity": 0.9023
+      },
+      {
+        "id": 33394,
+        "name": "Maria Doyle Kennedy",
+        "character": "Mebh's Mother, Moll MacTíre (voice)",
+        "popularity": 1.0555
+      },
+      {
+        "id": 37169,
+        "name": "Jon Kenny",
+        "character": "Stringy Woodcutter, Ned (voice)",
+        "popularity": 0.3784
+      },
+      {
+        "id": 167450,
+        "name": "John Morton",
+        "character": "Stumpy Woodcutter (voice)",
+        "popularity": 0.1383
+      },
+      {
+        "id": 96677,
+        "name": "Nora Twomey",
+        "character": "Head Housekeeper, Bridget (voice)",
+        "popularity": 0.2749
+      },
+      {
+        "id": 2808575,
+        "name": "Oliver McGrath",
+        "character": "Street Children Ringleader, Padraig (voice)",
+        "popularity": 0.0966
+      }
+    ],
+    "watchedDate": "2025-08-26",
+    "eventName": "Moviewatchers",
+    "attendees": [
+      "Jerry",
+      "Nir",
+      "Brenna",
+      "Alex",
+      "Jojo",
+      "Juliet",
+      "Michael",
+      "Sam",
+      "Tessa"
+    ],
+    "attendeeCount": 9
+  },
+  {
+    "title": "Tetris",
+    "year": 2023,
+    "genre": "Thriller",
+    "director": "Jon S. Baird",
+    "runtime": 118,
+    "rating": 7.652,
+    "posterPath": "/4F2QwCOYHJJjecSvdOjStuVLkpu.jpg",
+    "backdropPath": "/4avmIRBBOs9b4DKoenf8SWWJJP7.jpg",
+    "overview": "In 1988, American video game salesman Henk Rogers discovers the video game Tetris. When he sets out to bring the game to the world, he enters a dangerous web of lies and corruption behind the Iron Curtain.",
+    "cast": [
+      {
+        "id": 1303037,
+        "name": "Taron Egerton",
+        "character": "Henk Rogers",
+        "popularity": 4.6123
+      },
+      {
+        "id": 931253,
+        "name": "Nikita Efremov",
+        "character": "Alexey Pajitnov",
+        "popularity": 0.806
+      },
+      {
+        "id": 1466773,
+        "name": "Sofia Lebedeva",
+        "character": "Sasha",
+        "popularity": 0.8286
+      },
+      {
+        "id": 1727213,
+        "name": "Anthony Boyle",
+        "character": "Kevin Maxwell",
+        "popularity": 2.1589
+      },
+      {
+        "id": 11280,
+        "name": "Ben Miles",
+        "character": "Howard Lincoln",
+        "popularity": 1.5993
+      },
+      {
+        "id": 1155715,
+        "name": "Ken Yamamura",
+        "character": "Minoru Arakawa",
+        "popularity": 0.439
+      },
+      {
+        "id": 1679513,
+        "name": "Igor Grabuzov",
+        "character": "Valentin Trifonov",
+        "popularity": 0.8912
+      },
+      {
+        "id": 235858,
+        "name": "Oleg Stefan",
+        "character": "Belikov",
+        "popularity": 0.3739
+      },
+      {
+        "id": 1502347,
+        "name": "Ayane Nagabuchi",
+        "character": "Akemi Rogers",
+        "popularity": 0.9426
+      },
+      {
+        "id": 10883,
+        "name": "Rick Yune",
+        "character": "Bank Manager",
+        "popularity": 1.5872
+      }
+    ],
+    "watchedDate": "2025-09-30",
+    "eventName": "four tennis",
+    "attendees": [
+      "Zoe",
+      "Nir",
+      "Jerry",
+      "Brenna",
+      "Alex",
+      "Juliet",
+      "Michael",
+      "Tessa"
+    ],
+    "attendeeCount": 8
+  },
+  {
+    "title": "Escape from New York",
+    "year": 1981,
+    "genre": "Science Fiction",
+    "director": "John Carpenter",
+    "runtime": 99,
+    "rating": 7.053,
+    "posterPath": "/vH9llaphjAssRGi0k7e75tD40Ce.jpg",
+    "backdropPath": "/aJsO6ek1ax2qDU8qJzB0HKBMHyA.jpg",
+    "overview": "In a world ravaged by crime, the entire island of Manhattan has been converted into a walled prison where brutal prisoners roam free. After the US president crash-lands inside, war hero Snake Plissken has 24 hours to bring him back.",
+    "cast": [
+      {
+        "id": 6856,
+        "name": "Kurt Russell",
+        "character": "Snake Plissken",
+        "popularity": 7.8747
+      },
+      {
+        "id": 4078,
+        "name": "Lee Van Cleef",
+        "character": "Police Commissioner Bob Hauk",
+        "popularity": 3.97
+      },
+      {
+        "id": 7502,
+        "name": "Ernest Borgnine",
+        "character": "Cabbie",
+        "popularity": 2.1479
+      },
+      {
+        "id": 9221,
+        "name": "Donald Pleasence",
+        "character": "President of the United States",
+        "popularity": 1.8271
+      },
+      {
+        "id": 6542,
+        "name": "Isaac Hayes",
+        "character": "The Duke of New York",
+        "popularity": 0.6591
+      },
+      {
+        "id": 47456,
+        "name": "Season Hubley",
+        "character": "Girl in Chock Full O'Nuts",
+        "popularity": 0.5948
+      },
+      {
+        "id": 5048,
+        "name": "Harry Dean Stanton",
+        "character": "Harold 'Brain' Helman",
+        "popularity": 1.2389
+      },
+      {
+        "id": 11782,
+        "name": "Adrienne Barbeau",
+        "character": "Maggie",
+        "popularity": 2.3707
+      },
+      {
+        "id": 11784,
+        "name": "Tom Atkins",
+        "character": "Rehme",
+        "popularity": 0.7121
+      },
+      {
+        "id": 11786,
+        "name": "Charles Cyphers",
+        "character": "Secretary of State",
+        "popularity": 0.5427
+      }
+    ],
+    "watchedDate": "2025-10-28",
+    "eventName": "Escape from Cinema Club",
+    "attendees": [
+      "Nir",
+      "Michael",
+      "Alex",
+      "Jerry",
+      "Brenna",
+      "Zoe",
+      "Jojo",
+      "Sam"
+    ],
+    "attendeeCount": 8
+  },
+  {
+    "title": "The Big Short",
+    "year": 2015,
+    "genre": "Comedy",
+    "director": "Adam McKay",
+    "runtime": 131,
+    "rating": 7.358,
+    "posterPath": "/scVEaJEwP8zUix8vgmMoJJ9Nq0w.jpg",
+    "backdropPath": "/l2Lqkfjq1k5pG2gZXD4qSiyrJ0.jpg",
+    "overview": "The men who made millions from a global economic meltdown.",
+    "cast": [
+      {
+        "id": 4495,
+        "name": "Steve Carell",
+        "character": "Mark Baum",
+        "popularity": 3.9735
+      },
+      {
+        "id": 3894,
+        "name": "Christian Bale",
+        "character": "Michael Burry",
+        "popularity": 5.6735
+      },
+      {
+        "id": 30614,
+        "name": "Ryan Gosling",
+        "character": "Jared Vennett",
+        "popularity": 8.0679
+      },
+      {
+        "id": 287,
+        "name": "Brad Pitt",
+        "character": "Ben Rickert",
+        "popularity": 8.5698
+      },
+      {
+        "id": 3141,
+        "name": "Marisa Tomei",
+        "character": "Cynthia Baum",
+        "popularity": 6.6867
+      },
+      {
+        "id": 6832,
+        "name": "Melissa Leo",
+        "character": "Georgia Hale",
+        "popularity": 1.2235
+      },
+      {
+        "id": 184581,
+        "name": "Hamish Linklater",
+        "character": "Porter Collins",
+        "popularity": 2.1639
+      },
+      {
+        "id": 37154,
+        "name": "John Magaro",
+        "character": "Charlie Geller",
+        "popularity": 2.4741
+      },
+      {
+        "id": 28847,
+        "name": "Rafe Spall",
+        "character": "Danny Moses",
+        "popularity": 1.4739
+      },
+      {
+        "id": 239271,
+        "name": "Jeremy Strong",
+        "character": "Vinny Daniel",
+        "popularity": 1.5768
+      }
+    ],
+    "watchedDate": "2025-11-18",
+    "eventName": "The Big Cinema Club",
+    "attendees": [
+      "Jerry",
+      "Zoe",
+      "Alex",
+      "Juliet",
+      "Brenna",
+      "Jojo",
+      "Laura",
+      "Eric",
+      "Sam"
+    ],
+    "attendeeCount": 9
+  },
+  {
+    "title": "Hedda",
+    "year": 2025,
+    "genre": "Drama",
+    "director": "Nia DaCosta",
+    "runtime": 107,
+    "rating": 5.3,
+    "posterPath": "/ecflk7AZf0ij205yDswjlvdxlCO.jpg",
+    "backdropPath": "/cKZcDKawR79igCgDMSXlpkn8hLR.jpg",
+    "overview": "Hedda Gabler finds herself torn between the lingering ache of a past love and the quiet suffocation of her present life. Over the course of one charged night, long-repressed desires and hidden tensions erupt—pulling her and everyone around her into a spiral of manipulation, passion, and betrayal.",
+    "cast": [
+      {
+        "id": 62561,
+        "name": "Tessa Thompson",
+        "character": "Hedda Gabler",
+        "popularity": 4.0337
+      },
+      {
+        "id": 681,
+        "name": "Nina Hoss",
+        "character": "Eileen Lovborg",
+        "popularity": 2.4628
+      },
+      {
+        "id": 17606,
+        "name": "Imogen Poots",
+        "character": "Thea Clifton",
+        "popularity": 3.1001
+      },
+      {
+        "id": 1356645,
+        "name": "Nicholas Pinnock",
+        "character": "Judge Roland Brack",
+        "popularity": 0.5871
+      },
+      {
+        "id": 1364004,
+        "name": "Tom Bateman",
+        "character": "George Tesman",
+        "popularity": 2.1798
+      },
+      {
+        "id": 1250809,
+        "name": "Finbar Lynch",
+        "character": "Professor Greenwood",
+        "popularity": 0.7077
+      },
+      {
+        "id": 2517398,
+        "name": "Mirren Mack",
+        "character": "Tabitha Greenwood",
+        "popularity": 0.5212
+      },
+      {
+        "id": 2266752,
+        "name": "Jamael Westman",
+        "character": "David",
+        "popularity": 0.0927
+      },
+      {
+        "id": 2134546,
+        "name": "Saffron Hocking",
+        "character": "Jane Ji",
+        "popularity": 0.6842
+      },
+      {
+        "id": 72309,
+        "name": "Kathryn Hunter",
+        "character": "Bertie",
+        "popularity": 1.6972
+      }
+    ],
+    "watchedDate": "2025-12-16",
+    "eventName": "Important night for me but also for you",
+    "attendees": [
+      "Jerry",
+      "Nir",
+      "Alex",
+      "Michael",
+      "Juliet",
+      "Jojo",
+      "Brenna",
+      "Sam"
+    ],
+    "attendeeCount": 8
+  }
+]

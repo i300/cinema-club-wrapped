@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useMotionValue, animate } from "framer-motion";
-import { fetchMovies } from "./data/movies";
+import enrichedMoviesData from "./data/enriched-movies.json";
 import { calculateStats } from "./utils/statistics";
 import { calculateRatingsStats } from "./data/ratings";
 import WelcomeSlide from "./components/slides/WelcomeSlide/WelcomeSlide";
@@ -28,12 +28,11 @@ function App() {
   const x = useMotionValue(0);
 
   useEffect(() => {
-    const loadMovies = async () => {
+    const loadMovies = () => {
       try {
         setLoading(true);
-        const movies = await fetchMovies();
         const calculatedStats = {
-          ...calculateStats(movies),
+          ...calculateStats(enrichedMoviesData),
           ratingsStats: calculateRatingsStats(),
         };
         setStats(calculatedStats);
