@@ -6,7 +6,7 @@ const Slide = ({ children, className = "" }) => {
 
 export const SlideTitle = ({ children }) => {
   return (
-    <p className="text-5xl font-tangerine text-white text-center mb-4 md:mb-8 max-sm:max-w-75">
+    <p className="text-5xl md:text-6xl font-tangerine text-white text-center mb-4 md:mb-8">
       {children}
     </p>
   );

@@ -35,7 +35,7 @@ const TopMoviesSlide = ({ stats }) => {
     <Slide className="flex flex-col items-center w-full mx-auto max-sm:h-full">
       <SlideTitle>Top Movies of the Year</SlideTitle>
 
-      <ScrollableFade className="flex flex-col items-center gap-4 w-full max-sm:h-full">
+      <ScrollableFade className="flex flex-col items-center gap-2 w-full max-sm:h-full">
         <PopularMovieCard
           movie={first}
           posterUrl={getPosterUrl(first.movieName)}
@@ -43,7 +43,7 @@ const TopMoviesSlide = ({ stats }) => {
         />
 
         {restMovies.length > 0 && (
-          <div className="flex flex-col sm:flex-row gap-4 w-full">
+          <div className="flex flex-col sm:flex-row gap-2 w-full">
             {restMovies.map((movie) => (
               <PopularMovieCard
                 key={movie.movieName}

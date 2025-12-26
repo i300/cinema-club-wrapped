@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Tangerine:wght@400;700&display=swap");
 
 /* Tailwind v4 Theme Configuration */
 @theme {
@@ -56,79 +55,79 @@
 
 /* Custom gradient background utilities */
 @utility bg-gradient-welcome {
-  background-image: var(--gradient-welcome);
+  background: var(--gradient-welcome);
 }
 
 @utility bg-gradient-events {
-  background-image: var(--gradient-events);
+  background: var(--gradient-events);
 }
 
 @utility bg-gradient-stat {
-  background-image: var(--gradient-stat);
+  background: var(--gradient-stat);
 }
 
 @utility bg-gradient-actors {
-  background-image: var(--gradient-actors);
+  background: var(--gradient-actors);
 }
 
 @utility bg-gradient-genre {
-  background-image: var(--gradient-genre);
+  background: var(--gradient-genre);
 }
 
 @utility bg-gradient-oldest {
-  background-image: var(--gradient-oldest);
+  background: var(--gradient-oldest);
 }
 
 @utility bg-gradient-longest {
-  background-image: var(--gradient-longest);
+  background: var(--gradient-longest);
 }
 
 @utility bg-gradient-attended {
-  background-image: var(--gradient-attended);
+  background: var(--gradient-attended);
 }
 
 @utility bg-gradient-top-attendee {
-  background-image: var(--gradient-top-attendee);
+  background: var(--gradient-top-attendee);
 }
 
 @utility bg-gradient-top-movies {
-  background-image: var(--gradient-top-movies);
+  background: var(--gradient-top-movies);
 }
 
 @utility bg-gradient-bust {
-  background-image: var(--gradient-bust);
+  background: var(--gradient-bust);
 }
 
 @utility bg-gradient-favorites {
-  background-image: var(--gradient-favorites);
+  background: var(--gradient-favorites);
 }
 
 @utility bg-gradient-summary {
-  background-image: var(--gradient-summary);
+  background: var(--gradient-summary);
 }
 
 @utility bg-gradient-app {
-  background-image: var(--gradient-app);
+  background: var(--gradient-app);
 }
 
 @utility bg-gradient-card {
-  background-image: var(--gradient-card);
+  background: var(--gradient-card);
 }
 
 @utility bg-gradient-card-secondary {
-  background-image: var(--gradient-card-secondary);
+  background: var(--gradient-card-secondary);
 }
 
 @utility bg-gradient-avatar {
-  background-image: var(--gradient-avatar);
+  background: var(--gradient-avatar);
 }
 
 @utility bg-gradient-overlay {
-  background-image: var(--gradient-overlay);
+  background: var(--gradient-overlay);
 }
 
 @utility bg-gradient-decade-bar {
-  background-image: var(--gradient-decade-bar);
+  background: var(--gradient-decade-bar);
 }
 
 /* Global scrollbar styling */
@@ -159,12 +158,18 @@
 
   color-scheme: dark;
   color: #ffffff;
-  background-color: #0a0a0a;
+  background: var(--gradient-app);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 768px) {
+  :root {
+    background: #0a0a0a;
+  }
 }
 
 body {
