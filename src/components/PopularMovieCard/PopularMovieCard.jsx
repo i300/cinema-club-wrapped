@@ -2,9 +2,11 @@ import clsx from "clsx";
 import ProfileImage from "../ProfileImage/ProfileImage";
 
 const UserReview = ({ displayName, rating, liked, size = "default" }) => {
+  const small = size === "small";
+
   // Format rating as stars for default size, or as "X/5" for small size
   const formatRating = () => {
-    if (size === "small") {
+    if (small) {
       return `${rating}/5`;
     }
 
@@ -20,7 +22,7 @@ const UserReview = ({ displayName, rating, liked, size = "default" }) => {
     <div
       className={clsx(
         "flex flex-col items-center flex-shrink-0",
-        size === "default" ? "w-[75px] min-w-[75px] gap-2" : "gap-1"
+        small ? "gap-1" : "w-[75px] min-w-[75px] gap-2"
       )}
     >
       <div className="relative shrink-0">
@@ -54,9 +56,10 @@ const PopularMovieCard = ({
   // Sort reviews by rating to show variety
   const sortedReviews = [...movie.reviews].sort((a, b) => a.rating - b.rating);
 
+  const small = size === "small";
+
   // Limit reviews display based on size
-  const displayReviews =
-    size === "small" ? sortedReviews.slice(0, 7) : sortedReviews;
+  const displayReviews = small ? sortedReviews.slice(0, 7) : sortedReviews;
 
   return (
     <div
@@ -84,20 +87,26 @@ const PopularMovieCard = ({
         </div>
 
         {/* Title Card, Stats */}
-        <div className="flex flex-1 flex-col gap-2">
+        <div
+          className={clsx(
+            "flex flex-1 flex-col",
+            !secondary && "gap-2",
+            secondary && "gap-0"
+          )}
+        >
           {/* Movie Title */}
           <div className={clsx("flex items-center justify-between gap-4")}>
             <h2
               className={clsx(
                 "font-inter font-bold text-white",
                 !secondary && "text-5xl md:text-6xl",
-                secondary && "font-semibold text-4xl"
+                secondary && "font-semibold text-3xl"
               )}
             >
               {movie.movieName}
             </h2>
 
-            {!secondary && (
+            {!secondary && !small && (
               <div className="font-inter font-semibold text-gold text-shadow-gold shrink-0 text-4xl md:text-5xl">
                 {movie.averageScore.toFixed(2)}
               </div>
@@ -105,15 +114,16 @@ const PopularMovieCard = ({
           </div>
 
           {/* Movie Stats */}
-          <div
-            className={clsx(
-              "flex gap-2 items-center text-white font-inter italic",
-              "font-light text-base md:font-extralight md:text-2xl"
-            )}
-          >
-            {secondary && (
+          <div className="flex gap-2 items-center text-white font-inter italic">
+            {(secondary || small) && (
               <>
-                <span className="leading-normal">
+                <span
+                  className={clsx(
+                    "leading-normal",
+                    !secondary &&
+                      "font-inter font-semibold text-gold text-shadow-gold shrink-0 text-2xl"
+                  )}
+                >
                   {movie.averageScore.toFixed(2)}
                 </span>
                 <span className="opacity-70 max-sm:text-sm">•</span>
@@ -124,7 +134,7 @@ const PopularMovieCard = ({
             <span className="leading-normal">{movie.likeCount} likes</span>
           </div>
 
-          {size === "default" && !secondary && (
+          {!secondary && !small && (
             <div className="flex flex-wrap gap-2 items-center justify-center">
               {displayReviews.map((review, index) => (
                 <UserReview
@@ -141,7 +151,7 @@ const PopularMovieCard = ({
       </div>
 
       {/* In small size, show reviews under poster row */}
-      {size === "small" && !secondary && (
+      {small && !secondary && (
         <div className="flex flex-wrap gap-2 items-center justify-center">
           {displayReviews.map((review, index) => (
             <UserReview

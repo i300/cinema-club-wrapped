@@ -8,7 +8,6 @@ import EventListSlide from "./components/slides/EventListSlide/EventListSlide";
 import TotalMoviesSlide from "./components/slides/TotalMoviesSlide/TotalMoviesSlide";
 import RuntimeSlide from "./components/slides/RuntimeSlide/RuntimeSlide";
 import TopGenreSlide from "./components/slides/TopGenreSlide/TopGenreSlide";
-import TopActorsSlide from "./components/slides/TopActorsSlide/TopActorsSlide";
 import OldestNewestSlide from "./components/slides/OldestNewestSlide/OldestNewestSlide";
 import LongestMovieSlide from "./components/slides/LongestMovieSlide/LongestMovieSlide";
 import MostAttendedEventSlide from "./components/slides/MostAttendedEventSlide/MostAttendedEventSlide";
@@ -55,7 +54,6 @@ function App() {
     <TotalMoviesSlide key="total" stats={stats} />,
     <RuntimeSlide key="runtime" stats={stats} />,
     <TopGenreSlide key="genre" stats={stats} />,
-    <TopActorsSlide key="top-actors" stats={stats} />,
     <OldestNewestSlide key="oldest-newest" stats={stats} />,
     <LongestMovieSlide key="longest" stats={stats} />,
     <MostAttendedEventSlide key="most-attended" stats={stats} />,
@@ -133,10 +131,10 @@ function App() {
   }
 
   return (
-    <div className="w-full h-screen flex flex-col justify-center items-center bg-gradient-app relative overflow-hidden scrollbar-custom">
+    <div className="w-full h-screen flex flex-col justify-center items-center relative overflow-hidden scrollbar-custom">
       <ProgressBar totalSlides={slides.length} currentSlide={index} />
 
-      <div className="w-full h-full pt-16 pb-8 px-8 max-md:pt-12 max-md:pb-4 max-md:px-0 relative overflow-hidden">
+      <div className="w-full h-full pt-16 pb-2 max-md:pt-12 relative overflow-hidden">
         <motion.div
           className="flex h-full cursor-grab active:cursor-grabbing select-none"
           ref={containerRef}
@@ -170,7 +168,7 @@ function App() {
           {slides.map((slide, i) => (
             <div
               key={i}
-              className="flex-shrink-0 w-full h-full flex justify-center items-center p-4"
+              className="w-full h-full flex shrink-0 items-start md:justify-center md:items-center px-2"
             >
               {slide}
             </div>

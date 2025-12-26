@@ -1,5 +1,6 @@
-import Slide from "../../Slide";
+import Slide, { SlideTitle } from "../../Slide";
 import PopularMovieCard from "../../PopularMovieCard/PopularMovieCard";
+import ScrollableFade from "../../ScrollableFade/ScrollableFade";
 import useScreenSize from "../../../hooks/useScreenSize";
 
 const TopMoviesSlide = ({ stats }) => {
@@ -31,12 +32,10 @@ const TopMoviesSlide = ({ stats }) => {
   const [first, ...restMovies] = topMovies;
 
   return (
-    <Slide>
-      <div className="flex flex-col items-center gap-4 w-full mx-auto">
-        <p className="text-5xl font-tangerine text-white text-center mb-4">
-          Top rated movies
-        </p>
+    <Slide className="flex flex-col items-center w-full mx-auto max-sm:h-full">
+      <SlideTitle>Top Movies of the Year</SlideTitle>
 
+      <ScrollableFade className="flex flex-col items-center gap-4 w-full max-sm:h-full">
         <PopularMovieCard
           movie={first}
           posterUrl={getPosterUrl(first.movieName)}
@@ -56,7 +55,7 @@ const TopMoviesSlide = ({ stats }) => {
             ))}
           </div>
         )}
-      </div>
+      </ScrollableFade>
     </Slide>
   );
 };
