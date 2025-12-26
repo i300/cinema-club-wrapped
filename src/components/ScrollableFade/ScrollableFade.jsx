@@ -59,7 +59,10 @@ const ScrollableFade = ({ children, className = "", fadeDistance = 8 }) => {
 
     const topFadeDistance = scrollState.isAtTop
       ? 0
-      : Math.min(maxFadeDistance, easeOutExpo(topScrollRatio) * maxFadeDistance);
+      : Math.min(
+          maxFadeDistance,
+          easeOutExpo(topScrollRatio) * maxFadeDistance
+        );
 
     const bottomFadeDistance = scrollState.isAtBottom
       ? 0
@@ -82,7 +85,7 @@ const ScrollableFade = ({ children, className = "", fadeDistance = 8 }) => {
       ref={scrollRef}
       onScroll={checkScroll}
       className={clsx(
-        "overflow-y-scroll overflow-x-hidden [touch-action:pan-y]",
+        "overflow-y-auto overflow-x-hidden [touch-action:pan-y]",
         className
       )}
       style={{

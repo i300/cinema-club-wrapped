@@ -74,9 +74,9 @@ const PopularMovieCard = ({
         {/* Poster */}
         <div
           className={clsx(
-            "shrink-0 rounded overflow-hidden self-stretch",
-            !secondary && "h-30 sm:h-50",
-            secondary && "h-30"
+            "shrink-0 rounded overflow-hidden aspect-2/3",
+            !secondary && "w-20 sm:w-32",
+            secondary && "w-20"
           )}
         >
           <img
