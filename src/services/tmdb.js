@@ -1,6 +1,7 @@
 import { TMDB } from "tmdb-ts";
 
-const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
+const API_KEY =
+  import.meta.env.VITE_TMDB_API_KEY ?? localStorage.getItem("TMDB_API_KEY");
 const tmdb = new TMDB(API_KEY);
 
 // Number of cast members to analyze per movie
