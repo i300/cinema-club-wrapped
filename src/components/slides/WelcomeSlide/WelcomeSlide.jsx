@@ -14,7 +14,7 @@ const WelcomeSlide = () => {
         </SlideTitle>
         <p className="font-bold italic text-[2.5rem] md:text-[3rem]">Wrapped</p>
         <img
-          src="public/sticker.svg"
+          src="sticker.svg"
           width={stickerSize}
           height={stickerSize}
           className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2"
