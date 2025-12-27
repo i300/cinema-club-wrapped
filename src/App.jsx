@@ -6,7 +6,6 @@ import { calculateRatingsStats } from "./data/ratings";
 import WelcomeSlide from "./components/slides/WelcomeSlide/WelcomeSlide";
 import EventListSlide from "./components/slides/EventListSlide/EventListSlide";
 import TotalMoviesSlide from "./components/slides/TotalMoviesSlide/TotalMoviesSlide";
-import RuntimeSlide from "./components/slides/RuntimeSlide/RuntimeSlide";
 import TopGenreSlide from "./components/slides/TopGenreSlide/TopGenreSlide";
 import OldestNewestSlide from "./components/slides/OldestNewestSlide/OldestNewestSlide";
 import LongestMovieSlide from "./components/slides/LongestMovieSlide/LongestMovieSlide";
@@ -32,7 +31,6 @@ function App() {
     <WelcomeSlide key="welcome" />,
     <TotalMoviesSlide key="total" stats={stats} />,
     // <EventListSlide key="events" stats={stats} />,
-    // <RuntimeSlide key="runtime" stats={stats} />,
     <TopGenreSlide key="genre" stats={stats} />,
     // <OldestNewestSlide key="oldest-newest" stats={stats} />,
     // <LongestMovieSlide key="longest" stats={stats} />,
