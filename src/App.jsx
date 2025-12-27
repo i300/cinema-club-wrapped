@@ -30,8 +30,8 @@ function App() {
 
   const slides = [
     <WelcomeSlide key="welcome" />,
+    <TotalMoviesSlide key="total" stats={stats} />,
     // <EventListSlide key="events" stats={stats} />,
-    // <TotalMoviesSlide key="total" stats={stats} />,
     // <RuntimeSlide key="runtime" stats={stats} />,
     // <TopGenreSlide key="genre" stats={stats} />,
     // <OldestNewestSlide key="oldest-newest" stats={stats} />,
