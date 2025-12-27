@@ -168,7 +168,7 @@
 
 @media (max-width: 768px) {
   :root {
-    background: #0a0a0a;
+    background: hsl(240, 28%, 7%);
   }
 }
 

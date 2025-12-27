@@ -1,17 +1,28 @@
-import Slide from "../../Slide";
+import Slide, { SlideTitle } from "../../Slide";
+import useScreenSize from "../../../hooks/useScreenSize";
 
 const WelcomeSlide = () => {
+  const { mobile } = useScreenSize();
+
+  const stickerSize = mobile ? 80 : 96;
+
   return (
-    <Slide className="bg-gradient-welcome rounded-[20px] shadow-[--shadow-slide]">
-      <div className="text-center w-full p-8">
-        <h1 className="text-[5rem] max-md:text-[3rem] font-extrabold m-0 bg-gradient-to-br from-white to-gray-200 bg-clip-text text-transparent tracking-[-2px]">
-          Cinema Club Wrapped
-        </h1>
-        <h2 className="text-[4rem] max-md:text-[2.5rem] font-bold my-2 text-white/95">
-          2025
-        </h2>
-        <p className="text-2xl text-white/80 mt-4">Our year in films</p>
+    <Slide className="h-full flex flex-col items-center justify-center relative">
+      <div className="relative text-center">
+        <SlideTitle className="text-[5rem] md:text-[6rem] mb-0!">
+          Cinema Club
+        </SlideTitle>
+        <p className="font-bold italic text-[2.5rem] md:text-[3rem]">Wrapped</p>
+        <img
+          src="public/sticker.svg"
+          width={stickerSize}
+          height={stickerSize}
+          className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2"
+        />
       </div>
+      <p className="absolute top-[85vh] font-extralight">
+        Made with &lt;3 by Jerry
+      </p>
     </Slide>
   );
 };
