@@ -92,11 +92,11 @@ for (const movie of movieList) {
       (person) => person.job === "Director"
     );
 
-    // Extract genre
-    const genre =
+    // Extract all genres
+    const genres =
       details.genres && details.genres.length > 0
-        ? details.genres[0].name
-        : "Unknown";
+        ? details.genres.map((g) => g.name)
+        : ["Unknown"];
 
     // Extract top cast members with popularity
     const topCast =
@@ -112,7 +112,7 @@ for (const movie of movieList) {
       // TMDB fields
       title: details.title,
       year: new Date(details.release_date).getFullYear(),
-      genre,
+      genres,
       director: director ? director.name : "Unknown",
       runtime: details.runtime,
       rating: details.vote_average,

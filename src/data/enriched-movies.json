@@ -2,7 +2,11 @@
   {
     "title": "Game Night",
     "year": 2018,
-    "genre": "Mystery",
+    "genres": [
+      "Mystery",
+      "Comedy",
+      "Crime"
+    ],
     "director": "John Francis Daley",
     "runtime": 100,
     "rating": 6.85,
@@ -86,7 +90,10 @@
   {
     "title": "Before Sunrise",
     "year": 1995,
-    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
     "director": "Richard Linklater",
     "runtime": 101,
     "rating": 7.969,
@@ -98,61 +105,61 @@
         "id": 569,
         "name": "Ethan Hawke",
         "character": "Jesse",
-        "popularity": 6.784
+        "popularity": 8.9453
       },
       {
         "id": 1146,
         "name": "Julie Delpy",
         "character": "Céline",
-        "popularity": 2.1541
+        "popularity": 2.2073
       },
       {
         "id": 571,
         "name": "Andrea Eckert",
         "character": "Wife on Train",
-        "popularity": 0.2009
+        "popularity": 0.2056
       },
       {
         "id": 572,
         "name": "Hanno Pöschl",
         "character": "Husband on Train",
-        "popularity": 0.4484
+        "popularity": 0.4708
       },
       {
         "id": 573,
         "name": "Karl Bruckschwaiger",
         "character": "Guy on Bridge",
-        "popularity": 0.1398
+        "popularity": 0.1532
       },
       {
         "id": 574,
         "name": "Tex Rubinowitz",
         "character": "Guy on Bridge",
-        "popularity": 0.6574
+        "popularity": 0.7232
       },
       {
         "id": 146859,
         "name": "Erni Mangold",
         "character": "Palm Reader",
-        "popularity": 0.6933
+        "popularity": 0.4398
       },
       {
         "id": 3735,
         "name": "Dominik Castell",
         "character": "Street Poet",
-        "popularity": 0.4231
+        "popularity": 0.4436
       },
       {
         "id": 3738,
         "name": "Haymon Maria Buttinger",
         "character": "Bartender",
-        "popularity": 0.8335
+        "popularity": 0.8322
       },
       {
         "id": 3737,
         "name": "Harold Waiglein",
         "character": "Guitarist in Club",
-        "popularity": 0.0505
+        "popularity": 0.0379
       }
     ],
     "watchedDate": "2025-02-25",
@@ -171,7 +178,10 @@
   {
     "title": "The Grand Budapest Hotel",
     "year": 2014,
-    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
     "director": "Wes Anderson",
     "runtime": 100,
     "rating": 8.033,
@@ -183,61 +193,61 @@
         "id": 5469,
         "name": "Ralph Fiennes",
         "character": "M. Gustave",
-        "popularity": 7.1796
+        "popularity": 7.9912
       },
       {
         "id": 1164,
         "name": "F. Murray Abraham",
         "character": "Mr. Moustafa",
-        "popularity": 3.2811
+        "popularity": 3.4804
       },
       {
         "id": 8789,
         "name": "Mathieu Amalric",
         "character": "Serge X.",
-        "popularity": 1.4686
+        "popularity": 1.7003
       },
       {
         "id": 3490,
         "name": "Adrien Brody",
         "character": "Dmitri",
-        "popularity": 4.4742
+        "popularity": 4.6793
       },
       {
         "id": 5293,
         "name": "Willem Dafoe",
         "character": "Jopling",
-        "popularity": 4.967
+        "popularity": 5.1344
       },
       {
         "id": 4785,
         "name": "Jeff Goldblum",
         "character": "Deputy Kovacs",
-        "popularity": 5.6416
+        "popularity": 5.551
       },
       {
         "id": 1037,
         "name": "Harvey Keitel",
         "character": "Ludwig",
-        "popularity": 3.8141
+        "popularity": 4.2709
       },
       {
         "id": 9642,
         "name": "Jude Law",
         "character": "Young Author",
-        "popularity": 7.8344
+        "popularity": 8.2098
       },
       {
         "id": 1532,
         "name": "Bill Murray",
         "character": "M. Ivan",
-        "popularity": 3.3685
+        "popularity": 3.4401
       },
       {
         "id": 819,
         "name": "Edward Norton",
         "character": "Henckels",
-        "popularity": 6.8778
+        "popularity": 7.074
       }
     ],
     "watchedDate": "2025-03-27",
@@ -258,7 +268,10 @@
   {
     "title": "Tag",
     "year": 2018,
-    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Action"
+    ],
     "director": "Jeff Tomsic",
     "runtime": 100,
     "rating": 6.712,
@@ -270,19 +283,19 @@
         "id": 27105,
         "name": "Ed Helms",
         "character": "Hogan 'Hoagie' Malloy",
-        "popularity": 2.0749
+        "popularity": 2.0188
       },
       {
         "id": 65717,
         "name": "Jon Hamm",
         "character": "Bob Callahan",
-        "popularity": 8.7204
+        "popularity": 8.6009
       },
       {
         "id": 17604,
         "name": "Jeremy Renner",
         "character": "Jerry Pierce",
-        "popularity": 5.4004
+        "popularity": 5.6258
       },
       {
         "id": 543505,
@@ -300,25 +313,25 @@
         "id": 82809,
         "name": "Annabelle Wallis",
         "character": "Rebecca Crosby",
-        "popularity": 4.6659
+        "popularity": 5.3695
       },
       {
         "id": 52848,
         "name": "Isla Fisher",
         "character": "Anna Malloy",
-        "popularity": 9.0599
+        "popularity": 9.3942
       },
       {
         "id": 80591,
         "name": "Rashida Jones",
         "character": "Cheryl Deakins",
-        "popularity": 4.1434
+        "popularity": 4.062
       },
       {
         "id": 57451,
         "name": "Leslie Bibb",
         "character": "Susan Rollins",
-        "popularity": 1.8836
+        "popularity": 2.0608
       },
       {
         "id": 2073126,
@@ -344,7 +357,10 @@
   {
     "title": "The Truman Show",
     "year": 1998,
-    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
     "director": "Peter Weir",
     "runtime": 103,
     "rating": 8.15,
@@ -429,7 +445,10 @@
   {
     "title": "The Matrix",
     "year": 1999,
-    "genre": "Action",
+    "genres": [
+      "Action",
+      "Science Fiction"
+    ],
     "director": "Lana Wachowski",
     "runtime": 136,
     "rating": 8.236,
@@ -441,61 +460,61 @@
         "id": 6384,
         "name": "Keanu Reeves",
         "character": "Neo",
-        "popularity": 10.2579
+        "popularity": 10.0435
       },
       {
         "id": 2975,
         "name": "Laurence Fishburne",
         "character": "Morpheus",
-        "popularity": 3.7458
+        "popularity": 3.3663
       },
       {
         "id": 530,
         "name": "Carrie-Anne Moss",
         "character": "Trinity",
-        "popularity": 4.3589
+        "popularity": 4.5849
       },
       {
         "id": 1331,
         "name": "Hugo Weaving",
         "character": "Agent Smith",
-        "popularity": 2.454
+        "popularity": 2.689
       },
       {
         "id": 9364,
         "name": "Gloria Foster",
         "character": "Oracle",
-        "popularity": 0.6958
+        "popularity": 0.5306
       },
       {
         "id": 532,
         "name": "Joe Pantoliano",
         "character": "Cypher",
-        "popularity": 2.6895
+        "popularity": 2.5826
       },
       {
         "id": 9372,
         "name": "Marcus Chong",
         "character": "Tank",
-        "popularity": 0.6458
+        "popularity": 0.7061
       },
       {
         "id": 7244,
         "name": "Julian Arahanga",
         "character": "Apoc",
-        "popularity": 2.8056
+        "popularity": 2.6957
       },
       {
         "id": 9374,
         "name": "Matt Doran",
         "character": "Mouse",
-        "popularity": 1.1572
+        "popularity": 1.2849
       },
       {
         "id": 9376,
         "name": "Belinda McClory",
         "character": "Switch",
-        "popularity": 1.3668
+        "popularity": 1.7485
       }
     ],
     "watchedDate": "2025-06-16",
@@ -517,7 +536,10 @@
   {
     "title": "What We Do in the Shadows",
     "year": 2014,
-    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Horror"
+    ],
     "director": "Jemaine Clement",
     "runtime": 86,
     "rating": 7.554,
@@ -604,7 +626,12 @@
   {
     "title": "Wolfwalkers",
     "year": 2020,
-    "genre": "Animation",
+    "genres": [
+      "Animation",
+      "Family",
+      "Adventure",
+      "Fantasy"
+    ],
     "director": "Tomm Moore",
     "runtime": 102,
     "rating": 8.2,
@@ -616,55 +643,55 @@
         "id": 1363045,
         "name": "Honor Kneafsey",
         "character": "Robyn Goodfellowe (voice)",
-        "popularity": 0.9745
+        "popularity": 1.1207
       },
       {
         "id": 2770089,
         "name": "Eva Whittaker",
         "character": "Mebh Óg MacTíre (voice)",
-        "popularity": 0.1167
+        "popularity": 0.1724
       },
       {
         "id": 48,
         "name": "Sean Bean",
         "character": "Robyn's Father, Bill Goodfellowe (voice)",
-        "popularity": 5.2175
+        "popularity": 5.2695
       },
       {
         "id": 16358,
         "name": "Simon McBurney",
         "character": "Lord Protector (voice)",
-        "popularity": 1.1754
+        "popularity": 1.4109
       },
       {
         "id": 107682,
         "name": "Tommy Tiernan",
         "character": "Sean Óg (voice)",
-        "popularity": 0.9023
+        "popularity": 0.9962
       },
       {
         "id": 33394,
         "name": "Maria Doyle Kennedy",
         "character": "Mebh's Mother, Moll MacTíre (voice)",
-        "popularity": 1.0555
+        "popularity": 1.3153
       },
       {
         "id": 37169,
         "name": "Jon Kenny",
         "character": "Stringy Woodcutter, Ned (voice)",
-        "popularity": 0.3784
+        "popularity": 0.3548
       },
       {
         "id": 167450,
         "name": "John Morton",
         "character": "Stumpy Woodcutter (voice)",
-        "popularity": 0.1383
+        "popularity": 0.1203
       },
       {
         "id": 96677,
         "name": "Nora Twomey",
         "character": "Head Housekeeper, Bridget (voice)",
-        "popularity": 0.2749
+        "popularity": 0.3623
       },
       {
         "id": 2808575,
@@ -691,7 +718,11 @@
   {
     "title": "Tetris",
     "year": 2023,
-    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "History",
+      "Drama"
+    ],
     "director": "Jon S. Baird",
     "runtime": 118,
     "rating": 7.652,
@@ -777,7 +808,10 @@
   {
     "title": "Escape from New York",
     "year": 1981,
-    "genre": "Science Fiction",
+    "genres": [
+      "Science Fiction",
+      "Action"
+    ],
     "director": "John Carpenter",
     "runtime": 99,
     "rating": 7.053,
@@ -863,7 +897,10 @@
   {
     "title": "The Big Short",
     "year": 2015,
-    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
     "director": "Adam McKay",
     "runtime": 131,
     "rating": 7.358,
@@ -875,61 +912,61 @@
         "id": 4495,
         "name": "Steve Carell",
         "character": "Mark Baum",
-        "popularity": 3.9735
+        "popularity": 4.2186
       },
       {
         "id": 3894,
         "name": "Christian Bale",
         "character": "Michael Burry",
-        "popularity": 5.6735
+        "popularity": 6.6538
       },
       {
         "id": 30614,
         "name": "Ryan Gosling",
         "character": "Jared Vennett",
-        "popularity": 8.0679
+        "popularity": 8.1807
       },
       {
         "id": 287,
         "name": "Brad Pitt",
         "character": "Ben Rickert",
-        "popularity": 8.5698
+        "popularity": 9.0626
       },
       {
         "id": 3141,
         "name": "Marisa Tomei",
         "character": "Cynthia Baum",
-        "popularity": 6.6867
+        "popularity": 6.5682
       },
       {
         "id": 6832,
         "name": "Melissa Leo",
         "character": "Georgia Hale",
-        "popularity": 1.2235
+        "popularity": 1.3065
       },
       {
         "id": 184581,
         "name": "Hamish Linklater",
         "character": "Porter Collins",
-        "popularity": 2.1639
+        "popularity": 2.2439
       },
       {
         "id": 37154,
         "name": "John Magaro",
         "character": "Charlie Geller",
-        "popularity": 2.4741
+        "popularity": 2.5797
       },
       {
         "id": 28847,
         "name": "Rafe Spall",
         "character": "Danny Moses",
-        "popularity": 1.4739
+        "popularity": 1.5447
       },
       {
         "id": 239271,
         "name": "Jeremy Strong",
         "character": "Vinny Daniel",
-        "popularity": 1.5768
+        "popularity": 1.5793
       }
     ],
     "watchedDate": "2025-11-18",
@@ -950,7 +987,11 @@
   {
     "title": "Hedda",
     "year": 2025,
-    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Romance"
+    ],
     "director": "Nia DaCosta",
     "runtime": 107,
     "rating": 5.3,

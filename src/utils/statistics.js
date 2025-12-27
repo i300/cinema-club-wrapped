@@ -6,7 +6,10 @@ export const calculateStats = (movies) => {
   const totalMinutes = totalRuntime % 60;
 
   const genreCounts = movies.reduce((acc, movie) => {
-    acc[movie.genre] = (acc[movie.genre] || 0) + 1;
+    const genres = movie.genres || [movie.genre];
+    genres.forEach((genre) => {
+      acc[genre] = (acc[genre] || 0) + 1;
+    });
     return acc;
   }, {});
   const topGenre = Object.entries(genreCounts).sort((a, b) => b[1] - a[1])[0];
@@ -25,6 +28,10 @@ export const calculateStats = (movies) => {
 
   const longestMovie = movies.reduce((longest, movie) =>
     movie.runtime > longest.runtime ? movie : longest
+  );
+
+  const shortestMovie = movies.reduce((shortest, movie) =>
+    movie.runtime < shortest.runtime ? movie : shortest
   );
 
   const directorCounts = movies.reduce((acc, movie) => {
@@ -89,6 +96,7 @@ export const calculateStats = (movies) => {
     newestMovie,
     highestRated,
     longestMovie,
+    shortestMovie,
     topDirector: topDirector
       ? { name: topDirector[0], count: topDirector[1] }
       : null,

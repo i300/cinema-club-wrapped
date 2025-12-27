@@ -33,7 +33,7 @@ function App() {
     <TotalMoviesSlide key="total" stats={stats} />,
     // <EventListSlide key="events" stats={stats} />,
     // <RuntimeSlide key="runtime" stats={stats} />,
-    // <TopGenreSlide key="genre" stats={stats} />,
+    <TopGenreSlide key="genre" stats={stats} />,
     // <OldestNewestSlide key="oldest-newest" stats={stats} />,
     // <LongestMovieSlide key="longest" stats={stats} />,
     // <MostAttendedEventSlide key="most-attended" stats={stats} />,
@@ -59,8 +59,7 @@ function App() {
       let newIndex = -1;
       if (e.key === "ArrowRight" || e.key === " ") {
         e.preventDefault();
-        setIndex((i) => Math.min(slides.length - 1, i + 1));
-        newIndex = Math.min(slides.length, index + 1);
+        newIndex = Math.min(slides.length - 1, index + 1);
       } else if (e.key === "ArrowLeft") {
         e.preventDefault();
         newIndex = Math.max(0, index - 1);
@@ -76,8 +75,6 @@ function App() {
         stiffness: 300,
         damping: 30,
       });
-
-      console.log("onKeyDown");
     };
 
     window.addEventListener("keydown", handleKeyDown);
@@ -123,8 +120,6 @@ function App() {
               stiffness: 300,
               damping: 30,
             });
-
-            console.log("onDragEnd");
           }}
           style={{ x }}
         >

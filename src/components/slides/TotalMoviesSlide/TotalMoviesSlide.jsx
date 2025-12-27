@@ -1,3 +1,4 @@
+import ScrollableFade from "../../ScrollableFade/ScrollableFade";
 import Slide, { SlideTitle } from "../../Slide";
 import StatCard from "../../StatCard/StatCard";
 
@@ -15,7 +16,7 @@ const TotalMoviesSlide = ({ stats }) => {
     <Slide className="flex flex-col items-center w-full mx-auto max-sm:h-full">
       <SlideTitle>Movies Watched</SlideTitle>
 
-      <div className="flex flex-col items-center gap-2 w-full max-sm:h-full">
+      <ScrollableFade className="flex flex-col items-center gap-2 w-full max-sm:h-full">
         {/* Stat cards row */}
         <div className="flex flex-col sm:flex-row gap-2 w-full">
           <StatCard>
@@ -50,7 +51,7 @@ const TotalMoviesSlide = ({ stats }) => {
             </div>
           ))}
         </div>
-      </div>
+      </ScrollableFade>
     </Slide>
   );
 };

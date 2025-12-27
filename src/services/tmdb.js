@@ -52,10 +52,10 @@ export const enrichMovieData = async (movieTitle, year, watchedDate) => {
     const director = details.credits?.crew?.find(
       (person) => person.job === "Director"
     );
-    const genre =
+    const genres =
       details.genres && details.genres.length > 0
-        ? details.genres[0].name
-        : "Unknown";
+        ? details.genres.map((g) => g.name)
+        : ["Unknown"];
 
     // Extract top cast members with popularity
     const topCast =
@@ -69,7 +69,7 @@ export const enrichMovieData = async (movieTitle, year, watchedDate) => {
     return {
       title: details.title,
       year: new Date(details.release_date).getFullYear(),
-      genre: genre,
+      genres: genres,
       director: director ? director.name : "Unknown",
       runtime: details.runtime,
       rating: details.vote_average,
