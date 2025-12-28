@@ -69,7 +69,7 @@ const PopularMovieCard = ({ movie, size = "default", secondary = false }) => {
       <div className="flex items-center gap-4">
         {/* Poster */}
         <MoviePoster
-          movie={movie.posterPath}
+          movie={movie}
           alt={movie.movieName}
           className={clsx(!secondary && "w-20 sm:w-32", secondary && "w-20")}
         />

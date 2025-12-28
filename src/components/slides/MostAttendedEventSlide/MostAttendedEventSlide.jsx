@@ -24,11 +24,8 @@ const UserReview = ({ displayName, rating, liked }) => {
 const MostAttendedEventSlide = ({ stats }) => {
   const event = stats.mostAttendedEvent;
 
-  // Get reviews for this movie from ratingsStats
-  const movieStats = stats.ratingsStats?.movieStats?.find(
-    (m) => m.movieName === event.title
-  );
-  const reviews = movieStats?.reviews || [];
+  // Reviews are now attached directly to the enriched movie
+  const reviews = event?.reviews || [];
 
   // Format the date as "Month Dayth"
   const formatDate = (dateString) => {

@@ -6,10 +6,12 @@ import useScreenSize from "../../../hooks/useScreenSize";
 const TopMoviesSlide = ({ stats }) => {
   const { mobile } = useScreenSize();
 
-  if (
-    !stats?.ratingsStats?.movieStats ||
-    stats.ratingsStats.movieStats.length === 0
-  ) {
+  // Get movies with ratings, sorted by score
+  const moviesWithRatings = stats.movies
+    ?.filter((m) => m.totalReviews > 0)
+    .sort((a, b) => b.averageScore - a.averageScore);
+
+  if (!moviesWithRatings || moviesWithRatings.length === 0) {
     return (
       <Slide className="stat-slide bg-gradient-top-movies">
         <div className="flex flex-col items-center gap-8 w-full max-w-[900px] mx-auto">
@@ -21,11 +23,10 @@ const TopMoviesSlide = ({ stats }) => {
     );
   }
 
-  // Enrich movie stats with poster path from stats.movies
-  const topMovies = stats.ratingsStats.movieStats.slice(0, 3).map((movie) => ({
+  // Map to format expected by PopularMovieCard
+  const topMovies = moviesWithRatings.slice(0, 3).map((movie) => ({
     ...movie,
-    posterPath: stats.movies?.find((m) => m.title === movie.movieName)
-      ?.posterPath,
+    movieName: movie.title,
   }));
 
   const [first, ...restMovies] = topMovies;

@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import { motion, useMotionValue, animate } from "framer-motion";
 import enrichedMoviesData from "./data/enriched-movies.json";
 import { calculateStats } from "./utils/statistics";
-import { calculateRatingsStats } from "./data/ratings";
 import WelcomeSlide from "./components/slides/WelcomeSlide/WelcomeSlide";
 import EventListSlide from "./components/slides/EventListSlide/EventListSlide";
 import TotalMoviesSlide from "./components/slides/TotalMoviesSlide/TotalMoviesSlide";
@@ -22,10 +21,7 @@ function App() {
   const containerRef = useRef(null);
   const x = useMotionValue(0);
 
-  const stats = {
-    ...calculateStats(enrichedMoviesData),
-    ratingsStats: calculateRatingsStats(),
-  };
+  const stats = calculateStats(enrichedMoviesData);
 
   const slides = [
     <WelcomeSlide key="welcome" />,

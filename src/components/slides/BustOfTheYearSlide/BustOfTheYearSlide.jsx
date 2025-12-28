@@ -1,7 +1,7 @@
 import Slide from "../../Slide";
 
 const BustOfTheYearSlide = ({ stats }) => {
-  if (!stats?.ratingsStats?.leastLikedMovie) {
+  if (!stats?.leastLikedMovie) {
     return (
       <Slide className="stat-slide bg-gradient-bust">
         <div className="slide-content">
@@ -11,13 +11,13 @@ const BustOfTheYearSlide = ({ stats }) => {
     );
   }
 
-  const worstMovie = stats.ratingsStats.leastLikedMovie;
+  const worstMovie = stats.leastLikedMovie;
 
   return (
     <Slide className="stat-slide bg-gradient-bust">
       <div className="slide-content">
         <p className="stat-label">Bust of the year</p>
-        <h1 className="stat-highlight">{worstMovie.movieName}</h1>
+        <h1 className="stat-highlight">{worstMovie.title}</h1>
         <h2 className="stat-number">{worstMovie.averageScore.toFixed(1)}</h2>
         <p className="stat-unit">average score</p>
         <p className="stat-description">

@@ -1,7 +1,7 @@
 import Slide from "../../Slide";
 
 const PersonalFavoritesSlide = ({ stats }) => {
-  if (!stats?.ratingsStats?.personalFavorites) {
+  if (!stats?.personalFavorites) {
     return (
       <Slide className="stat-slide bg-gradient-favorites">
         <div className="slide-content">
@@ -11,7 +11,7 @@ const PersonalFavoritesSlide = ({ stats }) => {
     );
   }
 
-  const favorites = stats.ratingsStats.personalFavorites;
+  const favorites = stats.personalFavorites;
   const favoritesArray = Object.entries(favorites);
 
   return (
