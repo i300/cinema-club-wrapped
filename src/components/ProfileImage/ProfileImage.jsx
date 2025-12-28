@@ -41,7 +41,7 @@ const ProfileImage = ({ name, className = "" }) => {
 
   return (
     <div
-      className={`rounded-full border-[3px] border-white/40 flex items-center justify-center shadow-[--shadow-avatar] bg-cover bg-center bg-no-repeat bg-origin-border ${className}`}
+      className={`rounded-full border-3 border-white/40 flex items-center justify-center shadow-[--shadow-avatar] bg-cover bg-center bg-no-repeat bg-origin-border ${className}`}
       style={{
         backgroundImage: profileImage
           ? `url(${profileImage})`
@@ -49,7 +49,7 @@ const ProfileImage = ({ name, className = "" }) => {
       }}
     >
       {!profileImage && (
-        <span className="text-[2.5rem] max-md:text-[2rem] font-black text-white [text-shadow:0_2px_10px_rgba(0,0,0,0.3)] relative z-10">
+        <span className="text-2xl font-black text-white [text-shadow:0_2px_10px_rgba(0,0,0,0.3)] relative z-10">
           {name.charAt(0).toUpperCase()}
         </span>
       )}

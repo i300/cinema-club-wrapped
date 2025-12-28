@@ -1,14 +1,9 @@
 import ScrollableFade from "../../ScrollableFade/ScrollableFade";
 import Slide, { SlideTitle } from "../../Slide";
 import StatCard from "../../StatCard/StatCard";
+import PosterGrid from "../../PosterGrid/PosterGrid";
 
 const TotalMoviesSlide = ({ stats }) => {
-  // Helper to get poster URL for a movie
-  const getPosterUrl = (movie) => {
-    if (!movie?.posterPath) return null;
-    return `https://image.tmdb.org/t/p/w500${movie.posterPath}`;
-  };
-
   // Get first 12 movies for the poster grid (chronological order)
   const movies = stats.movies?.slice(0, 12) || [];
 
@@ -35,22 +30,7 @@ const TotalMoviesSlide = ({ stats }) => {
         </div>
 
         {/* Movie poster grid */}
-        <div className="grid grid-cols-4 sm:grid-cols-6 gap-2 w-full">
-          {movies.map((movie, index) => (
-            <div
-              key={movie.id || index}
-              className="aspect-2/3 rounded overflow-hidden"
-            >
-              {getPosterUrl(movie) && (
-                <img
-                  src={getPosterUrl(movie)}
-                  alt={movie.title}
-                  className="w-full h-full object-cover"
-                />
-              )}
-            </div>
-          ))}
-        </div>
+        <PosterGrid movies={movies} cols="4" />
       </ScrollableFade>
     </Slide>
   );

@@ -21,14 +21,13 @@ const TopMoviesSlide = ({ stats }) => {
     );
   }
 
-  // Helper to get poster URL for a movie
-  const getPosterUrl = (movieName) => {
-    const movie = stats.movies?.find((m) => m.title === movieName);
-    if (!movie?.posterPath) return null;
-    return `https://image.tmdb.org/t/p/w500${movie.posterPath}`;
-  };
+  // Enrich movie stats with poster path from stats.movies
+  const topMovies = stats.ratingsStats.movieStats.slice(0, 3).map((movie) => ({
+    ...movie,
+    posterPath: stats.movies?.find((m) => m.title === movie.movieName)
+      ?.posterPath,
+  }));
 
-  const topMovies = stats.ratingsStats.movieStats.slice(0, 3);
   const [first, ...restMovies] = topMovies;
 
   return (
@@ -36,11 +35,7 @@ const TopMoviesSlide = ({ stats }) => {
       <SlideTitle>Top Movies of the Year</SlideTitle>
 
       <ScrollableFade className="flex flex-col items-center gap-2 w-full max-sm:h-full">
-        <PopularMovieCard
-          movie={first}
-          posterUrl={getPosterUrl(first.movieName)}
-          size={mobile ? "small" : "default"}
-        />
+        <PopularMovieCard movie={first} size={mobile ? "small" : "default"} />
 
         {restMovies.length > 0 && (
           <div className="flex flex-col sm:flex-row gap-2 w-full">
@@ -48,7 +43,6 @@ const TopMoviesSlide = ({ stats }) => {
               <PopularMovieCard
                 key={movie.movieName}
                 movie={movie}
-                posterUrl={getPosterUrl(movie.movieName)}
                 size={mobile ? "small" : "default"}
                 secondary
               />

@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import ProfileImage from "../ProfileImage/ProfileImage";
+import MoviePoster from "../MoviePoster/MoviePoster";
 
 const UserReview = ({ displayName, rating, liked, size = "default" }) => {
   const small = size === "small";
@@ -45,12 +46,7 @@ const UserReview = ({ displayName, rating, liked, size = "default" }) => {
   );
 };
 
-const PopularMovieCard = ({
-  movie,
-  posterUrl,
-  size = "default",
-  secondary = false,
-}) => {
+const PopularMovieCard = ({ movie, size = "default", secondary = false }) => {
   if (!movie) return null;
 
   // Sort reviews by rating to show variety
@@ -72,19 +68,11 @@ const PopularMovieCard = ({
     >
       <div className="flex items-center gap-4">
         {/* Poster */}
-        <div
-          className={clsx(
-            "shrink-0 rounded overflow-hidden aspect-2/3",
-            !secondary && "w-20 sm:w-32",
-            secondary && "w-20"
-          )}
-        >
-          <img
-            src={posterUrl}
-            alt={movie.movieName}
-            className="w-full h-full object-cover object-center"
-          />
-        </div>
+        <MoviePoster
+          movie={movie.posterPath}
+          alt={movie.movieName}
+          className={clsx(!secondary && "w-20 sm:w-32", secondary && "w-20")}
+        />
 
         {/* Title Card, Stats */}
         <div
@@ -99,7 +87,7 @@ const PopularMovieCard = ({
             <h2
               className={clsx(
                 "font-inter font-bold text-white",
-                !secondary && "text-5xl md:text-6xl",
+                !secondary && "text-4xl md:text-5xl",
                 secondary && "font-semibold text-3xl"
               )}
             >

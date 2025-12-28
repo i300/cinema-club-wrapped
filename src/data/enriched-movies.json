@@ -7,7 +7,7 @@
       "Comedy",
       "Crime"
     ],
-    "director": "John Francis Daley",
+    "director": "John Francis Daley, Jonathan Goldstein",
     "runtime": 100,
     "rating": 6.85,
     "posterPath": "/85R8LMyn9f2Lev2YPBF8Nughrkv.jpg",
@@ -17,62 +17,52 @@
       {
         "id": 23532,
         "name": "Jason Bateman",
-        "character": "Max",
-        "popularity": 6.1212
+        "character": "Max"
       },
       {
         "id": 53714,
         "name": "Rachel McAdams",
-        "character": "Annie",
-        "popularity": 5.3408
+        "character": "Annie"
       },
       {
         "id": 3497,
         "name": "Kyle Chandler",
-        "character": "Brooks",
-        "popularity": 2.3317
+        "character": "Brooks"
       },
       {
         "id": 21676,
         "name": "Sharon Horgan",
-        "character": "Sarah",
-        "popularity": 1.7241
+        "character": "Sarah"
       },
       {
         "id": 141034,
         "name": "Billy Magnussen",
-        "character": "Ryan",
-        "popularity": 2.2216
+        "character": "Ryan"
       },
       {
         "id": 1181327,
         "name": "Lamorne Morris",
-        "character": "Kevin",
-        "popularity": 0.9444
+        "character": "Kevin"
       },
       {
         "id": 999346,
         "name": "Kylie Bunbury",
-        "character": "Michelle",
-        "popularity": 0.8911
+        "character": "Michelle"
       },
       {
         "id": 88124,
         "name": "Jesse Plemons",
-        "character": "Gary",
-        "popularity": 7.9179
+        "character": "Gary"
       },
       {
         "id": 53820,
         "name": "Michael C. Hall",
-        "character": "The Bulgarian",
-        "popularity": 3.9084
+        "character": "The Bulgarian"
       },
       {
         "id": 6413,
         "name": "Danny Huston",
-        "character": "Donald Anderton",
-        "popularity": 2.3222
+        "character": "Donald Anderton"
       }
     ],
     "watchedDate": "2025-01-30",
@@ -104,62 +94,52 @@
       {
         "id": 569,
         "name": "Ethan Hawke",
-        "character": "Jesse",
-        "popularity": 8.9453
+        "character": "Jesse"
       },
       {
         "id": 1146,
         "name": "Julie Delpy",
-        "character": "Céline",
-        "popularity": 2.2073
+        "character": "Céline"
       },
       {
         "id": 571,
         "name": "Andrea Eckert",
-        "character": "Wife on Train",
-        "popularity": 0.2056
+        "character": "Wife on Train"
       },
       {
         "id": 572,
         "name": "Hanno Pöschl",
-        "character": "Husband on Train",
-        "popularity": 0.4708
+        "character": "Husband on Train"
       },
       {
         "id": 573,
         "name": "Karl Bruckschwaiger",
-        "character": "Guy on Bridge",
-        "popularity": 0.1532
+        "character": "Guy on Bridge"
       },
       {
         "id": 574,
         "name": "Tex Rubinowitz",
-        "character": "Guy on Bridge",
-        "popularity": 0.7232
+        "character": "Guy on Bridge"
       },
       {
         "id": 146859,
         "name": "Erni Mangold",
-        "character": "Palm Reader",
-        "popularity": 0.4398
+        "character": "Palm Reader"
       },
       {
         "id": 3735,
         "name": "Dominik Castell",
-        "character": "Street Poet",
-        "popularity": 0.4436
+        "character": "Street Poet"
       },
       {
         "id": 3738,
         "name": "Haymon Maria Buttinger",
-        "character": "Bartender",
-        "popularity": 0.8322
+        "character": "Bartender"
       },
       {
         "id": 3737,
         "name": "Harold Waiglein",
-        "character": "Guitarist in Club",
-        "popularity": 0.0379
+        "character": "Guitarist in Club"
       }
     ],
     "watchedDate": "2025-02-25",
@@ -192,62 +172,52 @@
       {
         "id": 5469,
         "name": "Ralph Fiennes",
-        "character": "M. Gustave",
-        "popularity": 7.9912
+        "character": "M. Gustave"
       },
       {
         "id": 1164,
         "name": "F. Murray Abraham",
-        "character": "Mr. Moustafa",
-        "popularity": 3.4804
+        "character": "Mr. Moustafa"
       },
       {
         "id": 8789,
         "name": "Mathieu Amalric",
-        "character": "Serge X.",
-        "popularity": 1.7003
+        "character": "Serge X."
       },
       {
         "id": 3490,
         "name": "Adrien Brody",
-        "character": "Dmitri",
-        "popularity": 4.6793
+        "character": "Dmitri"
       },
       {
         "id": 5293,
         "name": "Willem Dafoe",
-        "character": "Jopling",
-        "popularity": 5.1344
+        "character": "Jopling"
       },
       {
         "id": 4785,
         "name": "Jeff Goldblum",
-        "character": "Deputy Kovacs",
-        "popularity": 5.551
+        "character": "Deputy Kovacs"
       },
       {
         "id": 1037,
         "name": "Harvey Keitel",
-        "character": "Ludwig",
-        "popularity": 4.2709
+        "character": "Ludwig"
       },
       {
         "id": 9642,
         "name": "Jude Law",
-        "character": "Young Author",
-        "popularity": 8.2098
+        "character": "Young Author"
       },
       {
         "id": 1532,
         "name": "Bill Murray",
-        "character": "M. Ivan",
-        "popularity": 3.4401
+        "character": "M. Ivan"
       },
       {
         "id": 819,
         "name": "Edward Norton",
-        "character": "Henckels",
-        "popularity": 7.074
+        "character": "Henckels"
       }
     ],
     "watchedDate": "2025-03-27",
@@ -282,62 +252,52 @@
       {
         "id": 27105,
         "name": "Ed Helms",
-        "character": "Hogan 'Hoagie' Malloy",
-        "popularity": 2.0188
+        "character": "Hogan 'Hoagie' Malloy"
       },
       {
         "id": 65717,
         "name": "Jon Hamm",
-        "character": "Bob Callahan",
-        "popularity": 8.6009
+        "character": "Bob Callahan"
       },
       {
         "id": 17604,
         "name": "Jeremy Renner",
-        "character": "Jerry Pierce",
-        "popularity": 5.6258
+        "character": "Jerry Pierce"
       },
       {
         "id": 543505,
         "name": "Jake Johnson",
-        "character": "Randy 'Chilli' Cilliano",
-        "popularity": 2.3619
+        "character": "Randy 'Chilli' Cilliano"
       },
       {
         "id": 500427,
         "name": "Hannibal Buress",
-        "character": "Kevin Sable",
-        "popularity": 1.1729
+        "character": "Kevin Sable"
       },
       {
         "id": 82809,
         "name": "Annabelle Wallis",
-        "character": "Rebecca Crosby",
-        "popularity": 5.3695
+        "character": "Rebecca Crosby"
       },
       {
         "id": 52848,
         "name": "Isla Fisher",
-        "character": "Anna Malloy",
-        "popularity": 9.3942
+        "character": "Anna Malloy"
       },
       {
         "id": 80591,
         "name": "Rashida Jones",
-        "character": "Cheryl Deakins",
-        "popularity": 4.062
+        "character": "Cheryl Deakins"
       },
       {
         "id": 57451,
         "name": "Leslie Bibb",
-        "character": "Susan Rollins",
-        "popularity": 2.0608
+        "character": "Susan Rollins"
       },
       {
         "id": 2073126,
         "name": "Maxwell Ross",
-        "character": "Teen Jerry",
-        "popularity": 0.1545
+        "character": "Teen Jerry"
       }
     ],
     "watchedDate": "2025-04-22",
@@ -371,62 +331,52 @@
       {
         "id": 206,
         "name": "Jim Carrey",
-        "character": "Truman Burbank",
-        "popularity": 9.3467
+        "character": "Truman Burbank"
       },
       {
         "id": 350,
         "name": "Laura Linney",
-        "character": "Meryl Burbank / Hannah Gill",
-        "popularity": 4.4509
+        "character": "Meryl Burbank / Hannah Gill"
       },
       {
         "id": 11315,
         "name": "Noah Emmerich",
-        "character": "Marlon / Louis Coltrane",
-        "popularity": 1.2979
+        "character": "Marlon / Louis Coltrane"
       },
       {
         "id": 11317,
         "name": "Natascha McElhone",
-        "character": "Lauren Garland / Sylvia",
-        "popularity": 3.6665
+        "character": "Lauren Garland / Sylvia"
       },
       {
         "id": 11318,
         "name": "Holland Taylor",
-        "character": "Angela Montclair / Alanis Montclair",
-        "popularity": 3.1097
+        "character": "Angela Montclair / Alanis Montclair"
       },
       {
         "id": 228,
         "name": "Ed Harris",
-        "character": "Christof",
-        "popularity": 3.5289
+        "character": "Christof"
       },
       {
         "id": 13242,
         "name": "Paul Giamatti",
-        "character": "Simeon",
-        "popularity": 3.6158
+        "character": "Simeon"
       },
       {
         "id": 6579,
         "name": "Brian Delate",
-        "character": "Walter Moore / Kirk Burbank",
-        "popularity": 0.3515
+        "character": "Walter Moore / Kirk Burbank"
       },
       {
         "id": 23119,
         "name": "Peter Krause",
-        "character": "Lawrence",
-        "popularity": 2.3457
+        "character": "Lawrence"
       },
       {
         "id": 116898,
         "name": "Blair Slater",
-        "character": "Young Truman",
-        "popularity": 0.8513
+        "character": "Young Truman"
       }
     ],
     "watchedDate": "2025-05-20",
@@ -449,7 +399,7 @@
       "Action",
       "Science Fiction"
     ],
-    "director": "Lana Wachowski",
+    "director": "Lana Wachowski, Lilly Wachowski",
     "runtime": 136,
     "rating": 8.236,
     "posterPath": "/p96dm7sCMn4VYAStA6siNz30G1r.jpg",
@@ -459,62 +409,52 @@
       {
         "id": 6384,
         "name": "Keanu Reeves",
-        "character": "Neo",
-        "popularity": 10.0435
+        "character": "Neo"
       },
       {
         "id": 2975,
         "name": "Laurence Fishburne",
-        "character": "Morpheus",
-        "popularity": 3.3663
+        "character": "Morpheus"
       },
       {
         "id": 530,
         "name": "Carrie-Anne Moss",
-        "character": "Trinity",
-        "popularity": 4.5849
+        "character": "Trinity"
       },
       {
         "id": 1331,
         "name": "Hugo Weaving",
-        "character": "Agent Smith",
-        "popularity": 2.689
+        "character": "Agent Smith"
       },
       {
         "id": 9364,
         "name": "Gloria Foster",
-        "character": "Oracle",
-        "popularity": 0.5306
+        "character": "Oracle"
       },
       {
         "id": 532,
         "name": "Joe Pantoliano",
-        "character": "Cypher",
-        "popularity": 2.5826
+        "character": "Cypher"
       },
       {
         "id": 9372,
         "name": "Marcus Chong",
-        "character": "Tank",
-        "popularity": 0.7061
+        "character": "Tank"
       },
       {
         "id": 7244,
         "name": "Julian Arahanga",
-        "character": "Apoc",
-        "popularity": 2.6957
+        "character": "Apoc"
       },
       {
         "id": 9374,
         "name": "Matt Doran",
-        "character": "Mouse",
-        "popularity": 1.2849
+        "character": "Mouse"
       },
       {
         "id": 9376,
         "name": "Belinda McClory",
-        "character": "Switch",
-        "popularity": 1.7485
+        "character": "Switch"
       }
     ],
     "watchedDate": "2025-06-16",
@@ -540,7 +480,7 @@
       "Comedy",
       "Horror"
     ],
-    "director": "Jemaine Clement",
+    "director": "Jemaine Clement, Taika Waititi",
     "runtime": 86,
     "rating": 7.554,
     "posterPath": "/a2rD3i3DBMeYbA34rBv6z3B9S3a.jpg",
@@ -550,62 +490,52 @@
       {
         "id": 55936,
         "name": "Jemaine Clement",
-        "character": "Vladislav",
-        "popularity": 2.6814
+        "character": "Vladislav"
       },
       {
         "id": 55934,
         "name": "Taika Waititi",
-        "character": "Viago",
-        "popularity": 5.4423
+        "character": "Viago"
       },
       {
         "id": 586951,
         "name": "Jonny Brugh",
-        "character": "Deacon",
-        "popularity": 0.5751
+        "character": "Deacon"
       },
       {
         "id": 1286794,
         "name": "Cori Gonzalez-Macuer",
-        "character": "Nick",
-        "popularity": 0.1317
+        "character": "Nick"
       },
       {
         "id": 1286796,
         "name": "Stu Rutherford",
-        "character": "Stu",
-        "popularity": 0.274
+        "character": "Stu"
       },
       {
         "id": 1439931,
         "name": "Ben Fransham",
-        "character": "Petyr",
-        "popularity": 1.2713
+        "character": "Petyr"
       },
       {
         "id": 1286797,
         "name": "Jackie van Beek",
-        "character": "Jackie",
-        "popularity": 2.1464
+        "character": "Jackie"
       },
       {
         "id": 1341670,
         "name": "Elena Stejko",
-        "character": "Pauline (The Beast)",
-        "popularity": 0.2474
+        "character": "Pauline (The Beast)"
       },
       {
         "id": 1233372,
         "name": "Jason Hoyte",
-        "character": "Julian",
-        "popularity": 0.3081
+        "character": "Julian"
       },
       {
         "id": 1780262,
         "name": "Karen O'Leary",
-        "character": "Policewoman",
-        "popularity": 0.2294
+        "character": "Policewoman"
       }
     ],
     "watchedDate": "2025-07-07",
@@ -632,7 +562,7 @@
       "Adventure",
       "Fantasy"
     ],
-    "director": "Tomm Moore",
+    "director": "Tomm Moore, Ross Stewart",
     "runtime": 102,
     "rating": 8.2,
     "posterPath": "/vqGiNbdc2sDwsnivMMYzwAoSSu6.jpg",
@@ -642,62 +572,52 @@
       {
         "id": 1363045,
         "name": "Honor Kneafsey",
-        "character": "Robyn Goodfellowe (voice)",
-        "popularity": 1.1207
+        "character": "Robyn Goodfellowe (voice)"
       },
       {
         "id": 2770089,
         "name": "Eva Whittaker",
-        "character": "Mebh Óg MacTíre (voice)",
-        "popularity": 0.1724
+        "character": "Mebh Óg MacTíre (voice)"
       },
       {
         "id": 48,
         "name": "Sean Bean",
-        "character": "Robyn's Father, Bill Goodfellowe (voice)",
-        "popularity": 5.2695
+        "character": "Robyn's Father, Bill Goodfellowe (voice)"
       },
       {
         "id": 16358,
         "name": "Simon McBurney",
-        "character": "Lord Protector (voice)",
-        "popularity": 1.4109
+        "character": "Lord Protector (voice)"
       },
       {
         "id": 107682,
         "name": "Tommy Tiernan",
-        "character": "Sean Óg (voice)",
-        "popularity": 0.9962
+        "character": "Sean Óg (voice)"
       },
       {
         "id": 33394,
         "name": "Maria Doyle Kennedy",
-        "character": "Mebh's Mother, Moll MacTíre (voice)",
-        "popularity": 1.3153
+        "character": "Mebh's Mother, Moll MacTíre (voice)"
       },
       {
         "id": 37169,
         "name": "Jon Kenny",
-        "character": "Stringy Woodcutter, Ned (voice)",
-        "popularity": 0.3548
+        "character": "Stringy Woodcutter, Ned (voice)"
       },
       {
         "id": 167450,
         "name": "John Morton",
-        "character": "Stumpy Woodcutter (voice)",
-        "popularity": 0.1203
+        "character": "Stumpy Woodcutter (voice)"
       },
       {
         "id": 96677,
         "name": "Nora Twomey",
-        "character": "Head Housekeeper, Bridget (voice)",
-        "popularity": 0.3623
+        "character": "Head Housekeeper, Bridget (voice)"
       },
       {
         "id": 2808575,
         "name": "Oliver McGrath",
-        "character": "Street Children Ringleader, Padraig (voice)",
-        "popularity": 0.0966
+        "character": "Street Children Ringleader, Padraig (voice)"
       }
     ],
     "watchedDate": "2025-08-26",
@@ -733,62 +653,52 @@
       {
         "id": 1303037,
         "name": "Taron Egerton",
-        "character": "Henk Rogers",
-        "popularity": 4.6123
+        "character": "Henk Rogers"
       },
       {
         "id": 931253,
         "name": "Nikita Efremov",
-        "character": "Alexey Pajitnov",
-        "popularity": 0.806
+        "character": "Alexey Pajitnov"
       },
       {
         "id": 1466773,
         "name": "Sofia Lebedeva",
-        "character": "Sasha",
-        "popularity": 0.8286
+        "character": "Sasha"
       },
       {
         "id": 1727213,
         "name": "Anthony Boyle",
-        "character": "Kevin Maxwell",
-        "popularity": 2.1589
+        "character": "Kevin Maxwell"
       },
       {
         "id": 11280,
         "name": "Ben Miles",
-        "character": "Howard Lincoln",
-        "popularity": 1.5993
+        "character": "Howard Lincoln"
       },
       {
         "id": 1155715,
         "name": "Ken Yamamura",
-        "character": "Minoru Arakawa",
-        "popularity": 0.439
+        "character": "Minoru Arakawa"
       },
       {
         "id": 1679513,
         "name": "Igor Grabuzov",
-        "character": "Valentin Trifonov",
-        "popularity": 0.8912
+        "character": "Valentin Trifonov"
       },
       {
         "id": 235858,
         "name": "Oleg Stefan",
-        "character": "Belikov",
-        "popularity": 0.3739
+        "character": "Belikov"
       },
       {
         "id": 1502347,
         "name": "Ayane Nagabuchi",
-        "character": "Akemi Rogers",
-        "popularity": 0.9426
+        "character": "Akemi Rogers"
       },
       {
         "id": 10883,
         "name": "Rick Yune",
-        "character": "Bank Manager",
-        "popularity": 1.5872
+        "character": "Bank Manager"
       }
     ],
     "watchedDate": "2025-09-30",
@@ -822,62 +732,52 @@
       {
         "id": 6856,
         "name": "Kurt Russell",
-        "character": "Snake Plissken",
-        "popularity": 7.8747
+        "character": "Snake Plissken"
       },
       {
         "id": 4078,
         "name": "Lee Van Cleef",
-        "character": "Police Commissioner Bob Hauk",
-        "popularity": 3.97
+        "character": "Police Commissioner Bob Hauk"
       },
       {
         "id": 7502,
         "name": "Ernest Borgnine",
-        "character": "Cabbie",
-        "popularity": 2.1479
+        "character": "Cabbie"
       },
       {
         "id": 9221,
         "name": "Donald Pleasence",
-        "character": "President of the United States",
-        "popularity": 1.8271
+        "character": "President of the United States"
       },
       {
         "id": 6542,
         "name": "Isaac Hayes",
-        "character": "The Duke of New York",
-        "popularity": 0.6591
+        "character": "The Duke of New York"
       },
       {
         "id": 47456,
         "name": "Season Hubley",
-        "character": "Girl in Chock Full O'Nuts",
-        "popularity": 0.5948
+        "character": "Girl in Chock Full O'Nuts"
       },
       {
         "id": 5048,
         "name": "Harry Dean Stanton",
-        "character": "Harold 'Brain' Helman",
-        "popularity": 1.2389
+        "character": "Harold 'Brain' Helman"
       },
       {
         "id": 11782,
         "name": "Adrienne Barbeau",
-        "character": "Maggie",
-        "popularity": 2.3707
+        "character": "Maggie"
       },
       {
         "id": 11784,
         "name": "Tom Atkins",
-        "character": "Rehme",
-        "popularity": 0.7121
+        "character": "Rehme"
       },
       {
         "id": 11786,
         "name": "Charles Cyphers",
-        "character": "Secretary of State",
-        "popularity": 0.5427
+        "character": "Secretary of State"
       }
     ],
     "watchedDate": "2025-10-28",
@@ -911,62 +811,52 @@
       {
         "id": 4495,
         "name": "Steve Carell",
-        "character": "Mark Baum",
-        "popularity": 4.2186
+        "character": "Mark Baum"
       },
       {
         "id": 3894,
         "name": "Christian Bale",
-        "character": "Michael Burry",
-        "popularity": 6.6538
+        "character": "Michael Burry"
       },
       {
         "id": 30614,
         "name": "Ryan Gosling",
-        "character": "Jared Vennett",
-        "popularity": 8.1807
+        "character": "Jared Vennett"
       },
       {
         "id": 287,
         "name": "Brad Pitt",
-        "character": "Ben Rickert",
-        "popularity": 9.0626
+        "character": "Ben Rickert"
       },
       {
         "id": 3141,
         "name": "Marisa Tomei",
-        "character": "Cynthia Baum",
-        "popularity": 6.5682
+        "character": "Cynthia Baum"
       },
       {
         "id": 6832,
         "name": "Melissa Leo",
-        "character": "Georgia Hale",
-        "popularity": 1.3065
+        "character": "Georgia Hale"
       },
       {
         "id": 184581,
         "name": "Hamish Linklater",
-        "character": "Porter Collins",
-        "popularity": 2.2439
+        "character": "Porter Collins"
       },
       {
         "id": 37154,
         "name": "John Magaro",
-        "character": "Charlie Geller",
-        "popularity": 2.5797
+        "character": "Charlie Geller"
       },
       {
         "id": 28847,
         "name": "Rafe Spall",
-        "character": "Danny Moses",
-        "popularity": 1.5447
+        "character": "Danny Moses"
       },
       {
         "id": 239271,
         "name": "Jeremy Strong",
-        "character": "Vinny Daniel",
-        "popularity": 1.5793
+        "character": "Vinny Daniel"
       }
     ],
     "watchedDate": "2025-11-18",
@@ -1002,62 +892,52 @@
       {
         "id": 62561,
         "name": "Tessa Thompson",
-        "character": "Hedda Gabler",
-        "popularity": 4.0337
+        "character": "Hedda Gabler"
       },
       {
         "id": 681,
         "name": "Nina Hoss",
-        "character": "Eileen Lovborg",
-        "popularity": 2.4628
+        "character": "Eileen Lovborg"
       },
       {
         "id": 17606,
         "name": "Imogen Poots",
-        "character": "Thea Clifton",
-        "popularity": 3.1001
+        "character": "Thea Clifton"
       },
       {
         "id": 1356645,
         "name": "Nicholas Pinnock",
-        "character": "Judge Roland Brack",
-        "popularity": 0.5871
+        "character": "Judge Roland Brack"
       },
       {
         "id": 1364004,
         "name": "Tom Bateman",
-        "character": "George Tesman",
-        "popularity": 2.1798
+        "character": "George Tesman"
       },
       {
         "id": 1250809,
         "name": "Finbar Lynch",
-        "character": "Professor Greenwood",
-        "popularity": 0.7077
+        "character": "Professor Greenwood"
       },
       {
         "id": 2517398,
         "name": "Mirren Mack",
-        "character": "Tabitha Greenwood",
-        "popularity": 0.5212
+        "character": "Tabitha Greenwood"
       },
       {
         "id": 2266752,
         "name": "Jamael Westman",
-        "character": "David",
-        "popularity": 0.0927
+        "character": "David"
       },
       {
         "id": 2134546,
         "name": "Saffron Hocking",
-        "character": "Jane Ji",
-        "popularity": 0.6842
+        "character": "Jane Ji"
       },
       {
         "id": 72309,
         "name": "Kathryn Hunter",
-        "character": "Bertie",
-        "popularity": 1.6972
+        "character": "Bertie"
       }
     ],
     "watchedDate": "2025-12-16",

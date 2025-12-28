@@ -117,7 +117,7 @@ const ratings = [
     reviews: [
       {
         user: "Zoe",
-        rating: 0,
+        rating: 4.5,
         liked: true,
       },
       {

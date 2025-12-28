@@ -1,14 +1,10 @@
+import MoviePoster from "../../MoviePoster/MoviePoster";
 import Slide from "../../Slide";
 
 const EventListSlide = ({ stats }) => {
   const formatDate = (dateString) => {
     const date = new Date(dateString);
     return date.toLocaleDateString("en-US", { month: "short", day: "numeric" });
-  };
-
-  const getPosterUrl = (posterPath) => {
-    if (!posterPath) return null;
-    return `https://image.tmdb.org/t/p/w500${posterPath}`;
   };
 
   return (
@@ -25,11 +21,7 @@ const EventListSlide = ({ stats }) => {
             >
               <div className="relative w-full h-full">
                 {movie.posterPath ? (
-                  <img
-                    src={getPosterUrl(movie.posterPath)}
-                    alt={movie.title}
-                    className="w-full h-full object-cover block"
-                  />
+                  <MoviePoster movie={movie} alt={movie.title} />
                 ) : (
                   <div className="w-full h-full bg-white/15 flex items-center justify-center p-4 text-center font-semibold text-white text-[0.9rem]">
                     {movie.title}

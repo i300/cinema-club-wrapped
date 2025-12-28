@@ -34,14 +34,6 @@ export const calculateStats = (movies) => {
     movie.runtime < shortest.runtime ? movie : shortest
   );
 
-  const directorCounts = movies.reduce((acc, movie) => {
-    acc[movie.director] = (acc[movie.director] || 0) + 1;
-    return acc;
-  }, {});
-  const topDirector = Object.entries(directorCounts).sort(
-    (a, b) => b[1] - a[1]
-  )[0];
-
   const decadeCounts = movies.reduce((acc, movie) => {
     const decade = Math.floor(movie.year / 10) * 10;
     acc[decade] = (acc[decade] || 0) + 1;
@@ -97,9 +89,6 @@ export const calculateStats = (movies) => {
     highestRated,
     longestMovie,
     shortestMovie,
-    topDirector: topDirector
-      ? { name: topDirector[0], count: topDirector[1] }
-      : null,
     decadeCounts,
     monthCounts,
     ratingDistribution,

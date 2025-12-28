@@ -32,7 +32,7 @@ const { movieList } = await import("../src/data/movieList.js");
 
 console.log(`Starting TMDB data fetch for ${movieList.length} movies...\n`);
 
-// TMDB API functions (mirroring tmdb.js service)
+// TMDB API functions
 const searchMovie = async (title, year) => {
   try {
     const results = await tmdb.search.movies({
@@ -87,10 +87,11 @@ for (const movie of movieList) {
       continue;
     }
 
-    // Extract director
-    const director = details.credits?.crew?.find(
-      (person) => person.job === "Director"
-    );
+    // Extract directors (some movies have multiple)
+    const directors =
+      details.credits?.crew
+        ?.filter((person) => person.job === "Director")
+        .map((person) => person.name) || [];
 
     // Extract all genres
     const genres =
@@ -98,13 +99,12 @@ for (const movie of movieList) {
         ? details.genres.map((g) => g.name)
         : ["Unknown"];
 
-    // Extract top cast members with popularity
+    // Extract top cast members
     const topCast =
       details.credits?.cast?.slice(0, CAST_ANALYSIS_DEPTH).map((actor) => ({
         id: actor.id,
         name: actor.name,
         character: actor.character,
-        popularity: actor.popularity,
       })) || [];
 
     // Merge TMDB data with original metadata
@@ -113,7 +113,7 @@ for (const movie of movieList) {
       title: details.title,
       year: new Date(details.release_date).getFullYear(),
       genres,
-      director: director ? director.name : "Unknown",
+      director: directors.length > 0 ? directors.join(", ") : "Unknown",
       runtime: details.runtime,
       rating: details.vote_average,
       posterPath: details.poster_path,
