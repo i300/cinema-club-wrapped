@@ -31,7 +31,7 @@ function App() {
     // <OldestNewestSlide key="oldest-newest" stats={stats} />,
     // <LongestMovieSlide key="longest" stats={stats} />,
     <MostAttendedEventSlide key="most-attended" stats={stats} />,
-    // <TopAttendeeSlide key="top-attendee" stats={stats} />,
+    <TopAttendeeSlide key="top-attendee" stats={stats} />,
     <TopMoviesSlide key="top-movies" stats={stats} />,
     <BustOfTheYearSlide key="bust" stats={stats} />,
     // <PersonalFavoritesSlide key="personal-favorites" stats={stats} />,
