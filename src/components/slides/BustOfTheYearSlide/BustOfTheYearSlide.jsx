@@ -1,29 +1,30 @@
-import Slide from "../../Slide";
+import Slide, { SlideTitle } from "../../Slide";
+import PopularMovieCard from "../../PopularMovieCard/PopularMovieCard";
+import useScreenSize from "../../../hooks/useScreenSize";
 
 const BustOfTheYearSlide = ({ stats }) => {
+  const { mobile } = useScreenSize();
+
   if (!stats?.leastLikedMovie) {
     return (
-      <Slide className="stat-slide bg-gradient-bust">
-        <div className="slide-content">
-          <p className="stat-label">No rating data available</p>
-        </div>
+      <Slide className="flex flex-col items-center w-full mx-auto max-sm:h-full">
+        <SlideTitle>Bust of the Year</SlideTitle>
+        <p className="text-[2rem] max-md:text-[1.5rem] font-bold text-white text-center mb-4">
+          No rating data available
+        </p>
       </Slide>
     );
   }
 
-  const worstMovie = stats.leastLikedMovie;
+  const worstMovie = {
+    ...stats.leastLikedMovie,
+    movieName: stats.leastLikedMovie.title,
+  };
 
   return (
-    <Slide className="stat-slide bg-gradient-bust">
-      <div className="slide-content">
-        <p className="stat-label">Bust of the year</p>
-        <h1 className="stat-highlight">{worstMovie.title}</h1>
-        <h2 className="stat-number">{worstMovie.averageScore.toFixed(1)}</h2>
-        <p className="stat-unit">average score</p>
-        <p className="stat-description">
-          {worstMovie.totalReviews} reviews • {worstMovie.likeCount} likes
-        </p>
-      </div>
+    <Slide className="flex flex-col items-center w-full mx-auto max-sm:h-full">
+      <SlideTitle>Bust of the Year</SlideTitle>
+      <PopularMovieCard movie={worstMovie} size={mobile ? "small" : "default"} />
     </Slide>
   );
 };

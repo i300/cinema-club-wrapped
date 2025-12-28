@@ -33,7 +33,7 @@ function App() {
     <MostAttendedEventSlide key="most-attended" stats={stats} />,
     // <TopAttendeeSlide key="top-attendee" stats={stats} />,
     <TopMoviesSlide key="top-movies" stats={stats} />,
-    // <BustOfTheYearSlide key="bust" stats={stats} />,
+    <BustOfTheYearSlide key="bust" stats={stats} />,
     // <PersonalFavoritesSlide key="personal-favorites" stats={stats} />,
     // <SummarySlide key="summary" stats={stats} />,
   ];
