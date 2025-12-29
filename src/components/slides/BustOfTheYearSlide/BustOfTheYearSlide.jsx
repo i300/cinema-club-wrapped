@@ -24,7 +24,11 @@ const BustOfTheYearSlide = ({ stats }) => {
   return (
     <Slide className="flex flex-col items-center w-full mx-auto max-sm:h-full">
       <SlideTitle>Bust of the Year</SlideTitle>
-      <PopularMovieCard movie={worstMovie} size={mobile ? "small" : "default"} />
+      <PopularMovieCard
+        movie={worstMovie}
+        size={mobile ? "small" : "default"}
+        variant="bust"
+      />
     </Slide>
   );
 };

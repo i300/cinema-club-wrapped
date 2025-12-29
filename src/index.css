@@ -40,6 +40,7 @@
 
   /* Custom colors */
   --color-gold: #ffd700;
+  --color-bust: #ff6b6b;
   --color-purple-primary: #8e2de2;
 
   /* Custom shadows */
@@ -51,6 +52,10 @@
 /* Custom text-shadow utilities */
 @utility text-shadow-gold {
   text-shadow: 0px 4px 20px rgba(215, 215, 0, 0.5);
+}
+
+@utility text-shadow-bust {
+  text-shadow: 0px 4px 20px rgba(255, 107, 107, 0.5);
 }
 
 /* Custom gradient background utilities */

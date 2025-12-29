@@ -5,16 +5,16 @@ import ScrollableFade from "../../ScrollableFade/ScrollableFade";
 
 const ProfileWithBadgeCount = ({ name, count }) => {
   return (
-    <div className="relative space-y-1">
-      <ProfileImage name={name} className="w-16 h-16" />
-      <div className="absolute left-10 top-10 w-6 h-6 rounded-full bg-white text-black text-base font-semibold flex items-center justify-center">
-        {count}
+    <div className="space-y-1 text-center">
+      <div className="relative">
+        <ProfileImage name={name} className="w-16 h-16" />
+        <div className="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-white text-[#333] text-sm font-black flex items-center justify-center shadow-[--shadow-rank-badge] border-2 border-white/90">
+          {count}
+        </div>
       </div>
-      <div className="flex flex-col items-center gap-0.5">
-        <span className="text-base md:text-lg text-white text-center">
-          {name}
-        </span>
-      </div>
+      <span className="text-base md:text-lg text-white text-center">
+        {name}
+      </span>
     </div>
   );
 };

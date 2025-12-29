@@ -1,25 +1,7 @@
 import Slide, { SlideTitle } from "../../Slide";
 import StatCard from "../../StatCard/StatCard";
-import ProfileImage from "../../ProfileImage/ProfileImage";
 import MoviePoster from "../../MoviePoster/MoviePoster";
-
-const UserReview = ({ displayName, rating, liked }) => {
-  return (
-    <div className="flex flex-col items-center gap-1 shrink-0">
-      <div className="relative shrink-0">
-        <ProfileImage name={displayName} className="w-15 h-15" />
-        {liked && (
-          <div className="absolute -top-1 -right-1 text-base flex items-center justify-center">
-            💖
-          </div>
-        )}
-      </div>
-      <p className="font-inter text-white text-center text-sm leading-normal">
-        {rating}/5
-      </p>
-    </div>
-  );
-};
+import UserReview from "../../UserReview/UserReview";
 
 const MostAttendedEventSlide = ({ stats }) => {
   const event = stats.mostAttendedEvent;
@@ -87,7 +69,7 @@ const MostAttendedEventSlide = ({ stats }) => {
 
           {/* User Reviews Grid */}
           {reviews.length > 0 && (
-            <div className="flex flex-wrap gap-2.5 items-center justify-center w-full px-2">
+            <div className="grid grid-cols-4 md:flex md:flex-wrap gap-4 md:items-center md:justify-center">
               {reviews.map((review, index) => (
                 <UserReview
                   key={index}

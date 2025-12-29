@@ -1,61 +1,20 @@
 import clsx from "clsx";
-import ProfileImage from "../ProfileImage/ProfileImage";
 import MoviePoster from "../MoviePoster/MoviePoster";
+import UserReview from "../UserReview/UserReview";
 
-const UserReview = ({ displayName, rating, liked, size = "default" }) => {
-  const small = size === "small";
-
-  // Format rating as stars for default size, or as "X/5" for small size
-  const formatRating = () => {
-    if (small) {
-      return `${rating}/5`;
-    }
-
-    // Convert rating to stars (★½ format)
-    const fullStars = Math.floor(rating);
-    const hasHalf = rating % 1 >= 0.5;
-    let stars = "★".repeat(fullStars);
-    if (hasHalf) stars += "½";
-    return stars;
-  };
-
-  return (
-    <div
-      className={clsx(
-        "flex flex-col items-center flex-shrink-0",
-        small ? "gap-1" : "w-[75px] min-w-[75px] gap-2"
-      )}
-    >
-      <div className="relative shrink-0">
-        <ProfileImage name={displayName} className="w-16 h-16" />
-        {liked && (
-          <div className="absolute -top-1 -right-1 text-lg flex items-center justify-center">
-            💖
-          </div>
-        )}
-      </div>
-      <p
-        className={clsx(
-          "font-inter text-white text-center m-0 leading-normal",
-          size === "default" ? "font-semibold text-sm" : "font-normal text-sm"
-        )}
-      >
-        {formatRating()}
-      </p>
-    </div>
-  );
-};
-
-const PopularMovieCard = ({ movie, size = "default", secondary = false }) => {
+const PopularMovieCard = ({
+  movie,
+  size = "default",
+  secondary = false,
+  variant = "default",
+}) => {
   if (!movie) return null;
 
   // Sort reviews by rating to show variety
   const sortedReviews = [...movie.reviews].sort((a, b) => a.rating - b.rating);
 
   const small = size === "small";
-
-  // Limit reviews display based on size
-  const displayReviews = small ? sortedReviews.slice(0, 7) : sortedReviews;
+  const isBust = variant === "bust";
 
   return (
     <div
@@ -95,7 +54,14 @@ const PopularMovieCard = ({ movie, size = "default", secondary = false }) => {
             </h2>
 
             {!secondary && !small && (
-              <div className="font-inter font-semibold text-gold text-shadow-gold shrink-0 text-4xl md:text-5xl">
+              <div
+                className={clsx(
+                  "font-inter font-semibold shrink-0 text-4xl md:text-5xl",
+                  isBust
+                    ? "text-bust text-shadow-bust"
+                    : "text-gold text-shadow-gold"
+                )}
+              >
                 {movie.averageScore.toFixed(2)}
               </div>
             )}
@@ -108,8 +74,11 @@ const PopularMovieCard = ({ movie, size = "default", secondary = false }) => {
                 <span
                   className={clsx(
                     "leading-normal",
+                    !secondary && "font-inter font-semibold shrink-0 text-2xl",
                     !secondary &&
-                      "font-inter font-semibold text-gold text-shadow-gold shrink-0 text-2xl"
+                      (isBust
+                        ? "text-bust text-shadow-bust"
+                        : "text-gold text-shadow-gold")
                   )}
                 >
                   {movie.averageScore.toFixed(2)}
@@ -124,13 +93,12 @@ const PopularMovieCard = ({ movie, size = "default", secondary = false }) => {
 
           {!secondary && !small && (
             <div className="flex flex-wrap gap-2 items-center justify-center">
-              {displayReviews.map((review, index) => (
+              {sortedReviews.map((review, index) => (
                 <UserReview
                   key={index}
                   displayName={review.displayName}
                   rating={review.rating}
                   liked={review.liked}
-                  size={size}
                 />
               ))}
             </div>
@@ -140,14 +108,13 @@ const PopularMovieCard = ({ movie, size = "default", secondary = false }) => {
 
       {/* In small size, show reviews under poster row */}
       {small && !secondary && (
-        <div className="flex flex-wrap gap-2 items-center justify-center">
-          {displayReviews.map((review, index) => (
+        <div className="grid grid-cols-4 gap-4">
+          {sortedReviews.map((review, index) => (
             <UserReview
               key={index}
               displayName={review.displayName}
               rating={review.rating}
               liked={review.liked}
-              size={size}
             />
           ))}
         </div>
