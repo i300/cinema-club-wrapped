@@ -26,7 +26,6 @@ function App() {
   const slides = [
     <WelcomeSlide key="welcome" />,
     <TotalMoviesSlide key="total" stats={stats} />,
-    // <EventListSlide key="events" stats={stats} />,
     <TopGenreSlide key="genre" stats={stats} />,
     // <OldestNewestSlide key="oldest-newest" stats={stats} />,
     // <LongestMovieSlide key="longest" stats={stats} />,

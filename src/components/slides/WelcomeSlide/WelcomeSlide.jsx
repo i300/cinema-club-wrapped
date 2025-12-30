@@ -20,8 +20,11 @@ const WelcomeSlide = () => {
           className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2"
         />
       </div>
-      <p className="absolute top-[85vh] font-extralight">
-        Made with &lt;3 by Jerry
+      <p className="absolute bottom-5 font-extralight flex flex-col items-center gap-2">
+        <span>Data from</span>
+        <img src="partiful.svg" className="h-7" />
+        <img src="letterboxd.svg" className="h-5" />
+        <span>Made with &lt;3 by Jerry</span>
       </p>
     </Slide>
   );
