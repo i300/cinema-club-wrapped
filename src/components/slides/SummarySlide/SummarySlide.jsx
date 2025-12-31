@@ -95,7 +95,7 @@ const SummarySlide = ({ stats }) => {
         />
         <SummaryItem
           poster={stats.mostLikedMovie}
-          title="Top Movie"
+          title="Best of the Year"
           subtitle={stats.mostLikedMovie?.title}
         />
       </ScrollableFade>

@@ -20,7 +20,7 @@ const WelcomeSlide = () => {
         </SlideTitle>
         <p className="font-bold italic text-[2.5rem] md:text-[3rem]">Wrapped</p>
       </div>
-      <div className="mb-4">
+      <div className="mb-4 flex flex-col gap-2 items-center justify-center">
         <span>Data from</span>
         <img src="partiful.svg" className="h-7" />
         <img src="letterboxd.svg" className="h-5" />

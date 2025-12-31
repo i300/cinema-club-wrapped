@@ -17,19 +17,19 @@ const TopHostSlide = ({ stats }) => {
 
   return (
     <Slide className="flex flex-col items-center w-full mx-auto max-sm:h-full">
-      <SlideTitle>Most Movies Chosen</SlideTitle>
+      <SlideTitle>Most Picked Movies</SlideTitle>
 
       <ScrollableFade className="flex flex-col gap-2 w-full">
         {/* Top host card */}
-        <StatCard className="gap-2">
+        <StatCard className="gap-2 flex-row justify-between!">
           <div className="flex gap-2 items-center justify-center">
             <ProfileImage name={topHost.name} className="w-14 h-14" />
             <p className="text-5xl max-sm:text-4xl font-semibold text-white">
               {topHost.name}
             </p>
           </div>
-          <p className="text-2xl max-sm:text-xl font-light italic text-white">
-            {topHost.count} {topHost.count === 1 ? "movie" : "movies"} chosen
+          <p className="text-xl font-extralight italic">
+            {topHost.count} {topHost.count === 1 ? "movie" : "movies"}
           </p>
         </StatCard>
         {topHostedMovies.length > 0 && (
@@ -37,16 +37,15 @@ const TopHostSlide = ({ stats }) => {
         )}
 
         {/* Second place host card */}
-        <StatCard secondary className="gap-2">
+        <StatCard secondary className="gap-2 flex-row justify-between!">
           <div className="flex gap-2 items-center justify-center">
             <ProfileImage name={secondPlace.name} className="w-14 h-14" />
             <p className="text-5xl max-sm:text-4xl font-semibold text-white">
               {secondPlace.name}
             </p>
           </div>
-          <p className="text-2xl max-sm:text-xl font-light italic text-white">
-            {secondPlace.count} {secondPlace.count === 1 ? "movie" : "movies"}{" "}
-            chosen
+          <p className="text-xl font-extralight italic">
+            {secondPlace.count} {secondPlace.count === 1 ? "movie" : "movies"}
           </p>
         </StatCard>
         {secondPlaceMovies.length > 0 && (

@@ -35,6 +35,9 @@ const StandoutReviewsSlide = ({ stats }) => {
             {moviesWithStandoutReviews.length} standout reviews
           </p>
           <p className="text-xl font-light italic">
+            Hand-picked reviews from chat
+          </p>
+          <p className="text-base font-light italic">
             {totalReviews} reviews total
           </p>
         </StatCard>
