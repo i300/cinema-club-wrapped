@@ -2,6 +2,7 @@ import Slide, { SlideTitle } from "../../Slide";
 import StatCard from "../../StatCard/StatCard";
 import MoviePoster from "../../MoviePoster/MoviePoster";
 import UserReview from "../../UserReview/UserReview";
+import ScrollableFade from "../../ScrollableFade/ScrollableFade";
 
 const MostAttendedEventSlide = ({ stats }) => {
   const event = stats.mostAttendedEvent;
@@ -48,7 +49,7 @@ const MostAttendedEventSlide = ({ stats }) => {
     <Slide className="flex flex-col items-center w-full mx-auto max-sm:h-full">
       <SlideTitle>Biggest Turnout</SlideTitle>
 
-      <div className="flex flex-row max-md:flex-col gap-2 w-full max-w-225">
+      <ScrollableFade className="flex flex-row max-md:flex-col gap-2 w-full max-w-225">
         {/* Primary Stat Card - Attendee Count */}
         <StatCard className="gap-2 text-white text-center leading-normal flex-1">
           <p className="font-inter font-semibold text-5xl max-md:text-4xl">
@@ -97,7 +98,7 @@ const MostAttendedEventSlide = ({ stats }) => {
             </div>
           )}
         </StatCard>
-      </div>
+      </ScrollableFade>
     </Slide>
   );
 };

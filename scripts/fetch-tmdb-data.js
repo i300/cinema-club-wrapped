@@ -122,6 +122,7 @@ for (const movie of movieList) {
       cast: topCast,
 
       // Original metadata
+      host: movie.host,
       watchedDate: movie.watchedDate,
       eventName: movie.eventName,
       attendees: movie.attendees,

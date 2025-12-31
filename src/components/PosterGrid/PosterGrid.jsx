@@ -16,8 +16,10 @@ const PosterGrid = ({ movies, className, cols = "4" }) => {
     cols === "6"
       ? "grid-cols-3 sm:grid-cols-6"
       : cols === "4"
-        ? "grid-cols-4 sm:grid-cols-6"
-        : cols;
+      ? "grid-cols-4 sm:grid-cols-6"
+      : cols === "3"
+      ? "grid-cols-3 sm:grid-cols-6"
+      : cols;
 
   return (
     <div className={clsx("grid gap-2 w-full", colsClass, className)}>

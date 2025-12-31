@@ -9,7 +9,7 @@
     ],
     "director": "John Francis Daley, Jonathan Goldstein",
     "runtime": 100,
-    "rating": 6.851,
+    "rating": 6.85,
     "posterPath": "/85R8LMyn9f2Lev2YPBF8Nughrkv.jpg",
     "backdropPath": "/aKPCZwkSZy2ASLo0QKeYmcoplfA.jpg",
     "overview": "Max and Annie's weekly game night gets kicked up a notch when Max's brother Brooks arranges a murder mystery party -- complete with fake thugs and federal agents. So when Brooks gets kidnapped, it's all supposed to be part of the game. As the competitors set out to solve the case, they start to learn that neither the game nor Brooks are what they seem to be. The friends soon find themselves in over their heads as each twist leads to another unexpected turn over the course of one chaotic night.",
@@ -65,6 +65,7 @@
         "character": "Donald Anderton"
       }
     ],
+    "host": "Tessa",
     "watchedDate": "2025-01-30",
     "eventName": "Cinema Club Round 1",
     "attendees": [
@@ -86,7 +87,7 @@
     ],
     "director": "Richard Linklater",
     "runtime": 101,
-    "rating": 7.969,
+    "rating": 7.97,
     "posterPath": "/kf1Jb1c2JAOqjuzA3H4oDM263uB.jpg",
     "backdropPath": "/qA2TyqPldTtoTVY3LKrNIG5g6bH.jpg",
     "overview": "An unexpected meeting on a train leads two travelers to spend an evening wandering through Vienna. As the night unfolds, they share stories and conversations about life and love, exploring new ideas while a quiet intimacy grows between them, knowing it may be their only night together.",
@@ -142,6 +143,7 @@
         "character": "Guitarist in Club"
       }
     ],
+    "host": "Alex",
     "watchedDate": "2025-02-25",
     "eventName": "Cinema Club Round 2",
     "attendees": [
@@ -220,6 +222,7 @@
         "character": "Henckels"
       }
     ],
+    "host": "Jerry",
     "watchedDate": "2025-03-27",
     "eventName": "Grand Cinema Club",
     "attendees": [
@@ -300,6 +303,7 @@
         "character": "Teen Jerry"
       }
     ],
+    "host": "Jojo",
     "watchedDate": "2025-04-22",
     "eventName": "tag ur it ha ha movie night i guess",
     "attendees": [
@@ -379,6 +383,7 @@
         "character": "Young Truman"
       }
     ],
+    "host": "Nir",
     "watchedDate": "2025-05-20",
     "eventName": "The Cinema Club Show",
     "attendees": [
@@ -401,7 +406,7 @@
     ],
     "director": "Lana Wachowski, Lilly Wachowski",
     "runtime": 136,
-    "rating": 8.236,
+    "rating": 8.237,
     "posterPath": "/p96dm7sCMn4VYAStA6siNz30G1r.jpg",
     "backdropPath": "/tlm8UkiQsitc8rSuIAscQDCnP8d.jpg",
     "overview": "Set in the 22nd century, The Matrix tells the story of a computer hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth.",
@@ -457,6 +462,7 @@
         "character": "Switch"
       }
     ],
+    "host": "Sam",
     "watchedDate": "2025-06-16",
     "eventName": "www.whatisthematrix.com",
     "attendees": [
@@ -538,6 +544,7 @@
         "character": "Policewoman"
       }
     ],
+    "host": "Jerry",
     "watchedDate": "2025-07-07",
     "eventName": "Cinema Club in the Shadows",
     "attendees": [
@@ -564,7 +571,7 @@
     ],
     "director": "Tomm Moore, Ross Stewart",
     "runtime": 102,
-    "rating": 8.2,
+    "rating": 8.197,
     "posterPath": "/vqGiNbdc2sDwsnivMMYzwAoSSu6.jpg",
     "backdropPath": "/3zTbERSBLh7waK9811RTKGAcG86.jpg",
     "overview": "In a time of superstition and magic, when wolves are seen as demonic and nature an evil to be tamed, a young apprentice hunter comes to Ireland with her father to wipe out the last pack. But when she saves a wild native girl, their friendship leads her to discover the world of the Wolfwalkers and transform her into the very thing her father is tasked to destroy.",
@@ -620,6 +627,7 @@
         "character": "Street Children Ringleader, Padraig (voice)"
       }
     ],
+    "host": "Juliet",
     "watchedDate": "2025-08-26",
     "eventName": "Moviewatchers",
     "attendees": [
@@ -645,7 +653,7 @@
     ],
     "director": "Jon S. Baird",
     "runtime": 118,
-    "rating": 7.651,
+    "rating": 7.7,
     "posterPath": "/4F2QwCOYHJJjecSvdOjStuVLkpu.jpg",
     "backdropPath": "/4avmIRBBOs9b4DKoenf8SWWJJP7.jpg",
     "overview": "In 1988, American video game salesman Henk Rogers discovers the video game Tetris. When he sets out to bring the game to the world, he enters a dangerous web of lies and corruption behind the Iron Curtain.",
@@ -701,6 +709,7 @@
         "character": "Bank Manager"
       }
     ],
+    "host": "Jojo",
     "watchedDate": "2025-09-30",
     "eventName": "four tennis",
     "attendees": [
@@ -724,7 +733,7 @@
     ],
     "director": "John Carpenter",
     "runtime": 99,
-    "rating": 7.053,
+    "rating": 7.1,
     "posterPath": "/vH9llaphjAssRGi0k7e75tD40Ce.jpg",
     "backdropPath": "/aJsO6ek1ax2qDU8qJzB0HKBMHyA.jpg",
     "overview": "In a world ravaged by crime, the entire island of Manhattan has been converted into a walled prison where brutal prisoners roam free. After the US president crash-lands inside, war hero Snake Plissken has 24 hours to bring him back.",
@@ -780,6 +789,7 @@
         "character": "Secretary of State"
       }
     ],
+    "host": "Jerry",
     "watchedDate": "2025-10-28",
     "eventName": "Escape from Cinema Club",
     "attendees": [
@@ -859,6 +869,7 @@
         "character": "Vinny Daniel"
       }
     ],
+    "host": "Michael",
     "watchedDate": "2025-11-18",
     "eventName": "The Big Cinema Club",
     "attendees": [
@@ -884,7 +895,7 @@
     ],
     "director": "Nia DaCosta",
     "runtime": 107,
-    "rating": 5.3,
+    "rating": 5.438,
     "posterPath": "/ecflk7AZf0ij205yDswjlvdxlCO.jpg",
     "backdropPath": "/cKZcDKawR79igCgDMSXlpkn8hLR.jpg",
     "overview": "Hedda Gabler finds herself torn between the lingering ache of a past love and the quiet suffocation of her present life. Over the course of one charged night, long-repressed desires and hidden tensions erupt—pulling her and everyone around her into a spiral of manipulation, passion, and betrayal.",
@@ -940,6 +951,7 @@
         "character": "Bertie"
       }
     ],
+    "host": "Brenna",
     "watchedDate": "2025-12-16",
     "eventName": "Important night for me but also for you",
     "attendees": [

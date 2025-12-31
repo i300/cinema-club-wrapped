@@ -154,14 +154,20 @@ export const calculateStats = (movies) => {
     return acc;
   }, {});
 
-  const topHost = Object.entries(hostCounts).sort(
-    (a, b) => b[1] - a[1]
-  )[0];
+  const sortedHosts = Object.entries(hostCounts)
+    .sort((a, b) => b[1] - a[1])
+    .map((host) => ({
+      name: host[0],
+      count: host[1],
+    }));
 
   // Calculate ratings stats
   const validReviews = getValidReviews(ratings, userToName);
   const movieMetrics = calculateMovieMetrics(validReviews);
-  const personalFavorites = calculatePersonalFavorites(validReviews, userToName);
+  const personalFavorites = calculatePersonalFavorites(
+    validReviews,
+    userToName
+  );
 
   // Create a map of movie names to standout reviews
   const standoutReviewMap = {};
@@ -232,11 +238,6 @@ export const calculateStats = (movies) => {
     movie.attendeeCount > max.attendeeCount ? movie : max
   );
 
-  // Get movies hosted by the top host
-  const topHostMovies = topHost
-    ? enrichedMovies.filter((movie) => movie.host === topHost[0])
-    : [];
-
   return {
     totalMovies,
     totalHours,
@@ -263,8 +264,7 @@ export const calculateStats = (movies) => {
       ? { name: topAttendee[0], count: topAttendee[1] }
       : null,
     attendeeCounts,
-    topHost: topHost ? { name: topHost[0], count: topHost[1] } : null,
-    topHostMovies,
+    topHosts: sortedHosts,
     hostCounts,
     movies: enrichedMovies,
     // Ratings stats (no longer nested)

@@ -53,6 +53,18 @@ const TopAtendeesCard = ({ stats }) => {
   );
 };
 
+const TopHostsCard = ({ stats }) => {
+  if (!stats.topHosts) return null;
+
+  const topHost = stats.topHosts[0];
+
+  return (
+    <SummaryItemContainer title="Most Movies Chosen" subtitle={topHost.name}>
+      <ProfileImage name={topHost.name} className="w-12 h-12" />
+    </SummaryItemContainer>
+  );
+};
+
 const SummarySlide = ({ stats }) => {
   return (
     <Slide className="flex flex-col items-center justify-center w-full mx-auto max-sm:h-full">
@@ -74,16 +86,17 @@ const SummarySlide = ({ stats }) => {
           title="Most Attended Event"
           subtitle={stats.mostAttendedEvent?.eventName}
         />
+        <TopHostsCard stats={stats} />
         <TopAtendeesCard stats={stats} />
-        <SummaryItem
-          poster={stats.mostLikedMovie}
-          title="Top Movie"
-          subtitle={stats.mostLikedMovie?.title}
-        />
         <SummaryItem
           poster={stats.leastLikedMovie}
           title="Bust of the Year"
           subtitle={stats.leastLikedMovie?.title}
+        />
+        <SummaryItem
+          poster={stats.mostLikedMovie}
+          title="Top Movie"
+          subtitle={stats.mostLikedMovie?.title}
         />
       </ScrollableFade>
     </Slide>

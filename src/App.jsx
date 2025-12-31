@@ -13,6 +13,7 @@ import StandoutReviewsSlide from "./components/slides/StandoutReviewsSlide/Stand
 import BustOfTheYearSlide from "./components/slides/BustOfTheYearSlide/BustOfTheYearSlide";
 import SummarySlide from "./components/slides/SummarySlide/SummarySlide";
 import ProgressBar from "./components/ProgressBar/ProgressBar";
+import DirectorsCommentarySlide from "./components/slides/DirectorsCommentarySlide/DirectorsCommentarySlide";
 
 function App() {
   const [index, setIndex] = useState(0);
@@ -32,6 +33,7 @@ function App() {
     <BustOfTheYearSlide key="bust" stats={stats} />,
     <TopMoviesSlide key="top-movies" stats={stats} />,
     <SummarySlide key="summary" stats={stats} />,
+    <DirectorsCommentarySlide />,
   ];
 
   useEffect(() => {
