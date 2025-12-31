@@ -3,16 +3,12 @@ import { motion, useMotionValue, animate } from "framer-motion";
 import enrichedMoviesData from "./data/enriched-movies.json";
 import { calculateStats } from "./utils/statistics";
 import WelcomeSlide from "./components/slides/WelcomeSlide/WelcomeSlide";
-import EventListSlide from "./components/slides/EventListSlide/EventListSlide";
 import TotalMoviesSlide from "./components/slides/TotalMoviesSlide/TotalMoviesSlide";
 import TopGenreSlide from "./components/slides/TopGenreSlide/TopGenreSlide";
-import OldestNewestSlide from "./components/slides/OldestNewestSlide/OldestNewestSlide";
-import LongestMovieSlide from "./components/slides/LongestMovieSlide/LongestMovieSlide";
 import MostAttendedEventSlide from "./components/slides/MostAttendedEventSlide/MostAttendedEventSlide";
 import TopAttendeeSlide from "./components/slides/TopAttendeeSlide/TopAttendeeSlide";
 import TopMoviesSlide from "./components/slides/TopMoviesSlide/TopMoviesSlide";
 import BustOfTheYearSlide from "./components/slides/BustOfTheYearSlide/BustOfTheYearSlide";
-import PersonalFavoritesSlide from "./components/slides/PersonalFavoritesSlide/PersonalFavoritesSlide";
 import SummarySlide from "./components/slides/SummarySlide/SummarySlide";
 import ProgressBar from "./components/ProgressBar/ProgressBar";
 
@@ -27,14 +23,11 @@ function App() {
     <WelcomeSlide key="welcome" />,
     <TotalMoviesSlide key="total" stats={stats} />,
     <TopGenreSlide key="genre" stats={stats} />,
-    // <OldestNewestSlide key="oldest-newest" stats={stats} />,
-    // <LongestMovieSlide key="longest" stats={stats} />,
     <MostAttendedEventSlide key="most-attended" stats={stats} />,
     <TopAttendeeSlide key="top-attendee" stats={stats} />,
     <TopMoviesSlide key="top-movies" stats={stats} />,
     <BustOfTheYearSlide key="bust" stats={stats} />,
-    // <PersonalFavoritesSlide key="personal-favorites" stats={stats} />,
-    // <SummarySlide key="summary" stats={stats} />,
+    <SummarySlide key="summary" stats={stats} />,
   ];
 
   useEffect(() => {
@@ -79,7 +72,7 @@ function App() {
   }
 
   return (
-    <div className="w-full h-screen flex flex-col justify-center items-center relative overflow-hidden scrollbar-custom">
+    <div className="w-full h-full flex flex-col justify-center items-center relative overflow-hidden scrollbar-custom">
       <ProgressBar totalSlides={slides.length} currentSlide={index} />
 
       <div className="w-full h-full pt-16 pb-2 max-md:pt-12 relative overflow-hidden">
