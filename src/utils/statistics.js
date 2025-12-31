@@ -146,6 +146,18 @@ export const calculateStats = (movies) => {
     (a, b) => b[1] - a[1]
   )[0];
 
+  // Count host appearances
+  const hostCounts = movies.reduce((acc, movie) => {
+    if (movie.host) {
+      acc[movie.host] = (acc[movie.host] || 0) + 1;
+    }
+    return acc;
+  }, {});
+
+  const topHost = Object.entries(hostCounts).sort(
+    (a, b) => b[1] - a[1]
+  )[0];
+
   // Calculate ratings stats
   const validReviews = getValidReviews(ratings, userToName);
   const movieMetrics = calculateMovieMetrics(validReviews);
@@ -220,6 +232,11 @@ export const calculateStats = (movies) => {
     movie.attendeeCount > max.attendeeCount ? movie : max
   );
 
+  // Get movies hosted by the top host
+  const topHostMovies = topHost
+    ? enrichedMovies.filter((movie) => movie.host === topHost[0])
+    : [];
+
   return {
     totalMovies,
     totalHours,
@@ -246,6 +263,9 @@ export const calculateStats = (movies) => {
       ? { name: topAttendee[0], count: topAttendee[1] }
       : null,
     attendeeCounts,
+    topHost: topHost ? { name: topHost[0], count: topHost[1] } : null,
+    topHostMovies,
+    hostCounts,
     movies: enrichedMovies,
     // Ratings stats (no longer nested)
     mostLikedMovie,
