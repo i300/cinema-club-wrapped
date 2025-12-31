@@ -1,6 +1,7 @@
 import Slide, { SlideTitle } from "../../Slide";
 import PopularMovieCard from "../../PopularMovieCard/PopularMovieCard";
 import useScreenSize from "../../../hooks/useScreenSize";
+import ScrollableFade from "../../ScrollableFade/ScrollableFade";
 
 const BustOfTheYearSlide = ({ stats }) => {
   const { mobile } = useScreenSize();
@@ -24,11 +25,13 @@ const BustOfTheYearSlide = ({ stats }) => {
   return (
     <Slide className="flex flex-col items-center w-full mx-auto max-sm:h-full">
       <SlideTitle>Bust of the Year</SlideTitle>
-      <PopularMovieCard
-        movie={worstMovie}
-        size={mobile ? "small" : "default"}
-        variant="bust"
-      />
+      <ScrollableFade>
+        <PopularMovieCard
+          movie={worstMovie}
+          size={mobile ? "small" : "default"}
+          variant="bust"
+        />
+      </ScrollableFade>
     </Slide>
   );
 };

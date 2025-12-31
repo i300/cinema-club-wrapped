@@ -31,7 +31,7 @@ const StandoutReviewsSlide = ({ stats }) => {
 
       <ScrollableFade className="flex flex-col md:grid md:grid-cols-2 gap-2 w-full">
         <StatCard className="col-span-2">
-          <p className="text-4xl font-semibold">
+          <p className="text-4xl font-semibold text-center">
             {moviesWithStandoutReviews.length} standout reviews
           </p>
           <p className="text-xl font-light italic">
