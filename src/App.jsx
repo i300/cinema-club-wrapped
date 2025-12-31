@@ -8,6 +8,7 @@ import TopGenreSlide from "./components/slides/TopGenreSlide/TopGenreSlide";
 import MostAttendedEventSlide from "./components/slides/MostAttendedEventSlide/MostAttendedEventSlide";
 import TopAttendeeSlide from "./components/slides/TopAttendeeSlide/TopAttendeeSlide";
 import TopMoviesSlide from "./components/slides/TopMoviesSlide/TopMoviesSlide";
+import StandoutReviewsSlide from "./components/slides/StandoutReviewsSlide/StandoutReviewsSlide";
 import BustOfTheYearSlide from "./components/slides/BustOfTheYearSlide/BustOfTheYearSlide";
 import SummarySlide from "./components/slides/SummarySlide/SummarySlide";
 import ProgressBar from "./components/ProgressBar/ProgressBar";
@@ -25,8 +26,9 @@ function App() {
     <TopGenreSlide key="genre" stats={stats} />,
     <MostAttendedEventSlide key="most-attended" stats={stats} />,
     <TopAttendeeSlide key="top-attendee" stats={stats} />,
-    <TopMoviesSlide key="top-movies" stats={stats} />,
+    <StandoutReviewsSlide key="standout-reviews" stats={stats} />,
     <BustOfTheYearSlide key="bust" stats={stats} />,
+    <TopMoviesSlide key="top-movies" stats={stats} />,
     <SummarySlide key="summary" stats={stats} />,
   ];
 

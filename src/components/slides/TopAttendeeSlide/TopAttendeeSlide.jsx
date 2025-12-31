@@ -43,7 +43,7 @@ const TopAttendeeSlide = ({ stats }) => {
           {topAttendees.map(([name, count]) => (
             <StatCard key={name} className="gap-2">
               <div className="flex gap-2 items-center justify-center">
-                <ProfileImage name={name} className="w-16 h-16" />
+                <ProfileImage name={name} className="w-14 h-14" />
                 <p className="text-5xl max-sm:text-4xl font-semibold text-white">
                   {name}
                 </p>

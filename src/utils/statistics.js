@@ -151,6 +151,14 @@ export const calculateStats = (movies) => {
   const movieMetrics = calculateMovieMetrics(validReviews);
   const personalFavorites = calculatePersonalFavorites(validReviews, userToName);
 
+  // Create a map of movie names to standout reviews
+  const standoutReviewMap = {};
+  ratings.forEach((rating) => {
+    if (rating.standout_review) {
+      standoutReviewMap[rating.movie_name] = rating.standout_review;
+    }
+  });
+
   // Enrich movies with ratings data
   const enrichedMovies = movies.map((movie) => {
     const metrics = movieMetrics[movie.title] || {
@@ -159,12 +167,14 @@ export const calculateStats = (movies) => {
       totalReviews: 0,
       reviews: [],
     };
+    const standoutReview = standoutReviewMap[movie.title];
     return {
       ...movie,
       averageScore: metrics.averageScore,
       likeCount: metrics.likeCount,
       totalReviews: metrics.totalReviews,
       reviews: metrics.reviews,
+      standoutReview: standoutReview,
     };
   });
 

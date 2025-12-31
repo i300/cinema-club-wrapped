@@ -18,7 +18,7 @@ const GenreCard = ({ genre, count, movies }) => {
     <>
       <StatCard className="w-full items-start">
         <div className="flex items-center justify-between w-full text-white">
-          <p className="text-5xl md:text-6xl">{genre}</p>
+          <p className="text-5xl md:text-6xl font-semibold">{genre}</p>
           <p className="text-xl font-extralight italic">
             {count} {count === 1 ? "movie" : "movies"}
           </p>

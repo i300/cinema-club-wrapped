@@ -14,6 +14,10 @@ export const userToName = {
 export const ratings = [
   {
     movie_name: "Game Night",
+    standout_review: {
+      user: "sammybat",
+      text: "When I found out he cheated at board games their ENTIRE life I would’ve let him die",
+    },
     reviews: [
       { user: "tjm995", rating: 4, liked: false },
       { user: "johulia", rating: 3.5, liked: false },
@@ -27,6 +31,10 @@ export const ratings = [
   },
   {
     movie_name: "Before Sunrise",
+    standout_review: {
+      user: "Sittinduck57",
+      text: "This WILL happen to my buddy Michael",
+    },
     reviews: [
       { user: "kachi", rating: 5, liked: false },
       { user: "tjm995", rating: 3, liked: false },
@@ -67,6 +75,10 @@ export const ratings = [
   },
   {
     movie_name: "The Truman Show",
+    standout_review: {
+      user: "sammybat",
+      text: "If they did this to me I would also become the worlds leading scientist, wage a war with a hedgehog, and blow up this earth",
+    },
     reviews: [
       { user: "CV89", rating: 0, liked: false },
       { user: "Zoe", rating: 0, liked: true },
@@ -79,6 +91,10 @@ export const ratings = [
   },
   {
     movie_name: "The Matrix",
+    standout_review: {
+      user: "niranjanravi",
+      text: "Mother, you're dripping",
+    },
     reviews: [
       { user: "CV89", rating: 0, liked: true },
       { user: "tim995", rating: 4, liked: false },
@@ -131,6 +147,10 @@ export const ratings = [
   },
   {
     movie_name: "Escape from New York",
+    standout_review: {
+      user: "johulia",
+      text: "he's snake plissken and we know him and we thought he was dead",
+    },
     reviews: [
       { user: "yojek", rating: 2.5, liked: false },
       { user: "Zoe", rating: 2.5, liked: false },
@@ -157,6 +177,10 @@ export const ratings = [
   },
   {
     movie_name: "Hedda",
+    standout_review: {
+      user: "niranjanravi",
+      text: "Average peach trees party",
+    },
     reviews: [
       { user: "Sittinduck57", rating: 3.5, liked: false },
       { user: "johulia", rating: 4, liked: false },
