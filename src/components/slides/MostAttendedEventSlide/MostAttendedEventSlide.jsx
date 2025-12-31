@@ -3,6 +3,7 @@ import StatCard from "../../StatCard/StatCard";
 import MoviePoster from "../../MoviePoster/MoviePoster";
 import UserReview from "../../UserReview/UserReview";
 import ScrollableFade from "../../ScrollableFade/ScrollableFade";
+import ProfileImage from "../../ProfileImage/ProfileImage";
 
 const MostAttendedEventSlide = ({ stats }) => {
   const event = stats.mostAttendedEvent;
@@ -58,9 +59,16 @@ const MostAttendedEventSlide = ({ stats }) => {
           <p className="font-inter text-3xl max-md:text-2xl">
             {event.eventName}
           </p>
-          <p className="font-inter font-light text-2xl max-md:text-base">
-            {formatDate(event.watchedDate)}
-          </p>
+          <div className="flex gap-2 items-center justify-center">
+            <p className="font-inter text-xl">Hosted by</p>
+            <div className="flex gap-2 items-center justify-center">
+              <ProfileImage name={event.host} className="w-8 h-8" small />
+              <p className="text-xl font-semibold text-white">{event.host}</p>
+            </div>
+            <p className="font-inter font-light text-xl">
+              on {formatDate(event.watchedDate)}
+            </p>
+          </div>
         </StatCard>
 
         {/* Secondary Card - Movie Info + Reviews */}

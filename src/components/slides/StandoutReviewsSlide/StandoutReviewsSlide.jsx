@@ -61,7 +61,11 @@ const StandoutReviewsSlide = ({ stats }) => {
                   </h3>
 
                   <div className="flex items-center gap-2">
-                    <ProfileImage name={displayName} className="w-8 h-8" />
+                    <ProfileImage
+                      name={displayName}
+                      className="w-8 h-8"
+                      small
+                    />
                     <span className="font-inter text-white/80 text-sm">
                       {displayName}
                     </span>

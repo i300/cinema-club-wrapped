@@ -1,4 +1,5 @@
 // Import profile images
+import clsx from "clsx";
 import alexImg from "../../assets/alex.jpeg";
 import brennaImg from "../../assets/brenna.jpeg";
 import jerryImg from "../../assets/jerry.jpeg";
@@ -35,7 +36,7 @@ const getGradientForName = (name) => {
   return gradients[index];
 };
 
-const ProfileImage = ({ name, className = "" }) => {
+const ProfileImage = ({ name, className = "", small = false }) => {
   const nameLower = name.toLowerCase();
   const profileImage = profileImages[nameLower];
 
@@ -49,7 +50,12 @@ const ProfileImage = ({ name, className = "" }) => {
       }}
     >
       {!profileImage && (
-        <span className="text-2xl font-black text-white [text-shadow:0_2px_10px_rgba(0,0,0,0.3)] relative z-10">
+        <span
+          className={clsx(
+            "font-black text-white [text-shadow:0_2px_10px_rgba(0,0,0,0.3)] relative z-10",
+            !small && "text-2xl"
+          )}
+        >
           {name.charAt(0).toUpperCase()}
         </span>
       )}
