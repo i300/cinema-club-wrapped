@@ -6,6 +6,7 @@ import WelcomeSlide from "./components/slides/WelcomeSlide/WelcomeSlide";
 import TotalMoviesSlide from "./components/slides/TotalMoviesSlide/TotalMoviesSlide";
 import TopGenreSlide from "./components/slides/TopGenreSlide/TopGenreSlide";
 import MostAttendedEventSlide from "./components/slides/MostAttendedEventSlide/MostAttendedEventSlide";
+import TopHostSlide from "./components/slides/TopHostSlide/TopHostSlide";
 import TopAttendeeSlide from "./components/slides/TopAttendeeSlide/TopAttendeeSlide";
 import TopMoviesSlide from "./components/slides/TopMoviesSlide/TopMoviesSlide";
 import StandoutReviewsSlide from "./components/slides/StandoutReviewsSlide/StandoutReviewsSlide";
@@ -25,6 +26,7 @@ function App() {
     <TotalMoviesSlide key="total" stats={stats} />,
     <TopGenreSlide key="genre" stats={stats} />,
     <MostAttendedEventSlide key="most-attended" stats={stats} />,
+    <TopHostSlide key="top-host" stats={stats} />,
     <TopAttendeeSlide key="top-attendee" stats={stats} />,
     <StandoutReviewsSlide key="standout-reviews" stats={stats} />,
     <BustOfTheYearSlide key="bust" stats={stats} />,
