@@ -6,6 +6,7 @@ export const movieList = [
     watchedDate: "2025-01-30",
     eventName: "Cinema Club Round 1",
     attendees: ["Jerry", "Nir", "Alex", "Jojo", "Sam", "Tessa"],
+    host: "Tessa",
   },
   {
     title: "Before Sunrise",
@@ -13,6 +14,7 @@ export const movieList = [
     watchedDate: "2025-02-25",
     eventName: "Cinema Club Round 2",
     attendees: ["Jerry", "Nir", "Alex", "Juliet", "Jojo", "Michael", "Sam"],
+    host: "Alex",
   },
   {
     title: "The Grand Budapest Hotel",
@@ -30,6 +32,7 @@ export const movieList = [
       "Zoe",
       "Sam",
     ],
+    host: "Jerry",
   },
   {
     title: "Tag",
@@ -46,6 +49,7 @@ export const movieList = [
       "Tessa",
       "Sam",
     ],
+    host: "Jojo",
   },
   {
     title: "The Truman Show",
@@ -53,6 +57,7 @@ export const movieList = [
     watchedDate: "2025-05-20",
     eventName: "The Cinema Club Show",
     attendees: ["Nir", "Jerry", "Jojo", "Brenna", "Alex", "Tessa", "Sam"],
+    host: "Nir",
   },
   {
     title: "The Matrix",
@@ -71,6 +76,7 @@ export const movieList = [
       "Tessa",
       "Zoe",
     ],
+    host: "Sam",
   },
   {
     title: "What We Do in the Shadows",
@@ -88,6 +94,7 @@ export const movieList = [
       "Sam",
       "Alex",
     ],
+    host: "Jerry",
   },
   {
     title: "Wolfwalkers",
@@ -105,6 +112,7 @@ export const movieList = [
       "Sam",
       "Tessa",
     ],
+    host: "Juliet",
   },
   {
     title: "Tetris",
@@ -121,6 +129,7 @@ export const movieList = [
       "Michael",
       "Tessa",
     ],
+    host: "Jojo",
   },
   {
     title: "Escape from New York",
@@ -137,6 +146,7 @@ export const movieList = [
       "Jojo",
       "Sam",
     ],
+    host: "Jerry",
   },
   {
     title: "The Big Short",
@@ -154,6 +164,7 @@ export const movieList = [
       "Eric",
       "Sam",
     ],
+    host: "Michael",
   },
   {
     title: "Hedda",
@@ -170,5 +181,6 @@ export const movieList = [
       "Brenna",
       "Sam",
     ],
+    host: "Brenna",
   },
 ];
