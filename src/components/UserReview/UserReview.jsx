@@ -30,9 +30,11 @@ const UserReview = ({ displayName, rating, liked }) => {
           </div>
         )}
       </div>
-      <p className="font-inter text-white text-center m-0 leading-normal font-normal text-sm">
-        {formatRating()}
-      </p>
+      {rating !== undefined && (
+        <p className="font-inter text-white text-center m-0 leading-normal font-normal text-sm">
+          {formatRating()}
+        </p>
+      )}
     </div>
   );
 };

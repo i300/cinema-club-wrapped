@@ -9,6 +9,22 @@ const MostAttendedEventSlide = ({ stats }) => {
   // Reviews are now attached directly to the enriched movie
   const reviews = event?.reviews || [];
 
+  const processedReviews = [...event.attendees]
+    .map((attendee) => {
+      const review = reviews.find(
+        (r) => r.displayName.toLowerCase() === attendee.toLowerCase()
+      );
+      return { attendee, review };
+    })
+    .sort((a, b) => {
+      // Users without reviews go last
+      if (!a.review && !b.review) return 0;
+      if (!a.review) return 1;
+      if (!b.review) return -1;
+      // Sort by rating, lowest to highest
+      return a.review.rating - b.review.rating;
+    });
+
   // Format the date as "Month Dayth"
   const formatDate = (dateString) => {
     const date = new Date(dateString + "T00:00:00");
@@ -49,7 +65,7 @@ const MostAttendedEventSlide = ({ stats }) => {
         {/* Secondary Card - Movie Info + Reviews */}
         <StatCard
           secondary
-          className="gap-2 items-start flex-1 max-md:items-center"
+          className="gap-4 items-start flex-1 max-md:items-center"
         >
           {/* Movie Info Row */}
           <div className="flex gap-4 items-start w-full">
@@ -68,14 +84,14 @@ const MostAttendedEventSlide = ({ stats }) => {
           </div>
 
           {/* User Reviews Grid */}
-          {reviews.length > 0 && (
-            <div className="grid grid-cols-4 md:flex md:flex-wrap gap-4 md:items-center md:justify-center">
-              {reviews.map((review, index) => (
+          {processedReviews?.length > 0 && (
+            <div className="grid grid-cols-5 gap-4">
+              {processedReviews.map(({ attendee, review }, index) => (
                 <UserReview
                   key={index}
-                  displayName={review.displayName}
-                  rating={review.rating}
-                  liked={review.liked}
+                  displayName={attendee}
+                  rating={review?.rating}
+                  liked={review?.liked}
                 />
               ))}
             </div>
