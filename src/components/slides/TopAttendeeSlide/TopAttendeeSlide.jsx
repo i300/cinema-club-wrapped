@@ -26,9 +26,9 @@ const TopAttendeeSlide = ({ stats }) => {
 
   // Find top attendees (may be multiple if tied)
   const topCount = sortedAttendees[0]?.[1];
-  const topAttendees = sortedAttendees.filter(
-    ([, count]) => count === topCount
-  );
+  const topAttendees = sortedAttendees
+    .filter(([, count]) => count === topCount)
+    .sort((a, b) => a[0].localeCompare(b[0]));
   const otherAttendees = sortedAttendees.filter(
     ([, count]) => count !== topCount
   );

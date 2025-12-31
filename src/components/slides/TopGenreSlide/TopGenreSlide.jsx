@@ -13,19 +13,12 @@ const getMoviesByGenre = (movies, genre) => {
   );
 };
 
-const GenreCard = ({ genre, count, movies, secondary = false }) => {
+const GenreCard = ({ genre, count, movies }) => {
   return (
     <>
-      <StatCard secondary={secondary} className="w-full items-start">
+      <StatCard className="w-full items-start">
         <div className="flex items-center justify-between w-full text-white">
-          <p
-            className={clsx(
-              "text-5xl md:text-6xl",
-              !secondary && "font-semibold"
-            )}
-          >
-            {genre}
-          </p>
+          <p className="text-5xl md:text-6xl">{genre}</p>
           <p className="text-xl font-extralight italic">
             {count} {count === 1 ? "movie" : "movies"}
           </p>
@@ -64,7 +57,6 @@ const TopGenreSlide = ({ stats }) => {
             genre={secondGenre}
             count={secondCount}
             movies={secondGenreMovies}
-            secondary
           />
         )}
       </ScrollableFade>
