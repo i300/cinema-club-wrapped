@@ -29,8 +29,8 @@ const StandoutReviewsSlide = ({ stats }) => {
     <Slide className="flex flex-col items-center w-full mx-auto max-sm:h-full">
       <SlideTitle>Standout Reviews</SlideTitle>
 
-      <ScrollableFade className="flex flex-col md:flex-row md:flex-wrap gap-2 w-full">
-        <StatCard className="w-full">
+      <ScrollableFade className="flex flex-col md:grid md:grid-cols-2 gap-2 w-full">
+        <StatCard className="col-span-2">
           <p className="text-4xl font-semibold">
             {moviesWithStandoutReviews.length} standout reviews
           </p>

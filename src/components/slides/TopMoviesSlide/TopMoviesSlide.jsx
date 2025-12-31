@@ -33,7 +33,7 @@ const TopMoviesSlide = ({ stats }) => {
 
   return (
     <Slide className="flex flex-col items-center w-full mx-auto max-sm:h-full">
-      <SlideTitle>Best of the Best</SlideTitle>
+      <SlideTitle>Best of the Year</SlideTitle>
 
       <ScrollableFade className="flex flex-col items-center gap-2 w-full max-sm:h-full">
         <PopularMovieCard movie={first} size={mobile ? "small" : "default"} />

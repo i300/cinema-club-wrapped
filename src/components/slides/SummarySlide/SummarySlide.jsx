@@ -4,8 +4,21 @@ import ProfileImage from "../../ProfileImage/ProfileImage";
 import MoviePoster from "../../MoviePoster/MoviePoster";
 import ScrollableFade from "../../ScrollableFade/ScrollableFade";
 
+const SummaryItemContainer = ({ title, subtitle, children }) => (
+  <StatCard
+    secondary
+    className="grow-0 flex-row items-center gap-4 justify-start"
+  >
+    {children}
+    <div className="text-left min-w-0">
+      <p className="text-sm text-white/70 font-light italic">{title}</p>
+      <p className="text-2xl font-semibold text-white truncate">{subtitle}</p>
+    </div>
+  </StatCard>
+);
+
 const SummaryItem = ({ icon, poster, profile, title, subtitle }) => (
-  <StatCard secondary className="flex-row! items-center gap-3 justify-start!">
+  <SummaryItemContainer title={title} subtitle={subtitle}>
     {icon && (
       <div className="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center shrink-0">
         <span className="text-2xl">{icon}</span>
@@ -13,14 +26,10 @@ const SummaryItem = ({ icon, poster, profile, title, subtitle }) => (
     )}
     {poster && <MoviePoster movie={poster} className="w-12 rounded-lg!" />}
     {profile && <ProfileImage name={profile} className="w-12 h-12" />}
-    <div className="text-left min-w-0">
-      <p className="text-sm text-white/70">{title}</p>
-      <p className="text-base font-semibold text-white truncate">{subtitle}</p>
-    </div>
-  </StatCard>
+  </SummaryItemContainer>
 );
 
-const SummarySlide = ({ stats }) => {
+const TopAtendeesCard = ({ stats }) => {
   // Find top attendees (may be multiple if tied)
   const sortedAttendees = Object.entries(stats.attendeeCounts).sort(
     (a, b) => b[1] - a[1]
@@ -31,10 +40,25 @@ const SummarySlide = ({ stats }) => {
     .sort((a, b) => a[0].localeCompare(b[0]));
 
   return (
-    <Slide className="flex flex-col items-center w-full mx-auto max-sm:h-full">
+    <SummaryItemContainer
+      title={`Top Attendee${topAttendees.length > 1 ? "s" : ""}`}
+      subtitle={topAttendees.map(([name]) => name).join(" & ")}
+    >
+      <div className="flex -space-x-3">
+        {topAttendees.map(([name]) => (
+          <ProfileImage key={name} name={name} className="w-12 h-12" />
+        ))}
+      </div>
+    </SummaryItemContainer>
+  );
+};
+
+const SummarySlide = ({ stats }) => {
+  return (
+    <Slide className="flex flex-col items-center justify-center w-full mx-auto max-sm:h-full">
       <SlideTitle>Cinema Club Wrapped 2025</SlideTitle>
 
-      <ScrollableFade className="w-full h-full grid grid-cols-2 gap-3 max-sm:grid-cols-1">
+      <ScrollableFade className="w-full h-full gap-2 max-sm:flex max-sm:flex-col md:grid md:grid-cols-2">
         <SummaryItem
           icon="🎬"
           title="Total Movies"
@@ -47,27 +71,10 @@ const SummarySlide = ({ stats }) => {
         />
         <SummaryItem
           poster={stats.mostAttendedEvent}
-          title="Top Event"
+          title="Most Attended Event"
           subtitle={stats.mostAttendedEvent?.eventName}
         />
-        <StatCard
-          secondary
-          className="flex-row! items-center gap-3 justify-start!"
-        >
-          <div className="flex -space-x-3">
-            {topAttendees.map(([name]) => (
-              <ProfileImage key={name} name={name} className="w-12 h-12" />
-            ))}
-          </div>
-          <div className="text-left min-w-0">
-            <p className="text-sm text-white/70">
-              Top Attendee{topAttendees.length > 1 ? "s" : ""}
-            </p>
-            <p className="text-base font-semibold text-white truncate">
-              {topAttendees.map(([name]) => name).join(" & ")}
-            </p>
-          </div>
-        </StatCard>
+        <TopAtendeesCard stats={stats} />
         <SummaryItem
           poster={stats.mostLikedMovie}
           title="Top Movie"
