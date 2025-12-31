@@ -7,7 +7,7 @@ const DirectorsCommentarySlide = () => {
       <SlideTitle>Director's Commentary</SlideTitle>
 
       <ScrollableFade className="max-w-lg px-4 text-lg md:text-xl text-white/90 leading-relaxed space-y-2">
-        <p>And thats your 2025 Cinema Club Wrapped!</p>
+        <p>And that's your 2025 Cinema Club Wrapped!</p>
         <p>
           What started as a silly idea quickly became a really large project. It
           made me appreciate all the effort that goes into a little app like

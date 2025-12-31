@@ -29,7 +29,7 @@ const TopHostSlide = ({ stats }) => {
             </p>
           </div>
           <p className="text-2xl max-sm:text-xl font-light italic text-white">
-            {topHost.count} {topHost.count === 1 ? "movie" : "movies"} hosted
+            {topHost.count} {topHost.count === 1 ? "movie" : "movies"} chosen
           </p>
         </StatCard>
         {topHostedMovies.length > 0 && (
@@ -46,7 +46,7 @@ const TopHostSlide = ({ stats }) => {
           </div>
           <p className="text-2xl max-sm:text-xl font-light italic text-white">
             {secondPlace.count} {secondPlace.count === 1 ? "movie" : "movies"}{" "}
-            hosted
+            chosen
           </p>
         </StatCard>
         {secondPlaceMovies.length > 0 && (
